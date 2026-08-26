@@ -1,11 +1,11 @@
 backend:
-  name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  
+  name: git-gateway
   branch: main
 
 # Preview links point back at the live site
-site_url: https://YOUR_SITE_NAME.netlify.app
-display_url: https://YOUR_SITE_NAME.netlify.app
+site_url: https://olga-tarasova-site.netlify.app
+display_url: https://olga-tarasova-site.netlify.app
 
 media_folder: "images/uploads"
 public_folder: "images/uploads"
