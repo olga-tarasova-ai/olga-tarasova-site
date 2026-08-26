@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Olga Tarasova — AI Visual Creator &amp; Art Direction</title>
+<meta content="Olga Tarasova — AI Visual Creator creating fashion, beauty, product, food and interior visual campaigns for brands worldwide." name="description"/>
+<meta content="Olga Tarasova — AI Visual Creator &amp; Art Direction" property="og:title"/>
+<meta content="Olga Tarasova — AI Visual Creator creating fashion, beauty, product, food and interior visual campaigns for brands worldwide." property="og:description"/>
+<meta content="images/hero_cut.webp" property="og:image"/>
+<meta content="website" property="og:type"/>
+<link href="favicon.ico" rel="icon" sizes="any"/>
+<link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="images/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="images/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --charcoal:#171716;
+    --ivory:#F1ECE4;
+    --burgundy:#6B1522;
+    --burgundy-light:#B34455;
+    --oxblood:#3A0B10;
+    --silver:#AAA5A0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Manrope',sans-serif;font-weight:400;
+    background:var(--charcoal);
+    color:var(--ivory);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;line-height:1.06;}
+  h1,h2{text-transform:uppercase;letter-spacing:.012em;}
+  .accent{color:var(--burgundy-light);font-style:italic;font-weight:400;}
+  .cap{
+    font-family:'Manrope',sans-serif;font-weight:500;
+    font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+  }
+  .rule{width:46px;height:1px;background:var(--burgundy-light);display:block;}
+  .wrap{max-width:1340px;margin:0 auto;padding:0 5vw;}
+
+  /* HEADER */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:flex-start;justify-content:space-between;gap:30px;
+    padding:30px 5vw;transition:background .35s ease,padding .35s ease;
+  }
+  header.scrolled{background:rgba(15,14,14,.92);backdrop-filter:blur(8px);padding:16px 5vw;}
+  .logo .name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;letter-spacing:.2em;text-transform:uppercase;font-weight:400;}
+  .logo .tag{font-family:'Cormorant Garamond',serif;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:#c8c2ba;margin-top:6px;line-height:1.5;}
+  header.scrolled .logo .tag{display:none;}
+  .header-right{display:flex;align-items:center;gap:30px;padding-top:4px;}
+  nav.main-nav{display:flex;gap:34px;}
+  nav.main-nav a{
+    font-family:'Cormorant Garamond',serif;font-weight:500;
+    font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;
+    position:relative;padding-bottom:4px;color:#e7e1d8;
+  }
+  nav.main-nav a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--burgundy-light);transition:width .3s ease;}
+  nav.main-nav a:hover{color:var(--ivory);}
+  nav.main-nav a:hover::after{width:100%;}
+  .lang-switch{display:flex;align-items:center;gap:5px;font-size:.7rem;letter-spacing:.1em;color:var(--silver);}
+  .lang-btn{background:none;border:none;color:var(--silver);font-family:'Manrope',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.1em;cursor:pointer;padding:3px 5px;transition:color .25s ease;}
+  .lang-btn.active{color:var(--ivory);border:1px solid rgba(241,236,228,.45);}
+  .menu-toggle{
+    display:flex;align-items:center;gap:12px;background:none;border:none;cursor:pointer;
+    color:#e7e1d8;font-family:'Cormorant Garamond',serif;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+  }
+  .burger{width:26px;height:12px;position:relative;}
+  .burger span{position:absolute;left:0;right:0;height:1px;background:#e7e1d8;transition:transform .3s ease;}
+  .burger span:nth-child(1){top:0;}
+  .burger span:nth-child(2){top:6px;}
+  .burger span:nth-child(3){top:12px;}
+
+  .mobile-nav{
+    position:fixed;inset:0;background:#100f0f;z-index:99;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;
+    transform:translateY(-100%);visibility:hidden;
+    transition:transform .5s cubic-bezier(.6,0,.2,1),visibility 0s linear .5s;
+  }
+  .mobile-nav.open{transform:translateY(0);visibility:visible;transition:transform .5s cubic-bezier(.6,0,.2,1),visibility 0s linear 0s;}
+  .mobile-nav a{font-family:'Cormorant Garamond',serif;font-size:2.1rem;text-transform:uppercase;letter-spacing:.08em;}
+  .mobile-nav .lang-switch{margin-top:22px;font-size:.9rem;}
+  .mobile-nav .lang-btn{font-size:.85rem;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;min-height:100vh;overflow:hidden;
+    background:
+      radial-gradient(115% 90% at 8% 30%, rgba(107,21,34,.55) 0%, rgba(58,11,16,.2) 42%, transparent 72%),
+      linear-gradient(150deg, #2a0a10 0%, #1b1414 45%, #100f0f 100%);
+    display:flex;align-items:center;
+  }
+  .hero-photo-layer{
+    position:absolute;top:0;right:8vw;bottom:0;width:56%;
+    display:flex;justify-content:flex-end;align-items:flex-end;
+    pointer-events:none;z-index:1;
+  }
+  .hero-photo-layer::before{
+    content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:118%;height:96%;
+    background:radial-gradient(52% 50% at 50% 46%, rgba(120,26,40,.42) 0%, rgba(74,16,26,.2) 45%, transparent 74%);
+  }
+  .hero-photo-holder{position:relative;height:100%;display:flex;justify-content:flex-end;align-items:flex-end;}
+  .hero-photo{
+    height:100%;width:auto;max-width:none;display:block;
+    filter:saturate(1.02) contrast(1.02);
+  }
+  .hero-inner{position:relative;z-index:2;width:100%;max-width:1340px;margin:0 auto;padding:0 5vw;}
+  .hero-copy{max-width:600px;}
+  .hero h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.02;margin-bottom:34px;}
+  .hero h1 .ln{display:block;}
+  .hero .rule{margin-bottom:22px;}
+  .hero p.lead{
+    max-width:430px;font-size:.9rem;line-height:1.95;color:#cdc6bd;font-weight:400;
+  }
+  .hero-cta-row{display:flex;align-items:center;flex-wrap:wrap;gap:40px;margin-top:52px;}
+  .hero-cta{
+    display:inline-flex;align-items:center;gap:18px;
+    font-family:'Manrope',sans-serif;font-weight:500;
+    font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#e7e1d8;
+  }
+  .hero-cta .line{width:150px;height:1px;background:rgba(241,236,228,.45);transition:width .4s ease;}
+  .hero-cta:hover .line{width:190px;}
+  .hero-cta .dia{width:9px;height:9px;border:1px solid rgba(241,236,228,.6);transform:rotate(45deg);}
+  .hero-cta-secondary{
+    display:inline-block;font-family:'Manrope',sans-serif;font-weight:500;
+    font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#a89e93;
+    border-bottom:1px solid rgba(241,236,228,.28);padding-bottom:4px;
+    transition:color .3s ease,border-color .3s ease;
+  }
+  .hero-cta-secondary:hover{color:#e7e1d8;border-color:rgba(241,236,228,.65);}
+  .badge{
+    position:absolute;right:4vw;top:24%;width:118px;height:118px;z-index:3;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .badge svg{width:100%;height:100%;animation:spin 26s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .badge text{font-family:'Manrope',sans-serif;font-weight:500;font-size:7.6px;letter-spacing:2.6px;fill:#ded7ce;}
+  .badge-center{position:absolute;font-family:'Cormorant Garamond',serif;color:var(--burgundy-light);font-size:1.7rem;}
+
+  /* ===== SECTION GENERIC ===== */
+  section{padding:130px 0;}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-start;gap:60px;margin-bottom:64px;flex-wrap:wrap;}
+  .sec-head h2{font-size:clamp(2.2rem,4.4vw,3.8rem);}
+  .sec-head .rule{margin:20px 0 14px;}
+  .sec-head .sub{font-family:'Manrope',sans-serif;font-size:.8rem;letter-spacing:.05em;color:#b3aca3;}
+  .sec-intro{max-width:430px;font-size:.9rem;line-height:2;color:#cdc6bd;border-left:1px solid rgba(241,236,228,.18);padding-left:30px;margin-top:14px;}
+  .sec-note{max-width:430px;font-size:.72rem;font-style:italic;color:#8a8177;padding-left:30px;margin-top:12px;}
+
+  /* ===== ABOUT ===== */
+  .about{background:var(--ivory);color:var(--charcoal);padding:0;display:grid;grid-template-columns:41% 59%;align-items:stretch;min-height:660px;}
+  .about-photo-col{position:relative;overflow:hidden;}
+  .about-photo-col img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;}
+  .about-text-col{padding:110px 5vw 110px 5vw;display:flex;flex-direction:column;justify-content:center;}
+  .about-text-col .cap{color:var(--burgundy);}
+  .about-text-col h2{font-size:clamp(2rem,3.5vw,3rem);margin:16px 0 26px;}
+  .about-text-col h2 .accent{color:var(--burgundy);}
+  .about-text-col p{font-size:.92rem;line-height:2;color:#4a4740;margin-bottom:18px;max-width:640px;}
+  .about-info{display:flex;gap:0;margin-top:44px;border-top:1px solid rgba(23,23,22,.16);padding-top:28px;flex-wrap:wrap;}
+  .about-info div{flex:1;min-width:150px;padding-right:20px;}
+  .about-info .k{font-family:'Manrope',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--burgundy);margin-bottom:9px;}
+  .about-info .v{font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:500;letter-spacing:.04em;}
+  .about-link{display:inline-flex;align-items:center;gap:16px;margin-top:44px;font-family:'Manrope',sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--charcoal);}
+  .about-link .line{width:80px;height:1px;background:var(--charcoal);transition:width .4s ease;}
+  .about-link:hover .line{width:120px;}
+
+  /* ===== WORK / MOSAIC CARDS ===== */
+  .work{background:#100f0f;}
+  .m-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:300px 258px 380px 336px;gap:14px;}
+  .m-card{
+    position:relative;overflow:hidden;display:flex;flex-direction:column;
+    padding:34px 32px;min-height:230px;
+    background:linear-gradient(155deg,#242020 0%,#1a1616 55%,#2b1013 130%);
+    border:1px solid rgba(241,236,228,.07);
+    transition:transform .55s cubic-bezier(.4,0,.2,1), border-color .45s ease;
+  }
+  .m-card:hover{transform:translateY(-7px);border-color:rgba(179,68,85,.4);}
+  .m-card.c1{grid-column:1/3;grid-row:1/3;}
+  .m-card.c2{grid-column:3/7;grid-row:1;}
+  .m-card.c3{grid-column:3/5;grid-row:2;}
+  .m-card.c4{grid-column:5/7;grid-row:2;}
+  .m-card.c5{grid-column:1/4;grid-row:3;}
+  .m-card.c6{grid-column:4/7;grid-row:3;}
+  .m-card.c7{grid-column:1/7;grid-row:4;}
+  .m-num{font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:var(--burgundy-light);line-height:1;}
+  .m-card .rule{margin:14px 0 20px;width:34px;}
+  .m-title{
+    font-family:'Cormorant Garamond',serif;font-weight:500;
+    font-size:1.5rem;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin-bottom:16px;
+  }
+  .m-desc{font-size:.84rem;line-height:1.9;color:#c3bcb3;max-width:400px;}
+  .m-foot{margin-top:auto;padding-top:26px;display:flex;align-items:center;gap:14px;}
+
+  /* image-backed service cards — carries the Portfolio visual language into Services */
+  .m-card.has-img{padding:0;background:#1a1616;}
+  .m-card.has-img .m-img{position:absolute;inset:0;overflow:hidden;}
+  .m-card.has-img .m-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.3,0,.2,1);}
+  .m-card.has-img:hover .m-img img{transform:scale(1.06);}
+  .m-card.has-img .m-body{
+    position:relative;z-index:2;flex:1;display:flex;flex-direction:column;padding:34px 32px;
+    background:linear-gradient(180deg,rgba(18,15,15,.34) 0%,rgba(15,13,13,.8) 58%,rgba(12,10,10,.94) 100%);
+  }
+  .m-card.has-img .m-desc{color:#d3ccc3;max-width:430px;}
+  .m-card.c3 .m-img img{object-position:center 42%;}
+  .m-card.c4 .m-img img{object-position:center 32%;filter:brightness(.86) contrast(1.08) saturate(.9);}
+  .m-card.c5 .m-img img{object-position:48% 38%;}
+  .m-card.c6 .m-img img{object-position:center 46%;}
+  .m-foot .soon{
+    font-family:'Manrope',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+    border:1px solid rgba(241,236,228,.28);padding:7px 14px;color:#bdb6ad;
+  }
+
+
+  /* ===== PORTFOLIO / CASES ===== */
+  .portfolio{background:#141111;}
+  .case{margin-bottom:104px;}
+  .case:last-child{margin-bottom:0;}
+  .case-head{
+    display:flex;justify-content:space-between;align-items:flex-end;gap:44px;flex-wrap:wrap;
+    border-bottom:1px solid rgba(241,236,228,.13);padding-bottom:22px;margin-bottom:34px;
+  }
+  .case-n{display:none;}
+  .case-head h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.45rem,2.6vw,2.1rem);text-transform:uppercase;letter-spacing:.045em;margin-top:10px;}
+  .case-head .meta{font-size:.8rem;line-height:1.85;color:#a9a29a;max-width:430px;}
+  .case-brief{display:flex;flex-direction:column;gap:11px;max-width:430px;}
+  .case-brief .row{display:flex;gap:16px;align-items:baseline;}
+  .case-brief .lab{flex:0 0 100px;font-family:'Manrope',sans-serif;font-weight:600;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--burgundy-light);}
+  .case-brief .val{font-size:.8rem;line-height:1.7;color:#a9a29a;}
+  .menu-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
+  .dish .frame{overflow:hidden;background:#1c1918;}
+  .dish img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.3,0,.2,1);}
+  .dish video{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.3,0,.2,1);background:#1c1918;}
+  .dish:hover img,.dish:hover video{transform:scale(1.045);}
+  .dish .course{margin-top:15px;font-family:'Manrope',sans-serif;font-weight:500;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--burgundy-light);}
+  .dish .name{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.08rem;letter-spacing:.03em;margin-top:7px;line-height:1.35;}
+  .menu-grid.grid-4{grid-template-columns:repeat(4,1fr);}
+  .dish.square img{aspect-ratio:1/1;object-fit:cover;}
+
+  .ba{position:relative;aspect-ratio:3/2;overflow:hidden;border:1px solid rgba(241,236,228,.12);background:#191716;}
+  .ba.ba-portrait{aspect-ratio:3/4;max-width:520px;margin:0 auto;}
+  .ba-layer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
+  .ba-layer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  .ba-after{clip-path:inset(0 0 0 50%);}
+  .ba-tag{
+    position:absolute;top:18px;font-family:'Manrope',sans-serif;font-weight:600;
+    font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;padding:8px 14px;
+    border:1px solid rgba(241,236,228,.3);color:#ddd6cd;background:rgba(16,15,15,.5);z-index:2;
+  }
+  .ba-before .ba-tag{left:18px;}
+  .ba-after .ba-tag{right:18px;}
+  .ba-divider{position:absolute;top:0;bottom:0;left:50%;width:1px;background:rgba(241,236,228,.75);pointer-events:none;}
+  .ba-handle{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:44px;height:44px;border-radius:50%;border:1px solid rgba(241,236,228,.7);
+    background:rgba(16,15,15,.55);display:flex;align-items:center;justify-content:center;
+    color:#e7e1d8;font-size:.78rem;letter-spacing:.06em;pointer-events:none;
+  }
+  .ba input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:ew-resize;}
+  .case-note{margin-top:16px;font-size:.72rem;letter-spacing:.05em;color:#8d867e;}
+
+  /* ===== PORTFOLIO COVER GRID + MODAL ===== */
+  .case-cover-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px;}
+  .cover-card{position:relative;aspect-ratio:3/4;overflow:hidden;background:#1c1918;cursor:pointer;border:1px solid rgba(241,236,228,.08);}
+  .cover-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.3,0,.2,1);}
+  .cover-card:hover img{transform:scale(1.06);}
+  .cover-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,17,17,0) 38%,rgba(14,12,12,.94) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:22px;}
+  .cover-n{display:none;}
+  .cover-title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.26rem;text-transform:uppercase;letter-spacing:.03em;margin-top:8px;line-height:1.22;}
+  .cover-view{margin-top:14px;font-family:'Manrope',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:#cfc8bf;display:flex;align-items:center;gap:10px;opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease;}
+  .cover-card:hover .cover-view{opacity:1;transform:translateY(0);}
+  .cover-card.split .cover-split{position:absolute;inset:0;display:flex;}
+  .cover-card.split .half{flex:1;display:flex;align-items:flex-start;justify-content:center;padding-top:26px;font-family:'Manrope',sans-serif;font-weight:600;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#c9c2b9;}
+  .cover-card.split .half.b1{background:linear-gradient(135deg,#2b2724 0%,#191716 100%);}
+  .cover-card.split .half.b2{background:linear-gradient(135deg,#43121a 0%,#241a1b 100%);}
+
+  /* ===== PORTFOLIO CATEGORY GRID (direction picker) — editorial art-direction composition ===== */
+  .category-grid{display:grid;grid-template-columns:1.08fr 1fr 1fr;grid-template-rows:clamp(400px,30vw,460px) clamp(480px,38vw,560px) clamp(480px,37.5vw,560px);grid-template-areas:"fashion beauty beauty" "fashion product food" "interior interior motion";gap:16px;margin-top:56px;}
+  .category-card{position:relative;overflow:hidden;background:#1c1918;cursor:pointer;border:1px solid rgba(241,236,228,.08);height:100%;}
+  .category-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.3,0,.2,1);}
+  .category-card:hover img{transform:scale(1.06);}
+  .category-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,17,17,.1) 22%,rgba(12,10,10,.94) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:30px;}
+  .category-card[data-empty="true"]{background:linear-gradient(150deg,#1d1a19 0%,#141111 100%);cursor:default;}
+  .category-card[data-empty="true"] .category-overlay{background:none;position:static;height:100%;justify-content:space-between;}
+  .category-card[data-empty="true"]:hover img{transform:none;}
+  .category-n{font-family:'Manrope',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--burgundy-light);}
+  .category-title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.15rem,2vw,1.55rem);text-transform:uppercase;letter-spacing:.03em;margin-top:9px;line-height:1.2;}
+  .category-sub{margin-top:11px;font-family:'Manrope',sans-serif;font-weight:500;font-size:.66rem;letter-spacing:.06em;color:#a9a29a;line-height:1.7;}
+  .category-status{margin-top:16px;font-family:'Manrope',sans-serif;font-weight:600;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:#75706a;border:1px solid rgba(241,236,228,.16);display:inline-block;padding:6px 12px;align-self:flex-start;}
+  .category-view-badge{margin-top:14px;font-family:'Manrope',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#cfc8bf;display:flex;align-items:center;gap:10px;opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease;}
+  .category-card:hover .category-view-badge{opacity:1;transform:translateY(0);}
+
+  /* grid placement — 01 fashion tall vertical anchor left / 02 beauty wide top-right / 03+04 paired below beauty / 05 interior wide + 06 motion square bottom row */
+  .category-card[data-category="fashion"]{grid-area:fashion;}
+  .category-card[data-category="beauty"]{grid-area:beauty;}
+  .category-card[data-category="product"]{grid-area:product;}
+  .category-card[data-category="food"]{grid-area:food;}
+  .category-card[data-category="interior"]{grid-area:interior;}
+  .category-card[data-category="motion"]{grid-area:motion;}
+
+  .category-card:not([data-category="fashion"]) .category-sub{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .category-card[data-category="fashion"] .category-overlay,
+  .category-card[data-category="interior"] .category-overlay{padding:34px;}
+  .category-card[data-category="interior"] .category-overlay > div{max-width:420px;}
+  .category-card[data-category="interior"] .category-overlay{background:linear-gradient(90deg,rgba(10,8,8,.6) 0%,rgba(10,8,8,.15) 46%,rgba(10,8,8,0) 68%),linear-gradient(180deg,rgba(20,17,17,.1) 22%,rgba(12,10,10,.94) 100%);}
+  .category-card[data-category="fashion"] img{object-position:center 8%;}
+  .category-card[data-category="beauty"] img{object-position:center 28%;filter:brightness(.88) contrast(1.06) saturate(.92);}
+  .category-card[data-category="product"] img{object-position:center 50%;}
+  .category-card[data-category="food"] img{object-position:48% 42%;}
+  .category-card[data-category="interior"] img{object-position:center 58%;}
+  .category-card[data-category="motion"] img{object-position:center 30%;filter:brightness(.82) contrast(1.08) saturate(.88);}
+
+  .beyond-strip{margin-top:34px;padding-top:26px;border-top:1px solid rgba(241,236,228,.1);display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 22px;}
+  .beyond-label{font-family:'Manrope',sans-serif;font-weight:500;font-size:.66rem;letter-spacing:.1em;color:#75706a;text-transform:uppercase;}
+  .beyond-pills{font-family:'Manrope',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.03em;color:#a9a29a;}
+  .beyond-pills a{color:var(--burgundy-light);border-bottom:1px solid rgba(179,68,85,.4);padding-bottom:1px;transition:color .3s ease,border-color .3s ease;}
+  .beyond-pills a:hover{color:#e7e1d8;border-color:rgba(231,225,216,.6);}
+
+  .category-view-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:56px;margin-bottom:8px;}
+  .back-to-categories{font-family:'Manrope',sans-serif;font-weight:500;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#cfc8bf;background:none;border:1px solid rgba(241,236,228,.2);padding:11px 18px;cursor:pointer;transition:border-color .3s ease,color .3s ease;}
+  .back-to-categories:hover{border-color:rgba(241,236,228,.55);color:#fff;}
+  .category-view-title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.3rem,2.4vw,1.85rem);text-transform:uppercase;letter-spacing:.04em;}
+  .category-view .case-cover-grid{margin-top:26px;}
+  .category-empty-note{margin-top:26px;padding:44px 30px;border:1px solid rgba(241,236,228,.1);text-align:center;font-family:'Manrope',sans-serif;font-size:.82rem;line-height:1.8;color:#a9a29a;}
+
+  @media(max-width:1024px){
+    .category-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:none;grid-template-areas:none;gap:14px;}
+    .category-card{aspect-ratio:4/3;min-height:240px;}
+    .category-card[data-category]{grid-area:auto;}
+    .category-card[data-category] .category-overlay > div{max-width:none;}
+    .category-card[data-category="fashion"]{grid-column:1/3;aspect-ratio:auto;min-height:420px;}
+    .category-card[data-category="beauty"]{grid-column:1/3;aspect-ratio:auto;min-height:320px;}
+    .category-card[data-category="interior"]{grid-column:1/3;aspect-ratio:auto;min-height:320px;}
+    .category-card[data-category="motion"]{grid-column:1/3;aspect-ratio:auto;min-height:320px;}
+    .category-card[data-category="product"],
+    .category-card[data-category="food"]{aspect-ratio:1/1;min-height:260px;}
+  }
+  @media(max-width:560px){
+    .category-card{aspect-ratio:auto;min-height:320px;}
+    .category-card[data-category]{grid-column:auto;}
+    .category-card[data-category="fashion"]{aspect-ratio:3/4;min-height:400px;}
+    .category-grid{grid-template-columns:1fr;gap:10px;}
+    .category-view-head{margin-top:40px;}
+  }
+
+  .case-modal{position:fixed;inset:0;z-index:999;display:none;}
+  .case-modal.open{display:block;}
+  .case-modal-overlay{position:absolute;inset:0;background:rgba(10,8,8,.88);}
+  .case-modal-panel{position:fixed;top:4vh;left:50%;transform:translateX(-50%);width:min(1080px,92vw);max-height:92vh;background:#141111;border:1px solid rgba(241,236,228,.14);box-shadow:0 30px 80px rgba(0,0,0,.5);}
+  .case-modal-scroll{max-height:92vh;overflow-y:auto;padding:70px clamp(22px,5vw,64px) 76px;}
+  .case-modal-close{position:absolute;top:16px;right:16px;width:42px;height:42px;border:1px solid rgba(241,236,228,.3);background:rgba(20,17,17,.75);color:#e7e1d8;font-size:1.05rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:3;transition:border-color .3s ease;}
+  .case-modal-close:hover{border-color:rgba(241,236,228,.7);}
+  .case-modal .case{display:none;margin-bottom:0;}
+  .case-modal .case.active{display:block;}
+  .case-modal .reveal{opacity:1!important;transform:none!important;}
+  body.modal-open{overflow:hidden;}
+
+  @media(max-width:900px){
+    .case-cover-grid{grid-template-columns:repeat(3,1fr);}
+  }
+  @media(max-width:560px){
+    .case-cover-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .case-modal-scroll{padding:64px 18px 56px;}
+  }
+
+  /* ===== PROCESS ===== */
+  .process{background:linear-gradient(160deg,#1b1414 0%,#2a0a10 150%);}
+  .process .wrap{max-width:1620px;}
+  .process-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:5vw;align-items:center;margin-top:16px;}
+  .step{display:grid;grid-template-columns:72px 1fr;gap:28px;padding:38px 0;border-top:1px solid rgba(241,236,228,.13);}
+  .steps .step:last-child{border-bottom:1px solid rgba(241,236,228,.13);}
+  .step .s-n{font-family:'Cormorant Garamond',serif;font-size:1.75rem;color:var(--burgundy-light);}
+  .step h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.5rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:11px;}
+  .step p{font-size:.88rem;line-height:1.9;color:#c3bcb3;max-width:480px;}
+  .process-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;filter:contrast(1.06);}
+  .process .sec-head{margin-bottom:38px;}
+
+  /* ===== CONTACT ===== */
+  .contact{background:linear-gradient(145deg,#3A0B10 0%,#5c121e 85%, #6B1522 100%);padding-top:120px;}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:end;padding-bottom:66px;border-bottom:1px solid rgba(241,236,228,.2);}
+  .contact h2{font-size:clamp(2.2rem,4.6vw,3.6rem);margin-bottom:26px;}
+  .contact h2 .accent{color:#f0c3ca;}
+  .contact p.lead{font-size:.9rem;line-height:1.95;color:#f2ddda;max-width:420px;margin-bottom:40px;}
+  .contact-btn{
+    display:inline-flex;align-items:center;gap:16px;
+    font-family:'Manrope',sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+    border:1px solid rgba(241,236,228,.55);padding:17px 32px;transition:all .35s ease;
+  }
+  .contact-btn:hover{background:var(--ivory);color:var(--oxblood);border-color:var(--ivory);}
+  .contact-list{display:flex;flex-direction:column;gap:20px;}
+  .contact-list a,.contact-list .row{
+    display:flex;justify-content:space-between;align-items:center;gap:20px;
+    border-bottom:1px solid rgba(241,236,228,.2);padding-bottom:15px;font-size:.92rem;transition:opacity .3s ease;
+  }
+  .contact-list a:hover{opacity:.65;}
+  .contact-list .lab{font-family:'Manrope',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:#eab8c0;}
+  .footer-bottom{
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+    padding:32px 0;font-family:'Manrope',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:#e0b9bf;
+  }
+
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity 1s ease,transform 1s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  @media(max-width:1100px){
+    .badge{right:4vw;top:20%;width:96px;height:96px;}
+  }
+  @media(max-width:900px){
+    nav.main-nav{display:none;}
+    .header-right .lang-switch{display:none;}
+    .hero{flex-direction:column;justify-content:flex-end;min-height:auto;padding:108px 0 64px;}
+    .hero-photo-layer{position:relative;right:0;width:100%;height:auto;order:-1;margin-bottom:20px;}
+    .hero-photo-holder{height:auto;width:100%;justify-content:center;}
+    .hero-photo{width:auto;height:40vh;margin:0 auto;}
+    .badge{top:auto;bottom:34%;right:6vw;}
+    .hero-copy{max-width:none;}
+    .about{grid-template-columns:1fr;min-height:auto;}
+    .about-photo-col{aspect-ratio:3/4;}
+    .about-text-col{padding:70px 7vw;}
+    .m-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:none;gap:12px;}
+    .m-card.c1,.m-card.c2,.m-card.c3,.m-card.c4,.m-card.c5,.m-card.c6,.m-card.c7{grid-column:auto;grid-row:auto;}
+    .m-card.c7{grid-column:1/3;}
+    .m-card{min-height:300px;}
+    .menu-grid{grid-template-columns:repeat(3,1fr);}
+    .menu-grid.grid-4{grid-template-columns:repeat(3,1fr);}
+    .ba{aspect-ratio:16/10;}
+    .process-grid{grid-template-columns:1fr;gap:44px;}
+    .process-photo{max-width:440px;margin:0 auto;}
+    .step{padding:30px 0;}
+    .contact .wrap{grid-template-columns:1fr;gap:48px;}
+    section{padding:92px 0;}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 7vw;}
+    header{padding:22px 7vw;}
+    .m-grid{grid-template-columns:1fr;grid-template-rows:none;}
+    .menu-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .menu-grid.grid-4{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .ba{aspect-ratio:4/3;}
+    .case{margin-bottom:72px;}
+    .badge{display:none;}
+    .hero-cta .line{width:90px;}
+    .hero-photo{height:47vh;}
+    .about-photo-col{aspect-ratio:1/1;}
+    .about-photo-col img{object-position:50% 7%;}
+  }
+</style>
+</head>
+<body>
+<header id="siteHeader">
+<div class="logo">
+<div class="name">Olga Tarasova</div>
+<div class="tag" data-en="AI Visual Creator" data-key="hero.tag" data-ua="AI Visual Creator">AI Visual Creator</div>
+</div>
+<div class="header-right">
+<nav class="main-nav">
+<a data-en="Portfolio" data-ua="Портфоліо" href="#portfolio">Портфоліо</a>
+<a data-en="Services" data-ua="Послуги" href="#work">Послуги</a>
+<a data-en="About" data-ua="Про мене" href="#about">Про мене</a>
+<a data-en="Process" data-ua="Процес" href="#process">Процес</a>
+<a data-en="Contact" data-ua="Контакти" href="#contact">Контакти</a>
+</nav>
+<div class="lang-switch">
+<button class="lang-btn active" data-lang="ua">UA</button>
+<span>/</span>
+<button class="lang-btn" data-lang="en">EN</button>
+</div>
+<button class="menu-toggle" id="menuToggle">
+<span data-en="Menu" data-ua="Меню">Меню</span>
+<span class="burger"><span></span><span></span><span></span></span>
+</button>
+</div>
+</header>
+<div class="mobile-nav" id="mobileNav">
+<a data-en="Portfolio" data-ua="Портфоліо" href="#portfolio">Портфоліо</a>
+<a data-en="Services" data-ua="Послуги" href="#work">Послуги</a>
+<a data-en="About" data-ua="Про мене" href="#about">Про мене</a>
+<a data-en="Process" data-ua="Процес" href="#process">Процес</a>
+<a data-en="Contact" data-ua="Контакти" href="#contact">Контакти</a>
+<div class="lang-switch">
+<button class="lang-btn active" data-lang="ua">UA</button>
+<span>/</span>
+<button class="lang-btn" data-lang="en">EN</button>
+</div>
+</div>
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+<div class="hero-photo-layer">
+<div class="hero-photo-holder">
+<img alt="Olga Tarasova" class="hero-photo" src="images/hero_cut.webp"/>
+</div>
+</div>
+<div class="badge">
+<svg viewbox="0 0 100 100">
+<defs><path d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" id="circlePath"></path></defs>
+<text><textpath href="#circlePath">AI VISUAL CREATOR • AI VISUAL CREATOR • </textpath></text>
+</svg>
+<div class="badge-center">OT</div>
+</div>
+<div class="hero-inner">
+<div class="hero-copy">
+<h1 data-en='&lt;span class="ln"&gt;Shoots that never happened.&lt;/span&gt;&lt;span class="ln accent"&gt;Visuals that perform.&lt;/span&gt;' data-key="hero.title" data-ua='&lt;span class="ln"&gt;Зйомки, яких не було.&lt;/span&gt;&lt;span class="ln accent"&gt;Візуали, які працюють.&lt;/span&gt;'><span class="ln">Зйомки, яких не було.</span><span class="ln accent">Візуали, які працюють.</span></h1>
+<span class="rule"></span>
+<p class="lead" data-en="I create advertising AI shoots and visual campaigns for brands — from concept and art direction to finished content for websites, social media, marketplaces and ads." data-key="hero.lead" data-ua="Створюю рекламні AI-зйомки та візуальні кампанії для брендів — від концепції та арт-дирекшну до готового контенту для сайтів, соцмереж, маркетплейсів і реклами.">Створюю рекламні AI-зйомки та візуальні кампанії для брендів — від концепції та арт-дирекшну до готового контенту для сайтів, соцмереж, маркетплейсів і реклами.</p>
+<div class="hero-cta-row">
+<a class="hero-cta" href="#portfolio">
+<span data-en="View the work" data-key="hero.cta" data-ua="Переглянути роботи">Переглянути роботи</span>
+<span class="line"></span>
+<span class="dia"></span>
+</a>
+<a class="hero-cta-secondary" href="#contact">
+<span data-en="Discuss a project" data-key="hero.cta2" data-ua="Обговорити проєкт">Обговорити проєкт</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+<div class="about-photo-col reveal">
+<img alt="Olga Tarasova" src="images/about.jpg" loading="lazy" decoding="async"/>
+</div>
+<div class="about-text-col reveal">
+<div class="cap" data-en="About me" data-key="about.cap" data-ua="Про мене">Про мене</div>
+<h2 data-en='I turn a product&lt;br&gt;into a visual &lt;span class="accent"&gt;story.&lt;/span&gt;' data-key="about.heading" data-ua='Я перетворюю продукт&lt;br&gt;на візуальну &lt;span class="accent"&gt;історію.&lt;/span&gt;'>Я перетворюю продукт<br/>на візуальну <span class="accent">історію.</span></h2>
+<p data-en="I work at the intersection of commercial photography, art direction and generative AI." data-key="about.p1" data-ua="Працюю на перетині комерційної фотографії, арт-дирекшну та генеративного AI.">Працюю на перетині комерційної фотографії, арт-дирекшну та генеративного AI.</p>
+<p data-en="I don't create isolated pretty frames — I build complete series with consistent light, style and brand character." data-key="about.p2" data-ua="Створюю не окремі красиві кадри, а цілісні серії з єдиним світлом, стилем і характером бренду.">Створюю не окремі красиві кадри, а цілісні серії з єдиним світлом, стилем і характером бренду.</p>
+<div class="about-info">
+<div>
+<div class="k" data-en="Based in" data-key="about.base_label" data-ua="Base">Base</div>
+<div class="v" data-en="Germany" data-key="about.base_value" data-ua="Німеччина">Німеччина</div>
+</div>
+<div>
+<div class="k" data-en="AVAILABLE" data-key="about.working_label" data-ua="AVAILABLE">AVAILABLE</div>
+<div class="v" data-en="Worldwide" data-key="about.working_value" data-ua="По всьому світу">По всьому світу</div>
+</div>
+<div>
+<div class="k" data-en="Focus" data-key="about.focus_label" data-ua="Focus">Focus</div>
+<div class="v" data-en="Brand Visuals" data-key="about.focus_value" data-ua="Бренд-візуали">Бренд-візуали</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== PORTFOLIO / CASES ===== -->
+<section class="portfolio" id="portfolio">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2 data-en="Portfolio" data-key="portfolio.heading" data-ua="Портфоліо">Портфоліо</h2>
+<span class="rule"></span>
+<div class="sub" data-en="From a single product shot to a full campaign" data-key="portfolio.sub" data-ua="Від продуктового кадру до повної кампанії">Від продуктового кадру до повної кампанії</div>
+</div>
+<p class="sec-intro" data-en="Each case is not a single frame but a complete series: consistent light, styling and mood working together as the brand's visual language. Choose a direction to see the work." data-key="portfolio.intro" data-ua="Кожен кейс — це не окремий кадр, а цілісна серія: єдине світло, подача й настрій, які працюють разом як візуальна мова бренду. Оберіть напрямок, щоб переглянути роботи.">Кожен кейс — це не окремий кадр, а цілісна серія: єдине світло, подача й настрій, які працюють разом як візуальна мова бренду. Оберіть напрямок, щоб переглянути роботи.</p>
+</div>
+<div class="category-grid" id="categoryGrid">
+<div class="category-card" data-category="fashion">
+<img alt="Fashion &amp; Lingerie" data-img-key="portfolio.categories.fashion.image" src="images/fashbw1.webp" loading="lazy" decoding="async"/>
+<div class="category-overlay">
+<div>
+<div class="category-n" data-en="Direction 01" data-ua="Напрямок 01">Напрямок 01</div>
+<div class="category-title" data-en="Fashion &amp; Lingerie" data-key="portfolio.categories.fashion.title" data-ua="Fashion &amp; Lingerie">Fashion &amp; Lingerie</div>
+<div class="category-sub" data-en="Studio · Location · Editorial Campaign · Lookbook" data-key="portfolio.categories.fashion.sub" data-ua="Studio · Location · Editorial Campaign · Lookbook">Studio · Location · Editorial Campaign · Lookbook</div>
+<div class="category-view-badge"><span data-en="View direction" data-ua="Переглянути">Переглянути</span><span>→</span></div>
+</div>
+</div>
+</div>
+<div class="category-card" data-category="beauty">
+<img alt="Beauty &amp; Jewelry" data-img-key="portfolio.categories.beauty.image" src="images/necklace2.webp" loading="lazy" decoding="async"/>
+<div class="category-overlay">
+<div>
+<div class="category-n" data-en="Direction 02" data-ua="Напрямок 02">Напрямок 02</div>
+<div class="category-title" data-en="Beauty &amp; Jewelry" data-key="portfolio.categories.beauty.title" data-ua="Beauty &amp; Jewelry">Beauty &amp; Jewelry</div>
+<div class="category-sub" data-en="Beauty · Skincare · Perfume · Jewelry" data-key="portfolio.categories.beauty.sub" data-ua="Beauty · Skincare · Perfume · Jewelry">Beauty · Skincare · Perfume · Jewelry</div>
+<div class="category-view-badge"><span data-en="View direction" data-ua="Переглянути">Переглянути</span><span>→</span></div>
+</div>
+</div>
+</div>
+<div class="category-card" data-category="product">
+<img alt="Product &amp; E‑commerce" data-img-key="portfolio.categories.product.image" src="images/nespresso_lifestyle.webp" loading="lazy" decoding="async"/>
+<div class="category-overlay">
+<div>
+<div class="category-n" data-en="Direction 03" data-ua="Напрямок 03">Напрямок 03</div>
+<div class="category-title" data-en="Product &amp; E‑commerce" data-key="portfolio.categories.product.title" data-ua="Product &amp; E‑commerce">Product &amp; E‑commerce</div>
+<div class="category-sub" data-en="Product · Lifestyle · E‑commerce · Marketplace" data-key="portfolio.categories.product.sub" data-ua="Product · Lifestyle · E‑commerce · Marketplace">Product · Lifestyle · E‑commerce · Marketplace</div>
+<div class="category-view-badge"><span data-en="View direction" data-ua="Переглянути">Переглянути</span><span>→</span></div>
+</div>
+</div>
+</div>
+<div class="category-card" data-category="food">
+<img alt="Food" data-img-key="portfolio.categories.food.image" src="images/dish4.webp" loading="lazy" decoding="async"/>
+<div class="category-overlay">
+<div>
+<div class="category-n" data-en="Direction 04" data-ua="Напрямок 04">Напрямок 04</div>
+<div class="category-title" data-en="Food" data-key="portfolio.categories.food.title" data-ua="Food">Food</div>
+<div class="category-sub" data-en="Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign" data-key="portfolio.categories.food.sub" data-ua="Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign">Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign</div>
+<div class="category-view-badge"><span data-en="View direction" data-ua="Переглянути">Переглянути</span><span>→</span></div>
+</div>
+</div>
+</div>
+<div class="category-card" data-category="interior">
+<img alt="Interior" data-img-key="portfolio.categories.interior.image" src="images/interior_editorial.webp" loading="lazy" decoding="async"/>
+<div class="category-overlay">
+<div>
+<div class="category-n" data-en="Direction 05" data-ua="Напрямок 05">Напрямок 05</div>
+<div class="category-title" data-en="Interior" data-key="portfolio.categories.interior.title" data-ua="Interior">Interior</div>
+<div class="category-sub" data-en="Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation" data-key="portfolio.categories.interior.sub" data-ua="Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation">Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation</div>
+<div class="category-view-badge"><span data-en="View direction" data-ua="Переглянути">Переглянути</span><span>→</span></div>
+</div>
+</div>
+</div>
+<div class="category-card" data-category="motion">
+<img alt="AI Content &amp; Motion" data-img-key="portfolio.categories.motion.image" src="images/motionposter1.webp" loading="lazy" decoding="async"/>
+<div class="category-overlay">
+<div>
+<div class="category-n" data-en="Direction 06" data-ua="Напрямок 06">Напрямок 06</div>
+<div class="category-title" data-en="AI Content &amp; Motion" data-key="portfolio.categories.motion.title" data-ua="AI Content &amp; Motion">AI Content &amp; Motion</div>
+<div class="category-sub" data-en="Product Video · Image-to-Video · Campaign Series · Animation" data-key="portfolio.categories.motion.sub" data-ua="Product Video · Image-to-Video · Campaign Series · Animation">Product Video · Image-to-Video · Campaign Series · Animation</div>
+<div class="category-view-badge"><span data-en="View direction" data-ua="Переглянути">Переглянути</span><span>→</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="beyond-strip">
+<span class="beyond-label" data-en="Beyond the portfolio — have a different request?" data-key="portfolio.beyond_label" data-ua="За межами каталогу — маєте інший запит?">За межами каталогу — маєте інший запит?</span>
+<span class="beyond-pills">AI Portraits · AI Avatars · Architecture · Photo Restoration · <a data-en="Custom Project →" data-ua="Custom Project →" href="#contact">Custom Project →</a></span>
+</div>
+<div class="category-view" id="categoryView" style="display:none">
+<div class="category-view-head">
+<button class="back-to-categories" data-en="← All directions" data-ua="← Всі напрямки" id="backToCategories">← Всі напрямки</button>
+<div class="category-view-title" id="categoryViewTitle"></div>
+</div>
+<div class="category-empty-note" data-en="Cases for this direction are coming soon." data-ua="Кейси цього напрямку скоро зʼявляться в портфоліо." id="categoryEmptyNote" style="display:none">Кейси цього напрямку скоро зʼявляться в портфоліо.</div>
+<div class="case-cover-grid" id="filteredCoverGrid">
+</div>
+</div>
+<div class="case-modal" id="caseModal">
+<div class="case-modal-overlay" data-close=""></div>
+<div class="case-modal-panel">
+<button aria-label="Close" class="case-modal-close" data-close="">✕</button>
+<div class="case-modal-scroll" id="caseModalScroll">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== WORK / SERVICES MOSAIC ===== -->
+<section class="work" id="work">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2 data-en="Services" data-key="services.heading" data-ua="Послуги">Послуги</h2>
+<span class="rule"></span>
+<div class="sub" data-en="From a single frame to a full campaign" data-key="services.sub" data-ua="Від одного кадру до повної кампанії">Від одного кадру до повної кампанії</div>
+</div>
+<p class="sec-intro" data-en="I create visual content for your brand's specific task — a product launch, an ad campaign, a website, social media or a marketplace listing." data-key="services.intro" data-ua="Створюю візуальний контент під конкретну задачу бренду — запуск продукту, рекламну кампанію, сайт, соцмережі або маркетплейс.">Створюю візуальний контент під конкретну задачу бренду — запуск продукту, рекламну кампанію, сайт, соцмережі або маркетплейс.</p>
+<p class="sec-note" data-en="Created with generative AI and professional post-production." data-key="services.note" data-ua="Створено за допомогою генеративного AI та професійного пост-продакшну.">Створено за допомогою генеративного AI та професійного пост-продакшну.</p>
+</div>
+<div class="m-grid">
+<article class="m-card c1 has-img reveal">
+<div class="m-img"><img alt="Fashion Campaigns" data-img-key="services.cards.c1.image" src="images/lux8.webp" loading="lazy" decoding="async"/></div>
+<div class="m-body">
+<div class="m-num">01</div><span class="rule"></span>
+<h3 class="m-title" data-en="Fashion Campaigns" data-key="services.cards.c1.title" data-ua="Fashion Campaigns">Fashion Campaigns</h3>
+<p class="m-desc" data-en="AI shoots of clothing, lingerie and swimwear — from catalogue to full editorial campaigns." data-key="services.cards.c1.desc" data-ua="AI-зйомки одягу, білизни та купальників — від каталогу до повноцінних editorial-кампаній.">AI-зйомки одягу, білизни та купальників — від каталогу до повноцінних editorial-кампаній.</p>
+<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+</div>
+</article>
+<article class="m-card c2 has-img reveal">
+<div class="m-img"><img alt="Beauty Campaigns" data-img-key="services.cards.c2.image" src="images/perfloc3.webp" loading="lazy" decoding="async"/></div>
+<div class="m-body">
+<div class="m-num">02</div><span class="rule"></span>
+<h3 class="m-title" data-en="Beauty Campaigns" data-key="services.cards.c2.title" data-ua="Beauty Campaigns">Beauty Campaigns</h3>
+<p class="m-desc" data-en="Macro, textures and atmospheric shots for cosmetics, skincare and perfumery." data-key="services.cards.c2.desc" data-ua="Макро, текстури та атмосферні кадри для косметики, skincare й парфумерії.">Макро, текстури та атмосферні кадри для косметики, skincare й парфумерії.</p>
+<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+</div>
+</article>
+<article class="m-card c3 has-img reveal">
+<div class="m-img"><img alt="Product &amp; E‑commerce" data-img-key="services.cards.c3.image" src="images/nespresso3.webp" loading="lazy" decoding="async"/></div>
+<div class="m-body">
+<div class="m-num">03</div><span class="rule"></span>
+<h3 class="m-title" data-en="Product &amp; E‑commerce" data-key="services.cards.c3.title" data-ua="Product &amp; E‑commerce">Product &amp; E‑commerce</h3>
+<p class="m-desc" data-en="Product shots, lifestyle imagery and listings for marketplaces and your website." data-key="services.cards.c3.desc" data-ua="Предметні кадри, lifestyle-зйомки та лістинги для маркетплейсів і сайту.">Предметні кадри, lifestyle-зйомки та лістинги для маркетплейсів і сайту.</p>
+<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+</div>
+</article>
+<article class="m-card c4 has-img reveal">
+<div class="m-img"><img alt="Jewelry &amp; Accessories" data-img-key="services.cards.c4.image" src="images/necklace11.webp" loading="lazy" decoding="async"/></div>
+<div class="m-body">
+<div class="m-num">04</div><span class="rule"></span>
+<h3 class="m-title" data-en="Jewelry &amp; Accessories" data-key="services.cards.c4.title" data-ua="Jewelry &amp; Accessories">Jewelry &amp; Accessories</h3>
+<p class="m-desc" data-en="Jewelry and accessories — as product and on-model, with attention to light and detail." data-key="services.cards.c4.desc" data-ua="Прикраси й аксесуари — предметно та на моделях, з увагою до світла й деталі.">Прикраси й аксесуари — предметно та на моделях, з увагою до світла й деталі.</p>
+<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+</div>
+</article>
+<article class="m-card c5 has-img reveal">
+<div class="m-img"><img alt="Food" data-img-key="services.cards.c5.image" src="images/dish4.webp" loading="lazy" decoding="async"/></div>
+<div class="m-body">
+<div class="m-num">05</div><span class="rule"></span>
+<h3 class="m-title" data-en="Food" data-key="services.cards.c5.title" data-ua="Food">Food</h3>
+<p class="m-desc" data-en="Realistic food imagery for menus, delivery, social media and ad campaigns." data-key="services.cards.c5.desc" data-ua="Реалістичні food-кадри для меню, доставки, соцмереж і рекламних кампаній.">Реалістичні food-кадри для меню, доставки, соцмереж і рекламних кампаній.</p>
+<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+</div>
+</article>
+<article class="m-card c6 has-img reveal">
+<div class="m-img"><img alt="Interior" data-img-key="services.cards.c6.image" src="images/int_living_dark.webp" loading="lazy" decoding="async"/></div>
+<div class="m-body">
+<div class="m-num">06</div><span class="rule"></span>
+<h3 class="m-title" data-en="Interior" data-key="services.cards.c6.title" data-ua="Interior">Interior</h3>
+<p class="m-desc" data-en="Interior visualization and redesign preserving the space and architecture." data-key="services.cards.c6.desc" data-ua="Візуалізація та редизайн інтер’єрів зі збереженням простору й архітектури.">Візуалізація та редизайн інтер’єрів зі збереженням простору й архітектури.</p>
+<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+</div>
+</article>
+<article class="m-card c7 has-img reveal">
+<div class="m-img"><img alt="AI Content & Motion" data-img-key="services.cards.c7.image" src="images/motionposter2.webp" loading="lazy" decoding="async"/></div>
+<div class="m-body">
+<div class="m-num">07</div><span class="rule"></span>
+<h3 class="m-title" data-en="AI Content &amp; Motion" data-key="services.cards.c7.title" data-ua="AI Content &amp; Motion">AI Content &amp; Motion</h3>
+<p class="m-desc" data-en="Product video, image-to-video and short ad clips for social media and campaigns." data-key="services.cards.c7.desc" data-ua="Відео для товарів, image-to-video та короткі рекламні ролики для соцмереж і кампаній.">Відео для товарів, image-to-video та короткі рекламні ролики для соцмереж і кампаній.</p>
+<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ===== PROCESS ===== -->
+<section class="process" id="process">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2 data-en="Process" data-key="process.heading" data-ua="Процес">Процес</h2>
+<span class="rule"></span>
+<div class="sub" data-en="From brief to a finished series of visuals" data-key="process.sub" data-ua="Від брифу до готової серії візуалів">Від брифу до готової серії візуалів</div>
+</div>
+</div>
+<div class="process-grid">
+<div class="steps">
+<div class="step reveal">
+<div class="s-n">01</div>
+<div><h3 data-en="Brief &amp; references" data-key="process.steps.s1.title" data-ua="Бриф і референси">Бриф і референси</h3><p data-en="We discuss the task, brand guide, mood and reference examples to aim for." data-key="process.steps.s1.desc" data-ua="Обговорюємо задачу, бренд-гайд, настрій і приклади, на які варто орієнтуватися.">Обговорюємо задачу, бренд-гайд, настрій і приклади, на які варто орієнтуватися.</p></div>
+</div>
+<div class="step reveal">
+<div class="s-n">02</div>
+<div><h3 data-en="Concept" data-key="process.steps.s2.title" data-ua="Концепція">Концепція</h3><p data-en="I shape the visual idea: looks, locations, light, composition and the overall style of the series." data-key="process.steps.s2.desc" data-ua="Формую візуальну ідею: образи, локації, світло, композицію та загальну стилістику серії.">Формую візуальну ідею: образи, локації, світло, композицію та загальну стилістику серії.</p></div>
+</div>
+<div class="step reveal">
+<div class="s-n">03</div>
+<div><h3 data-en="Creation" data-key="process.steps.s3.title" data-ua="Створення">Створення</h3><p data-en="I create and curate the series of visuals using generative AI — with attention to detail, brand character and artistic cohesion." data-key="process.steps.s3.desc" data-ua="Створюю та відбираю серію візуалів за допомогою генеративного AI — з увагою до деталей, характеру бренду та художньої цілісності.">Створюю та відбираю серію візуалів за допомогою генеративного AI — з увагою до деталей, характеру бренду та художньої цілісності.</p></div>
+</div>
+<div class="step reveal">
+<div class="s-n">04</div>
+<div><h3 data-en="Final &amp; adaptation" data-key="process.steps.s4.title" data-ua="Фінал і адаптація">Фінал і адаптація</h3><p data-en="I finalize the shots and adapt them to the formats you need — website, social media, ads, marketplaces." data-key="process.steps.s4.desc" data-ua="Обробляю кадри та адаптую під потрібні формати — сайт, соцмережі, рекламу, маркетплейси.">Обробляю кадри та адаптую під потрібні формати — сайт, соцмережі, рекламу, маркетплейси.</p></div>
+</div>
+</div>
+<div class="reveal">
+<img alt="Olga Tarasova" class="process-photo" src="images/process_seated_color.webp" loading="lazy" decoding="async"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+<div class="wrap">
+<div>
+<div class="cap" data-en="Get in touch" data-key="contact.cap" data-ua="Зв'язок" style="color:#f0c3ca;">Зв'язок</div>
+<h2 data-en="There's a product.&lt;br&gt;Let's build it a &lt;span class=&quot;accent&quot;&gt;world.&lt;/span&gt;" data-key="contact.heading" data-ua='Є продукт.&lt;br&gt;Створімо для нього &lt;span class="accent"&gt;світ.&lt;/span&gt;' style="margin-top:16px;">Є продукт.<br/>Створімо для нього <span class="accent">світ.</span></h2>
+<p class="lead" data-en="Tell me about your brand, product and task — I'll suggest a visual direction and project format." data-key="contact.lead" data-ua="Розкажіть мені про бренд, продукт і задачу — я запропоную візуальний напрямок та формат проєкту.">Розкажіть мені про бренд, продукт і задачу — я запропоную візуальний напрямок та формат проєкту.</p>
+<a class="contact-btn" data-en="Discuss a project →" data-key="contact.cta" data-ua="Обговорити проєкт →" href="https://t.me/Olenka_t78" rel="noopener" target="_blank">Обговорити проєкт →</a>
+</div>
+<div class="contact-list">
+<a href="https://t.me/Olenka_t78" rel="noopener" target="_blank"><span class="lab">Telegram</span><span>@Olenka_t78</span></a>
+<a href="https://www.instagram.com/no.camera.needed_/" rel="noopener" target="_blank"><span class="lab" data-en="Instagram · work" data-ua="Instagram · робота">Instagram · робота</span><span>@no.camera.needed_</span></a><div class="row"><span class="lab" data-en="Based in" data-ua="База">База</span><span data-en="Germany · available worldwide" data-ua="Німеччина · працюю по всьому світу">Німеччина · працюю по всьому світу</span></div>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<div>© 2026 Olga Tarasova</div>
+<div>AI Visual Creator &amp; Art Direction</div>
+</div>
+</section>
+<script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  menuToggle.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  function setLang(lang){
+    document.documentElement.lang = lang === 'ua' ? 'uk' : 'en';
+    document.querySelectorAll('[data-ua]').forEach(el => {
+      el.innerHTML = lang === 'ua' ? el.dataset.ua : el.dataset.en;
+    });
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  }
+  function initBaSlider(ba){
+    const input = ba.querySelector('input[type=range]');
+    const after = ba.querySelector('.ba-after');
+    const div = ba.querySelector('.ba-divider');
+    const handle = ba.querySelector('.ba-handle');
+    if (!input || !after || !div || !handle) return;
+    const upd = () => {
+      const v = input.value;
+      after.style.clipPath = `inset(0 0 0 ${v}%)`;
+      div.style.left = v + '%';
+      handle.style.left = v + '%';
+    };
+    input.addEventListener('input', upd);
+    upd();
+  }
+  document.querySelectorAll('[data-ba]').forEach(initBaSlider);
+
+  document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+
+  // ---- CMS content overrides (content/site.json), edited via /admin ----
+  function getPath(obj, path){
+    return path.split('.').reduce((o,k) => (o && o[k] !== undefined) ? o[k] : undefined, obj);
+  }
+  function applyCmsContent(content){
+    if (!content) return;
+    // composite fields rebuilt from parts
+    const heroTitle = document.querySelector('[data-key="hero.title"]');
+    if (heroTitle){
+      const l1 = getPath(content,'hero.title_l1'), l2 = getPath(content,'hero.title_l2'), l3 = getPath(content,'hero.title_l3');
+      if (l1 && l3){
+        const build = (lang) => {
+          const lines = [l1[lang]];
+          if (l2 && l2[lang]) lines.push(l2[lang]);
+          return lines.map(t => `<span class="ln">${t}</span>`).join('') + `<span class="ln accent">${l3[lang]}</span>`;
+        };
+        heroTitle.dataset.ua = build('ua');
+        heroTitle.dataset.en = build('en');
+      }
+    }
+    ['about.heading','contact.heading'].forEach(key => {
+      const el = document.querySelector(`[data-key="${key}"]`);
+      if (!el) return;
+      const l1 = getPath(content, key+'.line1'), l2 = getPath(content, key+'.line2'), ac = getPath(content, key+'.accent');
+      if (l1 && l2 && ac){
+        el.dataset.ua = `${l1.ua}<br>${l2.ua}<span class="accent">${ac.ua}</span>`;
+        el.dataset.en = `${l1.en}<br>${l2.en}<span class="accent">${ac.en}</span>`;
+      }
+    });
+    // simple fields: any element whose data-key resolves directly to {ua,en}
+    document.querySelectorAll('[data-key]').forEach(el => {
+      const key = el.dataset.key;
+      if (key === 'hero.title' || key === 'about.heading' || key === 'contact.heading') return;
+      const val = getPath(content, key);
+      if (val && typeof val.ua === 'string'){
+        el.dataset.ua = val.ua;
+        el.dataset.en = val.en != null ? val.en : val.ua;
+      }
+    });
+  }
+  function applyCmsImages(content){
+    if (!content) return;
+    document.querySelectorAll('[data-img-key]').forEach(el => {
+      const val = getPath(content, el.dataset.imgKey);
+      if (typeof val === 'string' && val) {
+        el.src = val;
+      }
+    });
+  }
+
+  fetch('content/site.json', {cache:'no-store'})
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null)
+    .then(content => { applyCmsContent(content); applyCmsImages(content); setLang(currentLangFallback()); });
+
+  function currentLangFallback(){
+    const active = document.querySelector('.lang-btn.active');
+    return active ? active.dataset.lang : 'ua';
+  }
+
+  const caseModal = document.getElementById('caseModal');
+  const caseModalScroll = document.getElementById('caseModalScroll');
+  function openCase(id){
+    caseModalScroll.querySelectorAll('.case').forEach(c => c.classList.remove('active'));
+    const target = document.getElementById(id);
+    if(target){ target.classList.add('active'); }
+    caseModal.classList.add('open');
+    document.body.classList.add('modal-open');
+    caseModalScroll.scrollTop = 0;
+  }
+  function closeCaseModal(){
+    caseModal.classList.remove('open');
+    document.body.classList.remove('modal-open');
+  }
+  document.querySelectorAll('.cover-card').forEach(card => {
+    card.addEventListener('click', () => openCase(card.dataset.case));
+  });
+  caseModal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeCaseModal));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeCaseModal(); });
+
+  // ===== PORTFOLIO CATEGORY PICKER =====
+  const categoryGrid = document.getElementById('categoryGrid');
+  const categoryView = document.getElementById('categoryView');
+  const categoryViewTitle = document.getElementById('categoryViewTitle');
+  const categoryEmptyNote = document.getElementById('categoryEmptyNote');
+  const filteredCoverGrid = document.getElementById('filteredCoverGrid');
+  const beyondStrip = document.querySelector('.beyond-strip');
+  const backToCategories = document.getElementById('backToCategories');
+
+  const categoryTitles = {
+    fashion: { ua: 'Fashion &amp; Lingerie', en: 'Fashion &amp; Lingerie' },
+    beauty: { ua: 'Beauty &amp; Jewelry', en: 'Beauty &amp; Jewelry' },
+    product: { ua: 'Product &amp; E‑commerce', en: 'Product &amp; E‑commerce' },
+    food: { ua: 'Food', en: 'Food' },
+    interior: { ua: 'Interior', en: 'Interior' },
+    motion: { ua: 'AI Content &amp; Motion', en: 'AI Content &amp; Motion' }
+  };
+
+  function currentLang(){
+    const activeBtn = document.querySelector('.lang-btn.active');
+    return activeBtn ? activeBtn.dataset.lang : 'ua';
+  }
+
+  function scrollToEl(el){
+    const y = el.getBoundingClientRect().top + window.scrollY - 110;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  function openCategory(cat){
+    const cards = filteredCoverGrid.querySelectorAll('.cover-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const match = card.dataset.category === cat;
+      card.style.display = match ? '' : 'none';
+      if(match) visibleCount++;
+    });
+    const t = categoryTitles[cat] || { ua: '', en: '' };
+    categoryViewTitle.dataset.ua = t.ua;
+    categoryViewTitle.dataset.en = t.en;
+    categoryViewTitle.innerHTML = currentLang() === 'ua' ? t.ua : t.en;
+    categoryEmptyNote.style.display = visibleCount === 0 ? '' : 'none';
+    filteredCoverGrid.style.display = visibleCount === 0 ? 'none' : '';
+    categoryGrid.style.display = 'none';
+    beyondStrip.style.display = 'none';
+    categoryView.style.display = '';
+    scrollToEl(categoryView);
+  }
+
+  document.querySelectorAll('.category-card').forEach(card => {
+    card.addEventListener('click', () => openCategory(card.dataset.category));
+  });
+
+  backToCategories.addEventListener('click', () => {
+    categoryView.style.display = 'none';
+    categoryGrid.style.display = '';
+    beyondStrip.style.display = '';
+    scrollToEl(categoryGrid);
+  });
+
+  // ---- Existing portfolio cases (content/legacy-cases.json, edited via /admin) ----
+  // Renders the 21 original case studies from JSON, preserving their bespoke
+  // block layouts (image/video grid, before/after slider) — only content
+  // (photos, text, order, item count) comes from the CMS; layout/CSS/hover
+  // effects stay exactly as designed.
+  function renderLegacyCases(cases){
+    if (!Array.isArray(cases) || !cases.length) return;
+    cases.forEach((item, idx) => {
+      if (!item || !item.id || !item.category) return;
+      const n = String(idx + 1).padStart(2, '0');
+      const titleUa = (item.title && item.title.ua) || '';
+      const titleEn = (item.title && item.title.en) || titleUa;
+      const taskUa = (item.task && item.task.ua) || '';
+      const taskEn = (item.task && item.task.en) || taskUa;
+      const conceptUa = (item.concept && item.concept.ua) || '';
+      const conceptEn = (item.concept && item.concept.en) || conceptUa;
+      const delivUa = (item.deliverables && item.deliverables.ua) || '';
+      const delivEn = (item.deliverables && item.deliverables.en) || delivUa;
+      const cover = item.cover || '';
+
+      const card = document.createElement('div');
+      card.className = 'cover-card';
+      card.dataset.case = item.id;
+      card.dataset.category = item.category;
+      card.innerHTML = `<img alt="${escAttr(titleUa)}" src="${escAttr(cover)}" loading="lazy" decoding="async">
+        <div class="cover-overlay">
+          <div class="cover-n" data-ua="Кейс ${n}" data-en="Case ${n}">Кейс ${n}</div>
+          <div class="cover-title" data-ua="${escAttr(titleUa)}" data-en="${escAttr(titleEn)}">${escHtml(titleUa)}</div>
+          <div class="cover-view"><span data-ua="Переглянути" data-en="View case">Переглянути</span><span>→</span></div>
+        </div>`;
+      card.addEventListener('click', () => openCase(item.id));
+      filteredCoverGrid.appendChild(card);
+
+      const briefRow = (labUa, labEn, valUa, valEn) => valUa ? `<div class="row"><span class="lab" data-ua="${escAttr(labUa)}" data-en="${escAttr(labEn)}">${escHtml(labUa)}</span><span class="val" data-ua="${escAttr(valUa)}" data-en="${escAttr(valEn)}">${escHtml(valUa)}</span></div>` : '';
+
+      const blocks = Array.isArray(item.blocks) ? item.blocks : [];
+      const blocksHtml = blocks.map(block => {
+        if (!block || !block.type) return '';
+        if (block.type === 'ba'){
+          const before = block.before || {}, after = block.after || {};
+          const baClass = 'ba' + (block.portrait ? ' ba-portrait' : '');
+          return `<div class="${baClass}" data-ba="">
+              <div class="ba-layer ba-before">
+                <img alt="${escAttr(before.alt)}" src="${escAttr(before.image)}" loading="lazy" decoding="async"/>
+                <span class="ba-tag" data-en="Before" data-ua="До">До</span>
+              </div>
+              <div class="ba-layer ba-after">
+                <img alt="${escAttr(after.alt)}" src="${escAttr(after.image)}" loading="lazy" decoding="async"/>
+                <span class="ba-tag" data-en="After" data-ua="Після">Після</span>
+              </div>
+              <div class="ba-divider"></div>
+              <div class="ba-handle">◄ ►</div>
+              <input aria-label="before after" max="100" min="0" type="range" value="50"/>
+            </div>
+            <div class="case-note" data-en="Drag the slider to compare." data-ua="Потягніть повзунок, щоб порівняти.">Потягніть повзунок, щоб порівняти.</div>`;
+        }
+        if (block.type === 'menu'){
+          const items = Array.isArray(block.items) ? block.items : [];
+          const gridClass = 'menu-grid' + (block.grid4 ? ' grid-4' : '');
+          const dishes = items.map(it => {
+            if (!it) return '';
+            const dishClass = 'dish' + (it.square ? ' square' : '') + ' reveal';
+            const courseUa = (it.course && it.course.ua) || '', courseEn = (it.course && it.course.en) || courseUa;
+            const nameUa = (it.name && it.name.ua) || '', nameEn = (it.name && it.name.en) || nameUa;
+            const media = it.media === 'video'
+              ? `<video aria-label="${escAttr(it.alt)}" autoplay loop muted playsinline poster="${escAttr(it.poster)}" src="${escAttr(it.video)}"></video>`
+              : `<img alt="${escAttr(it.alt)}" src="${escAttr(it.image)}" loading="lazy" decoding="async"/>`;
+            return `<div class="${dishClass}">
+                <div class="frame">${media}</div>
+                ${courseUa ? `<div class="course" data-en="${escAttr(courseEn)}" data-ua="${escAttr(courseUa)}">${escHtml(courseUa)}</div>` : ''}
+                ${nameUa ? `<div class="name" data-en="${escAttr(nameEn)}" data-ua="${escAttr(nameUa)}">${escHtml(nameUa)}</div>` : ''}
+              </div>`;
+          }).join('');
+          return `<div class="${gridClass}">${dishes}</div>`;
+        }
+        return '';
+      }).join('');
+
+      const modalBlock = document.createElement('div');
+      modalBlock.className = 'case reveal';
+      modalBlock.id = item.id;
+      modalBlock.innerHTML = `<div class="case-head">
+          <div>
+            <div class="case-n" data-ua="Кейс ${n}" data-en="Case ${n}">Кейс ${n}</div>
+            <h3 data-ua="${escAttr(titleUa)}" data-en="${escAttr(titleEn)}">${escHtml(titleUa)}</h3>
+          </div>
+          <div class="case-brief">
+            ${briefRow('Завдання', 'Task', taskUa, taskEn)}
+            ${briefRow('Концепція', 'Concept', conceptUa, conceptEn)}
+            ${briefRow('Результат', 'Deliverables', delivUa, delivEn)}
+          </div>
+        </div>
+        ${blocksHtml}`;
+      caseModalScroll.appendChild(modalBlock);
+      modalBlock.querySelectorAll('[data-ba]').forEach(initBaSlider);
+    });
+    setLang(currentLangFallback());
+  }
+
+  // ---- CMS-added case studies (content/cases.json, edited via /admin) ----
+  function escAttr(s){
+    return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function escHtml(s){
+    return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function renderCmsCases(cases){
+    if (!Array.isArray(cases) || !cases.length) return;
+    cases.forEach(item => {
+      if (!item || !item.id || !item.category || !item.cover) return;
+      const titleUa = (item.title && item.title.ua) || '';
+      const titleEn = (item.title && item.title.en) || titleUa;
+      const taskUa = (item.task && item.task.ua) || '';
+      const taskEn = (item.task && item.task.en) || taskUa;
+      const conceptUa = (item.concept && item.concept.ua) || '';
+      const conceptEn = (item.concept && item.concept.en) || conceptUa;
+      const delivUa = (item.deliverables && item.deliverables.ua) || '';
+      const delivEn = (item.deliverables && item.deliverables.en) || delivUa;
+
+      const card = document.createElement('div');
+      card.className = 'cover-card';
+      card.dataset.case = item.id;
+      card.dataset.category = item.category;
+      card.innerHTML = `<img src="${escAttr(item.cover)}" alt="${escAttr(titleUa)}" loading="lazy" decoding="async">
+        <div class="cover-overlay">
+          <div class="cover-n" data-ua="Кейс" data-en="Case">Кейс</div>
+          <div class="cover-title" data-ua="${escAttr(titleUa)}" data-en="${escAttr(titleEn)}">${escHtml(titleUa)}</div>
+          <div class="cover-view"><span data-ua="Переглянути" data-en="View case">Переглянути</span><span>→</span></div>
+        </div>`;
+      card.addEventListener('click', () => openCase(item.id));
+      filteredCoverGrid.appendChild(card);
+
+      const gallery = Array.isArray(item.gallery) ? item.gallery : [];
+      const dishes = gallery.map(g => {
+        if (!g || !g.image) return '';
+        const cUa = g.caption_ua || '', cEn = g.caption_en || cUa;
+        return `<div class="dish square reveal in">
+            <div class="frame"><img src="${escAttr(g.image)}" alt="" loading="lazy" decoding="async"></div>
+            ${cUa ? `<div class="name" data-ua="${escAttr(cUa)}" data-en="${escAttr(cEn)}">${escHtml(cUa)}</div>` : ''}
+          </div>`;
+      }).join('');
+
+      const briefRow = (labUa, labEn, valUa, valEn) => valUa ? `<div class="row"><span class="lab" data-ua="${escAttr(labUa)}" data-en="${escAttr(labEn)}">${escHtml(labUa)}</span><span class="val" data-ua="${escAttr(valUa)}" data-en="${escAttr(valEn)}">${escHtml(valUa)}</span></div>` : '';
+
+      const modalBlock = document.createElement('div');
+      modalBlock.className = 'case';
+      modalBlock.id = item.id;
+      modalBlock.innerHTML = `<div class="case-head">
+          <div>
+            <div class="case-n" data-ua="Кейс" data-en="Case">Кейс</div>
+            <h3 data-ua="${escAttr(titleUa)}" data-en="${escAttr(titleEn)}">${escHtml(titleUa)}</h3>
+          </div>
+          <div class="case-brief">
+            ${briefRow('Завдання', 'Task', taskUa, taskEn)}
+            ${briefRow('Концепція', 'Concept', conceptUa, conceptEn)}
+            ${briefRow('Результат', 'Deliverables', delivUa, delivEn)}
+          </div>
+        </div>
+        <div class="menu-grid">${dishes}</div>`;
+      caseModalScroll.appendChild(modalBlock);
+
+      const catCard = document.querySelector(`.category-card[data-category="${item.category}"]`);
+      if (catCard && catCard.dataset.empty === 'true'){
+        delete catCard.dataset.empty;
+        const img = document.createElement('img');
+        img.src = item.cover; img.alt = titleUa;
+        catCard.insertBefore(img, catCard.firstChild);
+        const status = catCard.querySelector('.category-status');
+        if (status){
+          status.outerHTML = '<div class="category-view-badge"><span data-ua="Переглянути" data-en="View direction">Переглянути</span><span>→</span></div>';
+        }
+      }
+    });
+    setLang(currentLangFallback());
+  }
+
+  fetch('content/legacy-cases.json', {cache:'no-store'})
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null)
+    .then(data => renderLegacyCases(data && data.cases))
+    .then(() => fetch('content/cases.json', {cache:'no-store'}))
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null)
+    .then(data => renderCmsCases(data && data.cases));
+</script>
+</body>
+</html>

@@ -1,0 +1,543 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+
+# Preview links point back at the live site
+site_url: https://YOUR_SITE_NAME.netlify.app
+display_url: https://YOUR_SITE_NAME.netlify.app
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+locale: "uk"
+
+collections:
+  - name: "site"
+    label: "Тексти сайту"
+    files:
+      - file: "content/site.json"
+        label: "Загальний контент"
+        name: "site"
+        fields:
+          - label: "Головний екран (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Підпис під логотипом — укр", name: "tag_ua_placeholder", widget: "hidden", required: false }
+              - label: "Тег під логотипом"
+                name: "tag"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Заголовок — рядок 1"
+                name: "title_l1"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Заголовок — рядок 2 (залиште порожнім, якщо заголовок з 2 рядків)"
+                name: "title_l2"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string", required: false }
+                  - { label: "EN", name: "en", widget: "string", required: false }
+              - label: "Заголовок — останній рядок (виділений)"
+                name: "title_l3"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Текст під заголовком"
+                name: "lead"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "text" }
+                  - { label: "EN", name: "en", widget: "text" }
+              - label: "Кнопка 1 (основна — веде на портфоліо)"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Кнопка 2 (додаткова — веде на контакти)"
+                name: "cta2"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+
+          - label: "Про мене"
+            name: "about"
+            widget: "object"
+            fields:
+              - label: "Надпис (капс)"
+                name: "cap"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Заголовок"
+                name: "heading"
+                widget: "object"
+                fields:
+                  - label: "Рядок 1"
+                    name: "line1"
+                    widget: "object"
+                    fields:
+                      - { label: "UA", name: "ua", widget: "string" }
+                      - { label: "EN", name: "en", widget: "string" }
+                  - label: "Рядок 2 (звичайний)"
+                    name: "line2"
+                    widget: "object"
+                    fields:
+                      - { label: "UA", name: "ua", widget: "string" }
+                      - { label: "EN", name: "en", widget: "string" }
+                  - label: "Рядок 2 (виділене слово)"
+                    name: "accent"
+                    widget: "object"
+                    fields:
+                      - { label: "UA", name: "ua", widget: "string" }
+                      - { label: "EN", name: "en", widget: "string" }
+              - label: "Абзац 1"
+                name: "p1"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "text" }
+                  - { label: "EN", name: "en", widget: "text" }
+              - label: "Абзац 2"
+                name: "p2"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "text" }
+                  - { label: "EN", name: "en", widget: "text" }
+              - label: "Base — підпис"
+                name: "base_label"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Base — значення"
+                name: "base_value"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Working — підпис"
+                name: "working_label"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Working — значення"
+                name: "working_value"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Focus — підпис"
+                name: "focus_label"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Focus — значення"
+                name: "focus_value"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+
+          - label: "Портфоліо — заголовок секції"
+            name: "portfolio"
+            widget: "object"
+            fields:
+              - label: "Заголовок"
+                name: "heading"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Підзаголовок"
+                name: "sub"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Вступний текст"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "text" }
+                  - { label: "EN", name: "en", widget: "text" }
+              - label: "Напрямки"
+                name: "categories"
+                widget: "object"
+                fields:
+                  - label: "01 · Fashion & Lingerie"
+                    name: "fashion"
+                    widget: "object"
+                    fields:
+                      - label: "Назва"
+                        name: "title"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - label: "Підпис"
+                        name: "sub"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - { label: "Фонове зображення картки (розмір, кадрування й затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "02 · Beauty & Jewelry"
+                    name: "beauty"
+                    widget: "object"
+                    fields:
+                      - label: "Назва"
+                        name: "title"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - label: "Підпис"
+                        name: "sub"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - { label: "Фонове зображення картки (розмір, кадрування й затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "03 · Product & E-commerce"
+                    name: "product"
+                    widget: "object"
+                    fields:
+                      - label: "Назва"
+                        name: "title"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - label: "Підпис"
+                        name: "sub"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - { label: "Фонове зображення картки (розмір, кадрування й затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "04 · Food"
+                    name: "food"
+                    widget: "object"
+                    fields:
+                      - label: "Назва"
+                        name: "title"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - label: "Підпис"
+                        name: "sub"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - { label: "Фонове зображення картки (розмір, кадрування й затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "05 · Interior"
+                    name: "interior"
+                    widget: "object"
+                    fields:
+                      - label: "Назва"
+                        name: "title"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - label: "Підпис"
+                        name: "sub"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - { label: "Фонове зображення картки (розмір, кадрування й затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "06 · AI Content & Motion"
+                    name: "motion"
+                    widget: "object"
+                    fields:
+                      - label: "Назва"
+                        name: "title"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - label: "Підпис"
+                        name: "sub"
+                        widget: "object"
+                        fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+                      - { label: "Фонове зображення картки (розмір, кадрування й затемнення на сайті не змінюються)", name: "image", widget: "image" }
+              - label: "«За межами каталогу» — текст"
+                name: "beyond_label"
+                widget: "object"
+                fields:
+                  - { label: "UA", name: "ua", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+
+          - label: "Послуги"
+            name: "services"
+            widget: "object"
+            fields:
+              - label: "Заголовок"
+                name: "heading"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Підзаголовок"
+                name: "sub"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Вступний текст"
+                name: "intro"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }]
+              - label: "Дрібний підпис під вступним текстом (напр. про generative AI)"
+                name: "note"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Картки послуг"
+                name: "cards"
+                widget: "object"
+                fields:
+                  - label: "01 · Fashion & Lingerie"
+                    name: "c1"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "02 · Beauty"
+                    name: "c2"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "03 · Product & E-commerce"
+                    name: "c3"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "04 · Jewelry & Accessories"
+                    name: "c4"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "05 · Food"
+                    name: "c5"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "06 · Interior"
+                    name: "c6"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
+                  - label: "07 · AI Content & Motion"
+                    name: "c7"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
+
+          - label: "Процес"
+            name: "process"
+            widget: "object"
+            fields:
+              - label: "Заголовок"
+                name: "heading"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Підзаголовок"
+                name: "sub"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Кроки"
+                name: "steps"
+                widget: "object"
+                fields:
+                  - label: "Крок 1"
+                    name: "s1"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                  - label: "Крок 2"
+                    name: "s2"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                  - label: "Крок 3"
+                    name: "s3"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                  - label: "Крок 4"
+                    name: "s4"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+
+          - label: "Контакти"
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "Надпис (капс)"
+                name: "cap"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Заголовок"
+                name: "heading"
+                widget: "object"
+                fields:
+                  - { label: "Рядок 1", name: "line1", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                  - { label: "Рядок 2 (звичайний)", name: "line2", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                  - { label: "Рядок 2 (виділене слово)", name: "accent", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+              - label: "Текст"
+                name: "lead"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }]
+              - label: "Текст кнопки"
+                name: "cta"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+
+  - name: "legacy_cases"
+    label: "Кейси портфоліо (наявні)"
+    files:
+      - file: "content/legacy-cases.json"
+        label: "21 наявний кейс"
+        name: "legacy_cases"
+        fields:
+          - label: "Кейси"
+            name: "cases"
+            widget: "list"
+            summary: "{{fields.id}} — {{fields.title.ua}}"
+            fields:
+              - { label: "ID (не змінювати — використовується для посилань)", name: "id", widget: "string" }
+              - label: "Напрямок"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Fashion & Lingerie", value: "fashion" }
+                  - { label: "Beauty & Jewelry", value: "beauty" }
+                  - { label: "Product & E-commerce", value: "product" }
+                  - { label: "Food", value: "food" }
+                  - { label: "Interior", value: "interior" }
+                  - { label: "AI Content & Motion", value: "motion" }
+              - { label: "Обкладинка (фото для картки в списку)", name: "cover", widget: "image" }
+              - label: "Назва кейсу"
+                name: "title"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Завдання (що просив бренд)"
+                name: "task"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }]
+              - label: "Концепція (яку візуальну ідею запропонували)"
+                name: "concept"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }]
+              - label: "Результат (напр. \"5 зображень страв · меню ресторану\")"
+                name: "deliverables"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Блоки контенту кейсу (порядок можна змінювати перетягуванням, можна додавати/видаляти)"
+                name: "blocks"
+                widget: "list"
+                summary: "{{fields.type}}"
+                types:
+                  - label: "Галерея зображень/відео (сітка)"
+                    name: "menu"
+                    widget: "object"
+                    fields:
+                      - { label: "4 колонки замість звичайної сітки", name: "grid4", widget: "boolean", default: false, required: false }
+                      - label: "Кадри (можна додавати, видаляти, міняти місцями)"
+                        name: "items"
+                        widget: "list"
+                        summary: "{{fields.name.ua}}"
+                        fields:
+                          - label: "Тип кадру"
+                            name: "media"
+                            widget: "select"
+                            options:
+                              - { label: "Фото", value: "image" }
+                              - { label: "Відео", value: "video" }
+                            default: "image"
+                          - { label: "Квадратна картка (для сіток на кшталт Amazon-лістингу)", name: "square", widget: "boolean", default: false, required: false }
+                          - { label: "Фото", name: "image", widget: "image", required: false, hint: "Заповнюйте, якщо тип кадру — Фото" }
+                          - { label: "Відео-файл (mp4)", name: "video", widget: "file", required: false, hint: "Заповнюйте, якщо тип кадру — Відео" }
+                          - { label: "Постер для відео (кадр-заглушка)", name: "poster", widget: "image", required: false, hint: "Заповнюйте, якщо тип кадру — Відео" }
+                          - { label: "Alt-текст фото (для пошукових систем)", name: "alt", widget: "string", required: false }
+                          - label: "Категорія підпису (напр. Закуска, Beauty, Ракурси)"
+                            name: "course"
+                            widget: "object"
+                            required: false
+                            fields: [{ label: "UA", name: "ua", widget: "string", required: false }, { label: "EN", name: "en", widget: "string", required: false }]
+                          - label: "Назва кадру"
+                            name: "name"
+                            widget: "object"
+                            required: false
+                            fields: [{ label: "UA", name: "ua", widget: "string", required: false }, { label: "EN", name: "en", widget: "string", required: false }]
+                  - label: "До / Після (слайдер з двома фото)"
+                    name: "ba"
+                    widget: "object"
+                    fields:
+                      - { label: "Вертикальний формат (портрет)", name: "portrait", widget: "boolean", default: false, required: false }
+                      - label: "Фото «До»"
+                        name: "before"
+                        widget: "object"
+                        fields:
+                          - { label: "Фото", name: "image", widget: "image" }
+                          - { label: "Alt-текст", name: "alt", widget: "string", required: false }
+                      - label: "Фото «Після»"
+                        name: "after"
+                        widget: "object"
+                        fields:
+                          - { label: "Фото", name: "image", widget: "image" }
+                          - { label: "Alt-текст", name: "alt", widget: "string", required: false }
+
+  - name: "cases"
+    label: "Кейси портфоліо (нові)"
+    files:
+      - file: "content/cases.json"
+        label: "Нові кейси (додаються поверх існуючих)"
+        name: "cases"
+        fields:
+          - label: "Кейси"
+            name: "cases"
+            widget: "list"
+            summary: "{{title}} — {{category}}"
+            fields:
+              - { label: "Унікальний ID (латиницею, без пробілів, напр. case-10)", name: "id", widget: "string" }
+              - label: "Напрямок"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Fashion & Lingerie", value: "fashion" }
+                  - { label: "Beauty & Jewelry", value: "beauty" }
+                  - { label: "Product & E-commerce", value: "product" }
+                  - { label: "Food", value: "food" }
+                  - { label: "Interior", value: "interior" }
+                  - { label: "AI Content & Motion", value: "motion" }
+              - label: "Назва кейсу (формат: Бренд/Товар — Тип кампанії, напр. \"Lip Gloss — Beauty Campaign\")"
+                name: "title"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Завдання (що просив бренд)"
+                name: "task"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Концепція (яку візуальну ідею запропонували)"
+                name: "concept"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Результат (напр. \"5 зображень · beauty-кампанія\")"
+                name: "deliverables"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - { label: "Обкладинка (фото для картки)", name: "cover", widget: "image" }
+              - label: "Галерея"
+                name: "gallery"
+                widget: "list"
+                fields:
+                  - { label: "Фото", name: "image", widget: "image" }
+                  - { label: "Підпис — укр", name: "caption_ua", widget: "string", required: false }
+                  - { label: "Підпис — англ", name: "caption_en", widget: "string", required: false }

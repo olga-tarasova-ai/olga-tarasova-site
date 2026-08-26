@@ -1,0 +1,2126 @@
+{
+  "cases": [
+    {
+      "id": "case-01",
+      "category": "food",
+      "cover": "images/dish1.webp",
+      "title": {
+        "ua": "Меню з нуля",
+        "en": "Menu from scratch"
+      },
+      "task": {
+        "ua": "Створити повне меню ресторану з нуля — без фотозйомки, студії та готових страв.",
+        "en": "Create a full restaurant menu from scratch — no photoshoot, no studio, no prepared dishes."
+      },
+      "concept": {
+        "ua": "Єдина подача, світло й фактура посуду для кожної страви — від закуски до десерту.",
+        "en": "Consistent plating, light and tableware texture for every dish — from starter to dessert."
+      },
+      "deliverables": {
+        "ua": "5 зображень страв · меню ресторану",
+        "en": "5 dish images · restaurant menu"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Закуска",
+                "en": "Amuse-bouche"
+              },
+              "name": {
+                "ua": "Гребінці · манго · юдзу · чилі",
+                "en": "Scallops · mango · yuzu · chili"
+              },
+              "media": "image",
+              "image": "images/dish1.webp",
+              "alt": "Scallops, mango, yuzu, chili"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Сашимі",
+                "en": "Sashimi"
+              },
+              "name": {
+                "ua": "Тунець татакі · авокадо · понзу · маракуйя",
+                "en": "Tuna tataki · avocado · ponzu · passion fruit"
+              },
+              "media": "image",
+              "image": "images/dish4.webp",
+              "alt": "Tuna tataki, avocado, ponzu, passion fruit"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Паста",
+                "en": "Pasta"
+              },
+              "name": {
+                "ua": "Чорні равіолі · краб · біск · шафран",
+                "en": "Black ravioli · crab · bisque · saffron"
+              },
+              "media": "image",
+              "image": "images/dish3.webp",
+              "alt": "Black ravioli, crab, bisque, saffron"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Основна страва",
+                "en": "Main course"
+              },
+              "name": {
+                "ua": "Качина грудка · вишня · буряк · фісташка",
+                "en": "Duck · cherry · beet · pistachio"
+              },
+              "media": "image",
+              "image": "images/dish4.webp",
+              "alt": "Duck, cherry, beet, pistachio"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Десерт",
+                "en": "Dessert"
+              },
+              "name": {
+                "ua": "Кокос · лайм · малина · лічі",
+                "en": "Coconut · lime · raspberry · lychee"
+              },
+              "media": "image",
+              "image": "images/dish5.webp",
+              "alt": "Coconut, lime, raspberry, lychee"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-02",
+      "category": "food",
+      "cover": "images/ba_wrap_after.webp",
+      "title": {
+        "ua": "Покращення фото для доставки",
+        "en": "Photo enhancement for delivery"
+      },
+      "task": {
+        "ua": "Покращити любительське фото страви для картки товару в застосунку доставки.",
+        "en": "Upgrade an amateur dish photo for a product card in a delivery app."
+      },
+      "concept": {
+        "ua": "Перетворити звичайний кадр на чистий, консистентний кадр на білому фоні.",
+        "en": "Turn an ordinary shot into a clean, consistent shot on a white background."
+      },
+      "deliverables": {
+        "ua": "До / після · 1 страва",
+        "en": "Before / after · 1 dish"
+      },
+      "blocks": [
+        {
+          "type": "ba",
+          "portrait": false,
+          "before": {
+            "image": "images/ba_wrap_before.webp",
+            "alt": "Оригінальне фото клієнта"
+          },
+          "after": {
+            "image": "images/ba_wrap_after.webp",
+            "alt": "Кадр на білому фоні"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case-03",
+      "category": "food",
+      "cover": "images/ba_salmon_after.webp",
+      "title": {
+        "ua": "Покращення фото для Instagram",
+        "en": "Photo enhancement for Instagram"
+      },
+      "task": {
+        "ua": "Оживити фото страви для соціальних мереж ресторану.",
+        "en": "Bring a dish photo to life for the restaurant's social media."
+      },
+      "concept": {
+        "ua": "Додати ресторанне світло, атмосферу й фактуру — контент, який зупиняє скрол.",
+        "en": "Add restaurant light, atmosphere and texture — content that stops the scroll."
+      },
+      "deliverables": {
+        "ua": "До / після · контент для Instagram",
+        "en": "Before / after · Instagram content"
+      },
+      "blocks": [
+        {
+          "type": "ba",
+          "portrait": false,
+          "before": {
+            "image": "images/ba_salmon_before.webp",
+            "alt": "Оригінальне фото клієнта"
+          },
+          "after": {
+            "image": "images/ba_salmon_after.webp",
+            "alt": "Атмосферний кадр"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case-04",
+      "category": "product",
+      "cover": "images/kombucha1.webp",
+      "title": {
+        "ua": "Предметна зйомка",
+        "en": "Product photography"
+      },
+      "task": {
+        "ua": "Створити комерційний продуктовий візуал для двох напоєво-продуктових брендів.",
+        "en": "Create commercial product visuals for two beverage/food brands."
+      },
+      "concept": {
+        "ua": "Показати продукт у різних сценах і світлі — від чистого студійного кадру до локації на природі.",
+        "en": "Show the product across different scenes and light — from a clean studio shot to an outdoor setting."
+      },
+      "deliverables": {
+        "ua": "4 зображення · Spraga Kombucha, Honey Brothers",
+        "en": "4 images · Spraga Kombucha, Honey Brothers"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Напій",
+                "en": "Beverage"
+              },
+              "name": {
+                "ua": "Spraga · Комбуча",
+                "en": "Spraga · Kombucha"
+              },
+              "media": "image",
+              "image": "images/kombucha1.webp",
+              "alt": "Spraga · Kombucha"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Напій",
+                "en": "Beverage"
+              },
+              "name": {
+                "ua": "Spraga · Манго-маракуйя",
+                "en": "Spraga · Mango-passionfruit"
+              },
+              "media": "image",
+              "image": "images/kombucha2.webp",
+              "alt": "Spraga · Mango-passionfruit"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Продукт",
+                "en": "Product"
+              },
+              "name": {
+                "ua": "Honey Brothers · У полі",
+                "en": "Honey Brothers · In the field"
+              },
+              "media": "image",
+              "image": "images/honey1.webp",
+              "alt": "Honey Brothers · In the field"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Продукт",
+                "en": "Product"
+              },
+              "name": {
+                "ua": "Honey Brothers · Макро",
+                "en": "Honey Brothers · Macro"
+              },
+              "media": "image",
+              "image": "images/honey2.webp",
+              "alt": "Honey Brothers · Macro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-05",
+      "category": "food",
+      "cover": "images/mochi1.webp",
+      "title": {
+        "ua": "Креативна зйомка",
+        "en": "Creative shoot"
+      },
+      "task": {
+        "ua": "Створити динамічний рекламний контент для десерту.",
+        "en": "Create dynamic advertising content for a dessert product."
+      },
+      "concept": {
+        "ua": "Побудувати серію на контрасті чорного фону та соковитого кольору — спленші, пудра, розламані текстури.",
+        "en": "Build a series on the contrast between a black background and vivid color — splashes, sugar dust, torn textures."
+      },
+      "deliverables": {
+        "ua": "6 зображень · соціальні мережі",
+        "en": "6 images · social media"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Десерт",
+                "en": "Dessert"
+              },
+              "name": {
+                "ua": "Полуничне моті · Спленш",
+                "en": "Strawberry mochi · Splash"
+              },
+              "media": "image",
+              "image": "images/mochi1.webp",
+              "alt": "Strawberry mochi · Splash"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Десерт",
+                "en": "Dessert"
+              },
+              "name": {
+                "ua": "Полуничне моті · Політ",
+                "en": "Strawberry mochi · Flight"
+              },
+              "media": "image",
+              "image": "images/mochi2.webp",
+              "alt": "Strawberry mochi · Flight"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Десерт",
+                "en": "Dessert"
+              },
+              "name": {
+                "ua": "Полуничне моті · Розлам",
+                "en": "Strawberry mochi · Torn open"
+              },
+              "media": "image",
+              "image": "images/mochi3.webp",
+              "alt": "Strawberry mochi · Torn open"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Десерт",
+                "en": "Dessert"
+              },
+              "name": {
+                "ua": "Полуничне моті · Цукрова пудра",
+                "en": "Strawberry mochi · Sugar dust"
+              },
+              "media": "image",
+              "image": "images/mochi4.webp",
+              "alt": "Strawberry mochi · Sugar dust"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Десерт",
+                "en": "Dessert"
+              },
+              "name": {
+                "ua": "Полуничне моті · Діагональ",
+                "en": "Strawberry mochi · Diagonal"
+              },
+              "media": "image",
+              "image": "images/mochi5.webp",
+              "alt": "Strawberry mochi · Diagonal"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Десерт",
+                "en": "Dessert"
+              },
+              "name": {
+                "ua": "Полуничне моті · Макро",
+                "en": "Strawberry mochi · Macro"
+              },
+              "media": "image",
+              "image": "images/mochi6.webp",
+              "alt": "Strawberry mochi · Macro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-06",
+      "category": "beauty",
+      "cover": "images/gloss2.webp",
+      "title": {
+        "ua": "Lip Gloss — Beauty Campaign",
+        "en": "Lip Gloss — Beauty Campaign"
+      },
+      "task": {
+        "ua": "Створити beauty-кампанію для блиску для губ.",
+        "en": "Create a beauty campaign for a lip gloss."
+      },
+      "concept": {
+        "ua": "Поєднати макро текстуру, застосування на моделі та предметні кадри в єдиній світлій стилістиці.",
+        "en": "Combine macro texture, on-model application and product-only frames in one light, airy visual style."
+      },
+      "deliverables": {
+        "ua": "5 зображень · beauty-кампанія",
+        "en": "5 images · beauty campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Beauty",
+                "en": "Beauty"
+              },
+              "name": {
+                "ua": "Блиск для губ · Макро",
+                "en": "Lip gloss · Macro"
+              },
+              "media": "image",
+              "image": "images/gloss1.webp",
+              "alt": "Lip gloss · Macro"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Beauty",
+                "en": "Beauty"
+              },
+              "name": {
+                "ua": "Блиск для губ · На моделі",
+                "en": "Lip gloss · On model"
+              },
+              "media": "image",
+              "image": "images/gloss2.webp",
+              "alt": "Lip gloss · On model"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Beauty",
+                "en": "Beauty"
+              },
+              "name": {
+                "ua": "Блиск для губ · Текстура",
+                "en": "Lip gloss · Texture"
+              },
+              "media": "image",
+              "image": "images/gloss3.webp",
+              "alt": "Lip gloss · Texture"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Beauty",
+                "en": "Beauty"
+              },
+              "name": {
+                "ua": "Блиск для губ · Товар в руці",
+                "en": "Lip gloss · Product in hand"
+              },
+              "media": "image",
+              "image": "images/gloss4.webp",
+              "alt": "Lip gloss · Product in hand"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Beauty",
+                "en": "Beauty"
+              },
+              "name": {
+                "ua": "Блиск для губ · На моделі",
+                "en": "Lip gloss · On model"
+              },
+              "media": "image",
+              "image": "images/gloss5.webp",
+              "alt": "Lip gloss · On model"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-07",
+      "category": "beauty",
+      "cover": "images/perfstudio6.webp",
+      "title": {
+        "ua": "REPLICA — Studio Campaign",
+        "en": "REPLICA — Studio Campaign"
+      },
+      "task": {
+        "ua": "Створити студійний продуктовий візуал для парфуму Maison Margiela REPLICA.",
+        "en": "Create a studio product visual for the Maison Margiela REPLICA perfume."
+      },
+      "concept": {
+        "ua": "Чиста предметна композиція з дровом, лаймом і прянощами — консистентне світло для карток бренду.",
+        "en": "A clean still-life composition with driftwood, lime and spices — consistent light for brand assets."
+      },
+      "deliverables": {
+        "ua": "7 зображень · картки бренду",
+        "en": "7 images · brand assets"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "REPLICA · Дрова й лайм",
+                "en": "REPLICA · Driftwood & lime"
+              },
+              "media": "image",
+              "image": "images/perfstudio1.webp",
+              "alt": "REPLICA · Studio 1"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "REPLICA · На тканині",
+                "en": "REPLICA · On linen"
+              },
+              "media": "image",
+              "image": "images/perfstudio2.webp",
+              "alt": "REPLICA · Studio 2"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "REPLICA · Крупний план",
+                "en": "REPLICA · Close-up"
+              },
+              "media": "image",
+              "image": "images/perfstudio3.webp",
+              "alt": "REPLICA · Studio 3"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "REPLICA · Прянощі й лайм",
+                "en": "REPLICA · Spices & lime"
+              },
+              "media": "image",
+              "image": "images/perfstudio4.webp",
+              "alt": "REPLICA · Studio 4"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "REPLICA · Дрова",
+                "en": "REPLICA · Driftwood"
+              },
+              "media": "image",
+              "image": "images/perfstudio5.webp",
+              "alt": "REPLICA · Studio 5"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "REPLICA · Композиція",
+                "en": "REPLICA · Composition"
+              },
+              "media": "image",
+              "image": "images/perfstudio6.webp",
+              "alt": "REPLICA · Studio 6"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "REPLICA · Етикетка",
+                "en": "REPLICA · Label"
+              },
+              "media": "image",
+              "image": "images/perfstudio7.webp",
+              "alt": "REPLICA · Studio 7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-08",
+      "category": "beauty",
+      "cover": "images/perfloc5.webp",
+      "title": {
+        "ua": "REPLICA — Location Campaign",
+        "en": "REPLICA — Location Campaign"
+      },
+      "task": {
+        "ua": "Показати парфум REPLICA поза студією, в живому атмосферному контексті.",
+        "en": "Show the REPLICA perfume out of studio, in a living atmospheric context."
+      },
+      "concept": {
+        "ua": "Сонячна тераса з лимонним деревом і мармуровим столиком — легка літня історія бренду.",
+        "en": "A sunlit terrace with a lemon tree and a marble table — a light summer brand story."
+      },
+      "deliverables": {
+        "ua": "5 зображень · атмосферна кампанія",
+        "en": "5 images · atmospheric campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Локація",
+                "en": "Location"
+              },
+              "name": {
+                "ua": "REPLICA · Тераса",
+                "en": "REPLICA · Terrace"
+              },
+              "media": "image",
+              "image": "images/perfloc1.webp",
+              "alt": "REPLICA · Location 1"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Локація",
+                "en": "Location"
+              },
+              "name": {
+                "ua": "REPLICA · Етикетка на терасі",
+                "en": "REPLICA · Label on the terrace"
+              },
+              "media": "image",
+              "image": "images/perfloc2.webp",
+              "alt": "REPLICA · Location 2"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Локація",
+                "en": "Location"
+              },
+              "name": {
+                "ua": "REPLICA · Лимонне дерево",
+                "en": "REPLICA · Lemon tree"
+              },
+              "media": "image",
+              "image": "images/perfloc3.webp",
+              "alt": "REPLICA · Location 3"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Локація",
+                "en": "Location"
+              },
+              "name": {
+                "ua": "REPLICA · Мармурова тераса",
+                "en": "REPLICA · Marble terrace"
+              },
+              "media": "image",
+              "image": "images/perfloc4.webp",
+              "alt": "REPLICA · Location 4"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Локація",
+                "en": "Location"
+              },
+              "name": {
+                "ua": "REPLICA · На сонці",
+                "en": "REPLICA · In the sun"
+              },
+              "media": "image",
+              "image": "images/perfloc5.webp",
+              "alt": "REPLICA · Location 5"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Локація",
+                "en": "Location"
+              },
+              "name": {
+                "ua": "REPLICA · Сонячний відблиск",
+                "en": "REPLICA · Sun flare"
+              },
+              "media": "image",
+              "image": "images/perfloc6.webp",
+              "alt": "REPLICA · Location 6"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Локація",
+                "en": "Location"
+              },
+              "name": {
+                "ua": "REPLICA · Гілки лимона",
+                "en": "REPLICA · Lemon branches"
+              },
+              "media": "image",
+              "image": "images/perfloc7.webp",
+              "alt": "REPLICA · Location 7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-09",
+      "category": "product",
+      "cover": "images/nespresso1.webp",
+      "title": {
+        "ua": "Nespresso — Amazon Listing",
+        "en": "Nespresso — Amazon Listing"
+      },
+      "task": {
+        "ua": "Підготувати повний комплект візуалів для картки товару Nespresso Lattissima One на Amazon.",
+        "en": "Prepare a complete visual set for the Nespresso Lattissima One product listing on Amazon."
+      },
+      "concept": {
+        "ua": "Головне фото, ракурси, лайфстайл-кадр, інфографіка з перевагами й покроковий гайд — в єдиній стилістиці бренду.",
+        "en": "Main shot, angle views, a lifestyle photo, benefit infographics and a step-by-step guide — in one consistent brand style."
+      },
+      "deliverables": {
+        "ua": "7 зображень · Amazon-лістинг",
+        "en": "7 images · Amazon listing"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": true,
+          "items": [
+            {
+              "square": true,
+              "course": {
+                "ua": "Головне фото",
+                "en": "Main image"
+              },
+              "name": {
+                "ua": "Білий фон",
+                "en": "White background"
+              },
+              "media": "image",
+              "image": "images/nespresso1.webp",
+              "alt": "Nespresso Lattissima One · Main shot"
+            },
+            {
+              "square": true,
+              "course": {
+                "ua": "Ракурси",
+                "en": "Angle views"
+              },
+              "name": {
+                "ua": "Огляд з усіх боків",
+                "en": "All-around view"
+              },
+              "media": "image",
+              "image": "images/nespresso2.webp",
+              "alt": "Nespresso Lattissima One · Angle views"
+            },
+            {
+              "square": true,
+              "course": {
+                "ua": "Лайфстайл",
+                "en": "Lifestyle"
+              },
+              "name": {
+                "ua": "У домашній обстановці",
+                "en": "In a home setting"
+              },
+              "media": "image",
+              "image": "images/nespresso3.webp",
+              "alt": "Nespresso Lattissima One · Lifestyle"
+            },
+            {
+              "square": true,
+              "course": {
+                "ua": "Інфографіка",
+                "en": "Infographic"
+              },
+              "name": {
+                "ua": "Переваги",
+                "en": "Key features"
+              },
+              "media": "image",
+              "image": "images/nespresso4.webp",
+              "alt": "Nespresso Lattissima One · Infographic, features"
+            },
+            {
+              "square": true,
+              "course": {
+                "ua": "Інфографіка",
+                "en": "Infographic"
+              },
+              "name": {
+                "ua": "Характеристики",
+                "en": "Specifications"
+              },
+              "media": "image",
+              "image": "images/nespresso5.webp",
+              "alt": "Nespresso Lattissima One · Infographic, specs"
+            },
+            {
+              "square": true,
+              "course": {
+                "ua": "Гайд",
+                "en": "Guide"
+              },
+              "name": {
+                "ua": "Як користуватись",
+                "en": "How to use"
+              },
+              "media": "image",
+              "image": "images/nespresso6.webp",
+              "alt": "Nespresso Lattissima One · Usage guide"
+            },
+            {
+              "square": true,
+              "course": {
+                "ua": "Комплектація",
+                "en": "What's included"
+              },
+              "name": {
+                "ua": "Розкладка товару",
+                "en": "Product flatlay"
+              },
+              "media": "image",
+              "image": "images/nespresso7.webp",
+              "alt": "Nespresso Lattissima One · Unboxing flatlay"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-10",
+      "category": "fashion",
+      "cover": "images/fash1.webp",
+      "title": {
+        "ua": "Linen Dress — Location Campaign",
+        "en": "Linen Dress — Location Campaign"
+      },
+      "task": {
+        "ua": "Показати літню лляну сукню в живій атмосфері, яка передає легкість і настрій бренду.",
+        "en": "Show the summer linen dress in a live atmosphere that conveys the brand's lightness and mood."
+      },
+      "concept": {
+        "ua": "Білосніжне середземноморське містечко з блакитними віконницями та видом на море — світла, повітряна лукбук-серія з природними позами та рухом.",
+        "en": "A whitewashed Mediterranean village with blue shutters and sea views — a light, airy lookbook series built on natural poses and movement."
+      },
+      "deliverables": {
+        "ua": "7 зображень · lookbook-кампанія",
+        "en": "7 images · lookbook campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Лукбук",
+                "en": "Lookbook"
+              },
+              "name": {
+                "ua": "Лляна сукня · Біля моря",
+                "en": "Linen Dress · Seaside"
+              },
+              "media": "image",
+              "image": "images/fash1.webp",
+              "alt": "Linen Dress · Seaside"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Лукбук",
+                "en": "Lookbook"
+              },
+              "name": {
+                "ua": "Лляна сукня · Прогулянка містечком",
+                "en": "Linen Dress · Village Walk"
+              },
+              "media": "image",
+              "image": "images/fash2.webp",
+              "alt": "Linen Dress · Village Walk"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Лукбук",
+                "en": "Lookbook"
+              },
+              "name": {
+                "ua": "Лляна сукня · Сонячна вулиця",
+                "en": "Linen Dress · Sunlit Street"
+              },
+              "media": "image",
+              "image": "images/fash3.webp",
+              "alt": "Linen Dress · Sunlit Street"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Лукбук",
+                "en": "Lookbook"
+              },
+              "name": {
+                "ua": "Лляна сукня · У русі",
+                "en": "Linen Dress · In Motion"
+              },
+              "media": "image",
+              "image": "images/fash4.webp",
+              "alt": "Linen Dress · In Motion"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Лукбук",
+                "en": "Lookbook"
+              },
+              "name": {
+                "ua": "Лляна сукня · Вид на море",
+                "en": "Linen Dress · Sea View"
+              },
+              "media": "image",
+              "image": "images/fash5.webp",
+              "alt": "Linen Dress · Sea View"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Лукбук",
+                "en": "Lookbook"
+              },
+              "name": {
+                "ua": "Лляна сукня · Біля стіни",
+                "en": "Linen Dress · Against the Wall"
+              },
+              "media": "image",
+              "image": "images/fash6.webp",
+              "alt": "Linen Dress · Against the Wall"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Лукбук",
+                "en": "Lookbook"
+              },
+              "name": {
+                "ua": "Лляна сукня · Деталь",
+                "en": "Linen Dress · Detail"
+              },
+              "media": "image",
+              "image": "images/fash7.webp",
+              "alt": "Linen Dress · Detail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-11",
+      "category": "fashion",
+      "cover": "images/studio1.webp",
+      "title": {
+        "ua": "Linen Dress — Studio Campaign",
+        "en": "Linen Dress — Studio Campaign"
+      },
+      "task": {
+        "ua": "Показати сукню в чистому студійному кадрі — крій, тканину і деталі без відволікаючого фону.",
+        "en": "Show the dress in a clean studio shot — cut, fabric and details without a distracting background."
+      },
+      "concept": {
+        "ua": "Білий студійний фон, м'яке рівне світло і серія ракурсів — від повного зросту до макро-деталей крою і зав'язок.",
+        "en": "A white studio backdrop, soft even light and a range of angles — from full length to macro shots of the cut and ties."
+      },
+      "deliverables": {
+        "ua": "8 зображень · студійна кампанія",
+        "en": "8 images · studio campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лляна сукня · Повний зріст",
+                "en": "Linen Dress · Full Length"
+              },
+              "media": "image",
+              "image": "images/studio1.webp",
+              "alt": "Linen Dress · Full Length"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лляна сукня · Деталь спини",
+                "en": "Linen Dress · Back Detail"
+              },
+              "media": "image",
+              "image": "images/studio2.webp",
+              "alt": "Linen Dress · Back Detail"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лляна сукня · Крупний план",
+                "en": "Linen Dress · Close-up"
+              },
+              "media": "image",
+              "image": "images/studio3.webp",
+              "alt": "Linen Dress · Close-up"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лляна сукня · Деталь зав'язки",
+                "en": "Linen Dress · Strap Detail"
+              },
+              "media": "image",
+              "image": "images/studio4.webp",
+              "alt": "Linen Dress · Strap Detail"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лляна сукня · Сидячи",
+                "en": "Linen Dress · Seated"
+              },
+              "media": "image",
+              "image": "images/studio5.webp",
+              "alt": "Linen Dress · Seated"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лляна сукня · Присівши",
+                "en": "Linen Dress · Crouch"
+              },
+              "media": "image",
+              "image": "images/studio6.webp",
+              "alt": "Linen Dress · Crouch"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лляна сукня · У русі",
+                "en": "Linen Dress · Movement"
+              },
+              "media": "image",
+              "image": "images/studio7.webp",
+              "alt": "Linen Dress · Movement"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лляна сукня · Зав'язка на плечі",
+                "en": "Linen Dress · Shoulder Tie"
+              },
+              "media": "image",
+              "image": "images/studio8.webp",
+              "alt": "Linen Dress · Shoulder Tie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-12",
+      "category": "fashion",
+      "cover": "images/lingerie1.webp",
+      "title": {
+        "ua": "Lingerie — Editorial Campaign",
+        "en": "Lingerie — Editorial Campaign"
+      },
+      "task": {
+        "ua": "Показати чорну мереживну білизну як самостійний editorial-образ — з характером і атмосферою, а не просто товарний кадр.",
+        "en": "Present the black lace lingerie set as a standalone editorial look — with character and atmosphere, not just a product shot."
+      },
+      "concept": {
+        "ua": "Паризький дах і кована огорожа на заході сонця — контраст ніжного мережива з урбаністичною архітектурою, серія в русі та статичних позах.",
+        "en": "A Parisian rooftop and wrought-iron railing at sunset — the contrast of delicate lace against urban architecture, a series of both movement and still poses."
+      },
+      "deliverables": {
+        "ua": "8 зображень · editorial-кампанія",
+        "en": "8 images · editorial campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Едиторіал",
+                "en": "Editorial"
+              },
+              "name": {
+                "ua": "Білизна · Дах",
+                "en": "Lingerie · Rooftop"
+              },
+              "media": "image",
+              "image": "images/lingerie1.webp",
+              "alt": "Lingerie · Rooftop"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Едиторіал",
+                "en": "Editorial"
+              },
+              "name": {
+                "ua": "Білизна · Стоячи",
+                "en": "Lingerie · Standing"
+              },
+              "media": "image",
+              "image": "images/lingerie2.webp",
+              "alt": "Lingerie · Standing"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Едиторіал",
+                "en": "Editorial"
+              },
+              "name": {
+                "ua": "Білизна · Огорожа",
+                "en": "Lingerie · Railing"
+              },
+              "media": "image",
+              "image": "images/lingerie3.webp",
+              "alt": "Lingerie · Railing"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Едиторіал",
+                "en": "Editorial"
+              },
+              "name": {
+                "ua": "Білизна · Настрій",
+                "en": "Lingerie · Mood"
+              },
+              "media": "image",
+              "image": "images/lingerie4.webp",
+              "alt": "Lingerie · Mood"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Едиторіал",
+                "en": "Editorial"
+              },
+              "name": {
+                "ua": "Білизна · Спина",
+                "en": "Lingerie · Back"
+              },
+              "media": "image",
+              "image": "images/lingerie5.webp",
+              "alt": "Lingerie · Back"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Едиторіал",
+                "en": "Editorial"
+              },
+              "name": {
+                "ua": "Білизна · Деталь",
+                "en": "Lingerie · Detail"
+              },
+              "media": "image",
+              "image": "images/lingerie6.webp",
+              "alt": "Lingerie · Detail"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Едиторіал",
+                "en": "Editorial"
+              },
+              "name": {
+                "ua": "Білизна · Сидячи",
+                "en": "Lingerie · Seated"
+              },
+              "media": "image",
+              "image": "images/lingerie7.webp",
+              "alt": "Lingerie · Seated"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Едиторіал",
+                "en": "Editorial"
+              },
+              "name": {
+                "ua": "Білизна · Золота година",
+                "en": "Lingerie · Golden Hour"
+              },
+              "media": "image",
+              "image": "images/lingerie8.webp",
+              "alt": "Lingerie · Golden Hour"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-13",
+      "category": "beauty",
+      "cover": "images/necklace1.webp",
+      "title": {
+        "ua": "Beaded Necklace — Lifestyle Campaign",
+        "en": "Beaded Necklace — Lifestyle Campaign"
+      },
+      "task": {
+        "ua": "Показати делікатне намисто з бусинами в природному, живому контексті — вдома, на сонці, серед оливкового гаю.",
+        "en": "Present a delicate beaded chain necklace in a natural, lived-in context — at home, in the sun, among olive trees."
+      },
+      "concept": {
+        "ua": "Серія локацій — сонячне вікно з тюлевими шторами, оливковий гай, тераса на заході сонця — тепле світло підкреслює деталі металу на шкірі.",
+        "en": "A series of locations — a sunlit window with sheer curtains, an olive grove, a sunset terrace — warm light draws out the metal detail against skin."
+      },
+      "deliverables": {
+        "ua": "11 зображень · lifestyle-кампанія",
+        "en": "11 images · lifestyle campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Вікно",
+                "en": "Window"
+              },
+              "name": {
+                "ua": "Намисто · Профіль біля вікна",
+                "en": "Necklace · Window Profile"
+              },
+              "media": "image",
+              "image": "images/necklace1.webp",
+              "alt": "Necklace · Window Profile"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Деталь",
+                "en": "Detail"
+              },
+              "name": {
+                "ua": "Намисто · Деталь з рукою",
+                "en": "Necklace · Hand Detail"
+              },
+              "media": "image",
+              "image": "images/necklace2.webp",
+              "alt": "Necklace · Hand Detail"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Вікно",
+                "en": "Window"
+              },
+              "name": {
+                "ua": "Намисто · Погляд у вікно",
+                "en": "Necklace · Window Gaze"
+              },
+              "media": "image",
+              "image": "images/necklace3.webp",
+              "alt": "Necklace · Window Gaze"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Оливковий гай",
+                "en": "Olive Grove"
+              },
+              "name": {
+                "ua": "Намисто · Погляд угору",
+                "en": "Necklace · Looking Up"
+              },
+              "media": "image",
+              "image": "images/necklace4.webp",
+              "alt": "Necklace · Olive Grove Up"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Оливковий гай",
+                "en": "Olive Grove"
+              },
+              "name": {
+                "ua": "Намисто · Під гілками",
+                "en": "Necklace · Under the Branches"
+              },
+              "media": "image",
+              "image": "images/necklace5.webp",
+              "alt": "Necklace · Olive Grove Sky"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Оливковий гай",
+                "en": "Olive Grove"
+              },
+              "name": {
+                "ua": "Намисто · Профіль у гаю",
+                "en": "Necklace · Grove Profile"
+              },
+              "media": "image",
+              "image": "images/necklace6.webp",
+              "alt": "Necklace · Olive Grove Profile"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Деталь",
+                "en": "Detail"
+              },
+              "name": {
+                "ua": "Намисто · Деталь на сонці",
+                "en": "Necklace · Sunlit Detail"
+              },
+              "media": "image",
+              "image": "images/necklace7.webp",
+              "alt": "Necklace · Sunlit Detail"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Спина",
+                "en": "Back"
+              },
+              "name": {
+                "ua": "Намисто · Уздовж спини",
+                "en": "Necklace · Along the Spine"
+              },
+              "media": "image",
+              "image": "images/necklace8.webp",
+              "alt": "Necklace · Back Chain"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Профіль",
+                "en": "Profile"
+              },
+              "name": {
+                "ua": "Намисто · Бокове світло",
+                "en": "Necklace · Side Light"
+              },
+              "media": "image",
+              "image": "images/necklace9.webp",
+              "alt": "Necklace · Side Light Profile"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Тераса",
+                "en": "Terrace"
+              },
+              "name": {
+                "ua": "Намисто · Тераса на заході сонця",
+                "en": "Necklace · Terrace at Sunset"
+              },
+              "media": "image",
+              "image": "images/necklace10.webp",
+              "alt": "Necklace · Terrace Sunset"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Тераса",
+                "en": "Terrace"
+              },
+              "name": {
+                "ua": "Намисто · Силует біля колони",
+                "en": "Necklace · Column Silhouette"
+              },
+              "media": "image",
+              "image": "images/necklace11.webp",
+              "alt": "Necklace · Terrace Silhouette"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-14",
+      "category": "motion",
+      "cover": "images/motionposter1.webp",
+      "title": {
+        "ua": "Jewelry — Cinematic Motion",
+        "en": "Jewelry — Cinematic Motion"
+      },
+      "task": {
+        "ua": "Оживити ювелірну зйомку — показати намисто в русі, з природним світлом і диханням кадру, а не статичним фото.",
+        "en": "Bring the jewelry shoot to life — show the necklace in motion, with natural light and the breath of a moving frame, not a static photo."
+      },
+      "concept": {
+        "ua": "Три короткі кінематографічні відео — макро-деталь на плечі, середземноморська тераса на заході сонця — image-to-video підхід для соціальних мереж і сайту бренду.",
+        "en": "Three short cinematic clips — a macro detail on the shoulder, a Mediterranean terrace at sunset — an image-to-video approach for social media and brand websites."
+      },
+      "deliverables": {
+        "ua": "3 відео · image-to-video кампанія",
+        "en": "3 videos · image-to-video campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Рух",
+                "en": "Motion"
+              },
+              "name": {
+                "ua": "Рух · Деталь прикраси",
+                "en": "Motion · Jewelry Detail"
+              },
+              "media": "video",
+              "video": "videos/jewelry-motion1.mp4",
+              "poster": "images/motionposter1.webp",
+              "alt": "Cinematic macro shot of jewelry detail in motion"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Рух",
+                "en": "Motion"
+              },
+              "name": {
+                "ua": "Рух · Середземноморська тераса",
+                "en": "Motion · Mediterranean Terrace"
+              },
+              "media": "video",
+              "video": "videos/jewelry-motion2.mp4",
+              "poster": "images/motionposter2.webp",
+              "alt": "Necklace on a Mediterranean terrace at sunset, cinematic motion video"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Рух",
+                "en": "Motion"
+              },
+              "name": {
+                "ua": "Рух · Світло з вікна",
+                "en": "Motion · Window Light"
+              },
+              "media": "video",
+              "video": "videos/jewelry-motion3.mp4",
+              "poster": "images/motionposter3.webp",
+              "alt": "Jewelry lit by natural window light, cinematic motion video"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-15",
+      "category": "fashion",
+      "cover": "images/poppyfield1.webp",
+      "title": {
+        "ua": "Lingerie — Golden Hour Field",
+        "en": "Lingerie — Golden Hour Field"
+      },
+      "task": {
+        "ua": "Показати нову колекцію білизни (чорно-рожевий комплект) у теплій, романтичній атмосфері — на противагу студійному чи міському сетингу попередніх кейсів.",
+        "en": "Present a new lingerie collection (black-and-pink set) in a warm, romantic atmosphere — as a counterpoint to the studio and urban settings of earlier cases."
+      },
+      "concept": {
+        "ua": "Маковe поле на заході сонця — контрове світло, польові квіти і довга трава створюють м'яку, живу editorial-історію.",
+        "en": "A poppy field at sunset — backlight, wildflowers and tall grass create a soft, lived-in editorial story."
+      },
+      "deliverables": {
+        "ua": "6 зображень · editorial-кампанія",
+        "en": "6 images · editorial campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Поле",
+                "en": "Field"
+              },
+              "name": {
+                "ua": "Білизна · Лежачи в полі",
+                "en": "Lingerie · Lying in the Field"
+              },
+              "media": "image",
+              "image": "images/poppyfield1.webp",
+              "alt": "Lingerie · Lying in the Field"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Поле",
+                "en": "Field"
+              },
+              "name": {
+                "ua": "Білизна · Поворот через плече",
+                "en": "Lingerie · Turning Back"
+              },
+              "media": "image",
+              "image": "images/poppyfield2.webp",
+              "alt": "Lingerie · Turning Back"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Поле",
+                "en": "Field"
+              },
+              "name": {
+                "ua": "Білизна · Портрет сидячи",
+                "en": "Lingerie · Seated Portrait"
+              },
+              "media": "image",
+              "image": "images/poppyfield3.webp",
+              "alt": "Lingerie · Seated Portrait"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Поле",
+                "en": "Field"
+              },
+              "name": {
+                "ua": "Білизна · Вид ззаду стоячи",
+                "en": "Lingerie · Standing Back View"
+              },
+              "media": "image",
+              "image": "images/poppyfield4.webp",
+              "alt": "Lingerie · Standing Back View"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Поле",
+                "en": "Field"
+              },
+              "name": {
+                "ua": "Білизна · Портрет у золоту годину",
+                "en": "Lingerie · Golden Hour Portrait"
+              },
+              "media": "image",
+              "image": "images/poppyfield5.webp",
+              "alt": "Lingerie · Golden Hour Portrait"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Поле",
+                "en": "Field"
+              },
+              "name": {
+                "ua": "Білизна · Силует у полі",
+                "en": "Lingerie · Field Silhouette"
+              },
+              "media": "image",
+              "image": "images/poppyfield6.webp",
+              "alt": "Lingerie · Field Silhouette"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-16",
+      "category": "interior",
+      "cover": "images/int_kitchen1_after.webp",
+      "title": {
+        "ua": "Kitchen — Full Style Transformation",
+        "en": "Kitchen — Full Style Transformation"
+      },
+      "task": {
+        "ua": "Показати, як уже готова кухня може виглядати в зовсім іншій матеріальній і кольоровій палітрі — без перепланування.",
+        "en": "Show how an already finished kitchen could look in a completely different material and colour palette — without moving a wall."
+      },
+      "concept": {
+        "ua": "Зберегти планування, техніку й габарити, замінити світлий дуб, глянець і мармур на темне дерево, травертин і скульптурне світло.",
+        "en": "Keep the layout, appliances and proportions; swap light oak, gloss and marble for dark wood, travertine and sculptural lighting."
+      },
+      "deliverables": {
+        "ua": "До / після · повна зміна стилю",
+        "en": "Before / after · full style transformation"
+      },
+      "blocks": [
+        {
+          "type": "ba",
+          "portrait": true,
+          "before": {
+            "image": "images/int_kitchen1_before.webp",
+            "alt": "Кухня — до"
+          },
+          "after": {
+            "image": "images/int_kitchen1_after.webp",
+            "alt": "Кухня — після"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case-17",
+      "category": "interior",
+      "cover": "images/int_living_boho.webp",
+      "title": {
+        "ua": "Living Room — Four Style Concepts",
+        "en": "Living Room — Four Style Concepts"
+      },
+      "task": {
+        "ua": "Допомогти клієнту побачити порожню коробку з еркером як завершену вітальню — одразу в кількох стилях на вибір.",
+        "en": "Help the client see a bare shell with a bay window as a finished living room — in several styles to choose from."
+      },
+      "concept": {
+        "ua": "Одна геометрія кімнати, чотири різні матеріальні світи: тепле бохо, кам'яний мінімалізм, скульптурна штукатурка й темний настрій.",
+        "en": "One room geometry, four different material worlds: warm boho, stone minimalism, sculptural plaster and a dark mood."
+      },
+      "deliverables": {
+        "ua": "До / після · 4 концепції стилю",
+        "en": "Before / after · 4 style concepts"
+      },
+      "blocks": [
+        {
+          "type": "ba",
+          "portrait": true,
+          "before": {
+            "image": "images/int_living_before.webp",
+            "alt": "Вітальня — до"
+          },
+          "after": {
+            "image": "images/int_living_boho.webp",
+            "alt": "Вітальня — після"
+          }
+        },
+        {
+          "type": "menu",
+          "grid4": true,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Концепція 1",
+                "en": "Concept 1"
+              },
+              "name": {
+                "ua": "Тепле бохо",
+                "en": "Warm Boho"
+              },
+              "media": "image",
+              "image": "images/int_living_boho.webp",
+              "alt": "Вітальня — бохо"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Концепція 2",
+                "en": "Concept 2"
+              },
+              "name": {
+                "ua": "Кам'яний мінімалізм",
+                "en": "Stone Minimalism"
+              },
+              "media": "image",
+              "image": "images/int_living_stone.webp",
+              "alt": "Вітальня — камінь"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Концепція 3",
+                "en": "Concept 3"
+              },
+              "name": {
+                "ua": "Скульптурна штукатурка",
+                "en": "Sculptural Plaster"
+              },
+              "media": "image",
+              "image": "images/int_living_plaster.webp",
+              "alt": "Вітальня — штукатурка"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Концепція 4",
+                "en": "Concept 4"
+              },
+              "name": {
+                "ua": "Темний настрій",
+                "en": "Dark Mood"
+              },
+              "media": "image",
+              "image": "images/int_living_dark.webp",
+              "alt": "Вітальня — темна"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-18",
+      "category": "interior",
+      "cover": "images/int_bath_light.webp",
+      "title": {
+        "ua": "Bathroom — Redesign",
+        "en": "Bathroom — Redesign"
+      },
+      "task": {
+        "ua": "Перетворити голу бетонну коробку, зняту одразу після будівництва, на завершену спа-ванну кімнату.",
+        "en": "Turn a bare concrete shell, photographed right after construction, into a finished spa-like bathroom."
+      },
+      "concept": {
+        "ua": "Фактурна кам'яна стіна, скульптурна окрема ванна й тепле приховане підсвічування — у світлій і темній палітрі.",
+        "en": "A textured stone wall, a sculptural freestanding tub and warm hidden lighting — in a light and a dark palette."
+      },
+      "deliverables": {
+        "ua": "До / після · 2 варіанти стилю",
+        "en": "Before / after · 2 style options"
+      },
+      "blocks": [
+        {
+          "type": "ba",
+          "portrait": true,
+          "before": {
+            "image": "images/int_bath_before.webp",
+            "alt": "Ванна — до"
+          },
+          "after": {
+            "image": "images/int_bath_light.webp",
+            "alt": "Ванна — після"
+          }
+        },
+        {
+          "type": "menu",
+          "grid4": true,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Варіант 1",
+                "en": "Option 1"
+              },
+              "name": {
+                "ua": "Світлий камінь",
+                "en": "Light Stone"
+              },
+              "media": "image",
+              "image": "images/int_bath_light.webp",
+              "alt": "Ванна — світлий камінь"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Варіант 2",
+                "en": "Option 2"
+              },
+              "name": {
+                "ua": "Темний камінь",
+                "en": "Dark Stone"
+              },
+              "media": "image",
+              "image": "images/int_bath_dark.webp",
+              "alt": "Ванна — темний камінь"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-19",
+      "category": "interior",
+      "cover": "images/int_kitchen2_light.webp",
+      "title": {
+        "ua": "Kitchen — Redesign",
+        "en": "Kitchen — Redesign"
+      },
+      "task": {
+        "ua": "Умеблювати й оздобити порожню кімнату під кухню, щоб клієнт побачив готовий результат ще до початку ремонту.",
+        "en": "Furnish and finish an empty room as a kitchen, so the client sees the finished result before renovation begins."
+      },
+      "concept": {
+        "ua": "Кам'яний острів із грубо тесаним краєм і фактурною скельною стіною — у світлому травертиновому й темному кам'яному варіанті.",
+        "en": "A stone island with a raw hewn edge and a textured rock wall — in a light travertine and a dark stone version."
+      },
+      "deliverables": {
+        "ua": "До / після · 2 варіанти стилю",
+        "en": "Before / after · 2 style options"
+      },
+      "blocks": [
+        {
+          "type": "ba",
+          "portrait": true,
+          "before": {
+            "image": "images/int_kitchen2_before.webp",
+            "alt": "Кухня — до"
+          },
+          "after": {
+            "image": "images/int_kitchen2_light.webp",
+            "alt": "Кухня — після"
+          }
+        },
+        {
+          "type": "menu",
+          "grid4": true,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Варіант 1",
+                "en": "Option 1"
+              },
+              "name": {
+                "ua": "Світлий травертин",
+                "en": "Light Travertine"
+              },
+              "media": "image",
+              "image": "images/int_kitchen2_light.webp",
+              "alt": "Кухня — травертин"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Варіант 2",
+                "en": "Option 2"
+              },
+              "name": {
+                "ua": "Темний камінь",
+                "en": "Dark Stone"
+              },
+              "media": "image",
+              "image": "images/int_kitchen2_dark.webp",
+              "alt": "Кухня — темний камінь"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-20",
+      "category": "interior",
+      "cover": "images/int_bedroom_calm.webp",
+      "title": {
+        "ua": "Bedroom — Style Concepts",
+        "en": "Bedroom — Style Concepts"
+      },
+      "task": {
+        "ua": "Показати дві протилежні за настроєм спальні як варіанти для однієї й тієї ж задачі.",
+        "en": "Present two bedrooms of opposite mood as alternative answers to the same brief."
+      },
+      "concept": {
+        "ua": "Один сценарій — два характери: брутальний лофт із бетоном і графікою проти м'якого мінімалізму в теплих піщаних тонах.",
+        "en": "One scenario, two characters: a brutalist loft with concrete and graphic art against soft minimalism in warm sand tones."
+      },
+      "deliverables": {
+        "ua": "2 зображення · концепції стилю",
+        "en": "2 images · style concepts"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": true,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Концепція 1",
+                "en": "Concept 1"
+              },
+              "name": {
+                "ua": "Бетонний лофт",
+                "en": "Concrete Loft"
+              },
+              "media": "image",
+              "image": "images/int_bedroom_loft.webp",
+              "alt": "Спальня — лофт"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Концепція 2",
+                "en": "Concept 2"
+              },
+              "name": {
+                "ua": "Теплий мінімалізм",
+                "en": "Warm Minimalism"
+              },
+              "media": "image",
+              "image": "images/int_bedroom_calm.webp",
+              "alt": "Спальня — мінімалізм"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-21",
+      "category": "fashion",
+      "cover": "images/luxcover.webp",
+      "title": {
+        "ua": "Lingerie — Paris to New York",
+        "en": "Lingerie — Paris to New York"
+      },
+      "task": {
+        "ua": "Побудувати флагманську кампанію для комплекту білизни з прозорої сітки — серію, здатну витримати запуск бренду на сайті, в лукбуці й соцмережах.",
+        "en": "Build one signature campaign for a sheer mesh lingerie set — a series strong enough to carry a brand launch across a website, lookbook and social media."
+      },
+      "concept": {
+        "ua": "Одна жінка, один комплект, чотири світи — паризькі балкони, дах у Нью-Йорку, чиста студія і стіл при свічках; колір і чорно-біле змонтовані як єдина візуальна мова.",
+        "en": "One woman, one set, four worlds — Parisian balconies, a New York rooftop, a clean studio and a candlelit table; colour and black-and-white cut together as a single visual language."
+      },
+      "deliverables": {
+        "ua": "10 зображень · флагманська кампанія",
+        "en": "10 images · signature campaign"
+      },
+      "blocks": [
+        {
+          "type": "menu",
+          "grid4": false,
+          "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Париж",
+                "en": "Paris"
+              },
+              "name": {
+                "ua": "Балкон · Ключовий кадр",
+                "en": "Balcony · Key Visual"
+              },
+              "media": "image",
+              "image": "images/luxcover.webp",
+              "alt": "Ключовий кадр серії"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Париж",
+                "en": "Paris"
+              },
+              "name": {
+                "ua": "Балкон · Вечір",
+                "en": "Balcony · Evening"
+              },
+              "media": "image",
+              "image": "images/lux1.webp",
+              "alt": "Балкон, келих"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Деталь",
+                "en": "Detail"
+              },
+              "name": {
+                "ua": "Крій і фактура",
+                "en": "Cut & Texture"
+              },
+              "media": "image",
+              "image": "images/lux2.webp",
+              "alt": "Деталь комплекту"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Париж",
+                "en": "Paris"
+              },
+              "name": {
+                "ua": "Балкон · Вид ззаду",
+                "en": "Balcony · Back View"
+              },
+              "media": "image",
+              "image": "images/lux3.webp",
+              "alt": "Балкон, вид ззаду"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Біла сорочка",
+                "en": "White Shirt"
+              },
+              "media": "image",
+              "image": "images/lux4.webp",
+              "alt": "Студія, сорочка"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Тепле світло",
+                "en": "Warm Light"
+              },
+              "media": "image",
+              "image": "images/lux5.webp",
+              "alt": "Студія, тепле світло"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
+                "ua": "Лінія спини",
+                "en": "Line of the Back"
+              },
+              "media": "image",
+              "image": "images/lux6.webp",
+              "alt": "Студія, спина"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Париж",
+                "en": "Paris"
+              },
+              "name": {
+                "ua": "Дах · Полудень",
+                "en": "Rooftop · Midday"
+              },
+              "media": "image",
+              "image": "images/lux7.webp",
+              "alt": "Дах, крісло"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Нью-Йорк",
+                "en": "New York"
+              },
+              "name": {
+                "ua": "Дах над містом",
+                "en": "Above the City"
+              },
+              "media": "image",
+              "image": "images/lux8.webp",
+              "alt": "Дах у Нью-Йорку"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Інтер’єр",
+                "en": "Interior"
+              },
+              "name": {
+                "ua": "Стіл при свічках",
+                "en": "Candlelit Table"
+              },
+              "media": "image",
+              "image": "images/lux9.webp",
+              "alt": "Стіл при свічках"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
