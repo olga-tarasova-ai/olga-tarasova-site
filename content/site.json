@@ -1,7 +1,7 @@
 {
   "hero": {
     "tag": {
-      "ua": "AI Visual Creator",
+      "ua": "AI Visual Creator TEST",
       "en": "AI Visual Creator"
     },
     "title_l1": {
@@ -30,9 +30,13 @@
     }
   },
   "about": {
-    "cap": {
-      "ua": "Про мене",
-      "en": "About me"
+    "p1": {
+      "ua": "Працюю на перетині комерційної фотографії, арт-дирекшну та генеративного AI.",
+      "en": "I work at the intersection of commercial photography, art direction and generative AI."
+    },
+    "p2": {
+      "ua": "Створюю не окремі красиві кадри, а цілісні серії з єдиним світлом, стилем і характером бренду.",
+      "en": "I don't create isolated pretty frames — I build complete series with consistent light, style and brand character."
     },
     "heading": {
       "line1": {
@@ -48,37 +52,33 @@
         "en": "story."
       }
     },
-    "p1": {
-      "ua": "Працюю на перетині комерційної фотографії, арт-дирекшну та генеративного AI.",
-      "en": "I work at the intersection of commercial photography, art direction and generative AI."
-    },
-    "p2": {
-      "ua": "Створюю не окремі красиві кадри, а цілісні серії з єдиним світлом, стилем і характером бренду.",
-      "en": "I don't create isolated pretty frames — I build complete series with consistent light, style and brand character."
-    },
-    "base_label": {
-      "ua": "Base",
-      "en": "Based in"
-    },
     "base_value": {
       "ua": "Німеччина",
       "en": "Germany"
-    },
-    "working_label": {
-      "ua": "AVAILABLE",
-      "en": "AVAILABLE"
     },
     "working_value": {
       "ua": "По всьому світу",
       "en": "Worldwide"
     },
-    "focus_label": {
-      "ua": "Focus",
-      "en": "Focus"
+    "base_label": {
+      "ua": "Base",
+      "en": "Based in"
+    },
+    "working_label": {
+      "ua": "AVAILABLE",
+      "en": "AVAILABLE"
     },
     "focus_value": {
       "ua": "Бренд-візуали",
       "en": "Brand Visuals"
+    },
+    "focus_label": {
+      "ua": "Focus",
+      "en": "Focus"
+    },
+    "cap": {
+      "ua": "Про мене",
+      "en": "About me"
     }
   },
   "portfolio": {
