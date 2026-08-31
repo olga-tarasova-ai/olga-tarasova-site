@@ -1,3 +1,77 @@
 {
-  "cases": []
+  "cases": [
+    {
+      "id": "case-22",
+      "category": "fashion",
+      "title": {
+        "ua": "Мереживна білизна — Studio Campaign",
+        "en": "Lace Lingerie — Studio Campaign"
+      },
+      "task": {
+        "ua": "Показати чорний мереживний комплект у чистому студійному кадрі — крій, тканину і силует без відволікаючого фону.",
+        "en": "Present the black lace lingerie set in a clean studio shot — cut, fabric and silhouette without a distracting background."
+      },
+      "concept": {
+        "ua": "Нейтральний теплий студійний фон, м'яке спрямоване світло і серія природних поз — від портрету до пластики тіла в русі.",
+        "en": "A neutral warm studio backdrop, soft directional light and a series of natural poses — from portrait to body movement."
+      },
+      "deliverables": {
+        "ua": "10 зображень · студійна кампанія",
+        "en": "10 images · studio campaign"
+      },
+      "cover": "images/uploads/lingerie-studio-01.jpg",
+      "gallery": [
+        {
+          "image": "images/uploads/lingerie-studio-01.jpg",
+          "caption_ua": "Мереживний комплект · Портрет",
+          "caption_en": "Lace Set · Portrait"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-02.jpg",
+          "caption_ua": "Лежачи · Динамічна поза",
+          "caption_en": "Lying · Dynamic Pose"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-03.jpg",
+          "caption_ua": "Мереживний комплект · Профіль",
+          "caption_en": "Lace Set · Profile"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-04.jpg",
+          "caption_ua": "Деталь спини",
+          "caption_en": "Back Detail"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-05.jpg",
+          "caption_ua": "Повний зріст",
+          "caption_en": "Full Length"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-06.jpg",
+          "caption_ua": "У русі · Біля стіни",
+          "caption_en": "In Motion · Against the Wall"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-07.jpg",
+          "caption_ua": "Присівши",
+          "caption_en": "Crouch"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-08.jpg",
+          "caption_ua": "Крупний план · Деталь мережива",
+          "caption_en": "Close-up · Lace Detail"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-09.jpg",
+          "caption_ua": "Біля стіни · Профіль",
+          "caption_en": "Against the Wall · Profile"
+        },
+        {
+          "image": "images/uploads/lingerie-studio-10.jpg",
+          "caption_ua": "Лежачи · Повний зріст",
+          "caption_en": "Lying · Full Length"
+        }
+      ]
+    }
+  ]
 }
