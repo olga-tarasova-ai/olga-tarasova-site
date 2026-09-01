@@ -2047,6 +2047,11 @@
               "media": "image",
               "image": "images/lux8.webp",
               "alt": "Дах у Нью-Йорку"
+            },
+            {
+              "media": "image",
+              "square": false,
+              "image": "images/uploads/hf_20260404_101406_bb64f711-eb44-449e-be56-4c5affbaec0a.png"
             }
           ]
         }
