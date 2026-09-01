@@ -72,6 +72,31 @@
           "caption_en": "Lying · Full Length"
         }
       ]
+    },
+    {
+      "id": "case-23",
+      "category": "fashion",
+      "title": {
+        "ua": "Lingerie — Noir Campaign",
+        "en": "Lingerie — Noir Campaign"
+      },
+      "task": {
+        "ua": "Створити виразну рекламну кампанію для чорної білизни, поєднавши чисту студійну естетику з більш атмосферними lifestyle-кадрами.",
+        "en": "Create a distinctive campaign for black lingerie, combining clean studio aesthetics with more atmospheric lifestyle imagery."
+      },
+      "concept": {
+        "ua": "Побудувати кампанію на контрасті світла й настрою: від графічних студійних портретів на темному фоні до теплого вечірнього світла та елегантної паризької локації.",
+        "en": "Build the campaign around contrasts in light and mood: from graphic studio portraits against a dark backdrop to warm evening light and an elegant Parisian setting."
+      },
+      "deliverables": {
+        "ua": "fashion campaign",
+        "en": "fashion campaign"
+      },
+      "gallery": [
+        {
+          "image": "images/uploads/hf_20260404_115549_6af8a9e1-0bc4-43ef-9727-8f8fb5048869.png"
+        }
+      ]
     }
   ]
 }
