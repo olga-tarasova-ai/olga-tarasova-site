@@ -1995,20 +1995,6 @@
             {
               "square": false,
               "course": {
-                "ua": "Деталь",
-                "en": "Detail"
-              },
-              "name": {
-                "ua": "Крій і фактура",
-                "en": "Cut & Texture"
-              },
-              "media": "image",
-              "image": "images/lux2.webp",
-              "alt": "Деталь комплекту"
-            },
-            {
-              "square": false,
-              "course": {
                 "ua": "Студія",
                 "en": "Studio"
               },
