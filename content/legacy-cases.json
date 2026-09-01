@@ -1962,16 +1962,16 @@
         "en": "Lingerie — Paris to New York"
       },
       "task": {
-        "ua": "Побудувати флагманську кампанію для комплекту білизни з прозорої сітки — серію, здатну витримати запуск бренду на сайті, в лукбуці й соцмережах.",
-        "en": "Build one signature campaign for a sheer mesh lingerie set — a series strong enough to carry a brand launch across a website, lookbook and social media."
+        "ua": "Створити цілісну editorial-кампанію для комплекту білизни — виразну серію для портфоліо, лукбуку та соціальних мереж.",
+        "en": "Create a cohesive editorial campaign for a lingerie set — a distinctive series for portfolio, lookbook and social media."
       },
       "concept": {
-        "ua": "Одна жінка, один комплект, чотири світи — паризькі балкони, дах у Нью-Йорку, чиста студія і стіл при свічках; колір і чорно-біле змонтовані як єдина візуальна мова.",
-        "en": "One woman, one set, four worlds — Parisian balconies, a New York rooftop, a clean studio and a candlelit table; colour and black-and-white cut together as a single visual language."
+        "ua": "Одна жінка, один комплект, два міста — Париж і Нью-Йорк. Чорно-біла серія поєднує балкони, міську архітектуру та студійні кадри в єдину editorial-історію.",
+        "en": "One woman, one set, two cities — Paris and New York. A black-and-white series combining balconies, urban architecture and studio imagery into one cohesive editorial story."
       },
       "deliverables": {
-        "ua": "10 зображень · флагманська кампанія",
-        "en": "10 images · signature campaign"
+        "ua": "флагманська кампанія",
+        "en": " signature campaign"
       },
       "blocks": [
         {
@@ -1995,20 +1995,6 @@
             {
               "square": false,
               "course": {
-                "ua": "Париж",
-                "en": "Paris"
-              },
-              "name": {
-                "ua": "Балкон · Вечір",
-                "en": "Balcony · Evening"
-              },
-              "media": "image",
-              "image": "images/lux1.webp",
-              "alt": "Балкон, келих"
-            },
-            {
-              "square": false,
-              "course": {
                 "ua": "Деталь",
                 "en": "Detail"
               },
@@ -2023,20 +2009,6 @@
             {
               "square": false,
               "course": {
-                "ua": "Париж",
-                "en": "Paris"
-              },
-              "name": {
-                "ua": "Балкон · Вид ззаду",
-                "en": "Balcony · Back View"
-              },
-              "media": "image",
-              "image": "images/lux3.webp",
-              "alt": "Балкон, вид ззаду"
-            },
-            {
-              "square": false,
-              "course": {
                 "ua": "Студія",
                 "en": "Studio"
               },
@@ -2047,34 +2019,6 @@
               "media": "image",
               "image": "images/lux4.webp",
               "alt": "Студія, сорочка"
-            },
-            {
-              "square": false,
-              "course": {
-                "ua": "Студія",
-                "en": "Studio"
-              },
-              "name": {
-                "ua": "Тепле світло",
-                "en": "Warm Light"
-              },
-              "media": "image",
-              "image": "images/lux5.webp",
-              "alt": "Студія, тепле світло"
-            },
-            {
-              "square": false,
-              "course": {
-                "ua": "Студія",
-                "en": "Studio"
-              },
-              "name": {
-                "ua": "Лінія спини",
-                "en": "Line of the Back"
-              },
-              "media": "image",
-              "image": "images/lux6.webp",
-              "alt": "Студія, спина"
             },
             {
               "square": false,
@@ -2103,20 +2047,6 @@
               "media": "image",
               "image": "images/lux8.webp",
               "alt": "Дах у Нью-Йорку"
-            },
-            {
-              "square": false,
-              "course": {
-                "ua": "Інтер’єр",
-                "en": "Interior"
-              },
-              "name": {
-                "ua": "Стіл при свічках",
-                "en": "Candlelit Table"
-              },
-              "media": "image",
-              "image": "images/lux9.webp",
-              "alt": "Стіл при свічках"
             }
           ]
         }
