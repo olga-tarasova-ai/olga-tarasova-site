@@ -284,50 +284,36 @@ collections:
                 name: "cards"
                 widget: "object"
                 fields:
-                  - label: "01 · Fashion & Lingerie"
+                  - label: "01 · AI Campaigns"
                     name: "c1"
                     widget: "object"
                     fields:
                       - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
                       - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
                       - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
-                  - label: "02 · Beauty"
+                  - label: "02 · Product Visuals"
                     name: "c2"
                     widget: "object"
                     fields:
                       - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
                       - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
                       - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
-                  - label: "03 · Product & E-commerce"
+                  - label: "03 · Social Content"
                     name: "c3"
                     widget: "object"
                     fields:
                       - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
                       - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
                       - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
-                  - label: "04 · Jewelry & Accessories"
+                  - label: "04 · AI Motion"
                     name: "c4"
                     widget: "object"
                     fields:
                       - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
                       - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
                       - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
-                  - label: "05 · Food"
+                  - label: "05 · Creative Direction"
                     name: "c5"
-                    widget: "object"
-                    fields:
-                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
-                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
-                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
-                  - label: "06 · Interior"
-                    name: "c6"
-                    widget: "object"
-                    fields:
-                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
-                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
-                      - { label: "Зображення картки (розмір і затемнення на сайті не змінюються)", name: "image", widget: "image" }
-                  - label: "07 · AI Content & Motion"
-                    name: "c7"
                     widget: "object"
                     fields:
                       - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
