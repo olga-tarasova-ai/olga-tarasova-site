@@ -104,6 +104,186 @@
         }
       ],
       "cover": "images/uploads/12.png"
+    },
+    {
+      "id": "case-24",
+      "category": "motion",
+      "title": {
+        "ua": "Мереживна білизна — AI Motion Campaign",
+        "en": "Lace Lingerie — AI Motion Campaign"
+      },
+      "task": {
+        "ua": "Показати чорний мереживний комплект у форматі динамічного відео для соцмереж — плавний рух моделі, який передає текстуру та крій білизни краще за статичне фото.",
+        "en": "Present the black lace lingerie set as a dynamic social-media video — smooth model movement that reads the texture and cut of the lingerie better than a static photo."
+      },
+      "concept": {
+        "ua": "Нейтральний студійний фон і м'яке світло, як у фотокампанії, але в русі: прохід камерою, зміна ракурсу, плавні пози — відео, згенероване і змонтоване за допомогою AI.",
+        "en": "The same neutral studio backdrop and soft light as the photo campaign, but in motion: a camera pass, changing angle, fluid poses — video generated and edited with AI."
+      },
+      "deliverables": {
+        "ua": "1 відео · AI motion-контент для соцмереж",
+        "en": "1 video · AI motion content for social media"
+      },
+      "cover": "images/uploads/lingerie-motion-poster.jpg",
+      "gallery": [
+        {
+          "media": "video",
+          "video": "images/uploads/lingerie-motion.mp4",
+          "poster": "images/uploads/lingerie-motion-poster.jpg",
+          "caption_ua": "Мереживний комплект · AI-відео",
+          "caption_en": "Lace Set · AI Video"
+        }
+      ]
+    },
+    {
+      "id": "case-25",
+      "category": "motion",
+      "title": {
+        "ua": "KENZO L'EAU PURE — Product Motion",
+        "en": "KENZO L'EAU PURE — Product Motion"
+      },
+      "task": {
+        "ua": "Створити рекламний відеоролик флакона парфумів KENZO L'EAU PURE, що передає відчуття свіжості та чистоти продукту.",
+        "en": "Create a product video for the KENZO L'EAU PURE fragrance bottle that conveys the product's sense of freshness and purity."
+      },
+      "concept": {
+        "ua": "Макрозйомка флакона на воді у холодній блакитній гамі: краплі, кола на воді та відображення підкреслюють ключове повідомлення бренду — «чиста вода».",
+        "en": "Macro shots of the bottle on water in a cool blue palette: droplets, ripples and reflections underline the brand's key message — \"pure water\"."
+      },
+      "deliverables": {
+        "ua": "1 відео · AI product motion",
+        "en": "1 video · AI product motion"
+      },
+      "cover": "images/uploads/perfume-motion-poster.jpg",
+      "gallery": [
+        {
+          "media": "video",
+          "video": "images/uploads/perfume-motion.mp4",
+          "poster": "images/uploads/perfume-motion-poster.jpg",
+          "caption_ua": "KENZO L'EAU PURE · AI-відео",
+          "caption_en": "KENZO L'EAU PURE · AI Video"
+        }
+      ]
+    },
+    {
+      "id": "case-26",
+      "category": "motion",
+      "title": {
+        "ua": "MIYA MAITE Oil — Beauty Product Motion",
+        "en": "MIYA MAITE Oil — Beauty Product Motion"
+      },
+      "task": {
+        "ua": "Створити рекламне відео олії для волосся MAITE Oil бренду MIYA, яке передає натуральність продукту та відчуття доглянутого, живого волосся.",
+        "en": "Create a promo video for MIYA's MAITE hair oil that conveys the product's natural origin and the feeling of healthy, nourished hair."
+      },
+      "concept": {
+        "ua": "Історія від природи до флакона: краплі олії серед листя й водоспаду, макрозйомка текстури волосся з олією, що стікає, і фінальні кадри флакона на світлому фоні з м'яким денним світлом.",
+        "en": "A story from nature to the bottle: oil droplets among leaves and a waterfall, macro shots of hair strands with oil flowing over them, and final bottle shots against a bright backdrop in soft daylight."
+      },
+      "deliverables": {
+        "ua": "1 відео · AI product motion для соцмереж",
+        "en": "1 video · AI product motion for social media"
+      },
+      "cover": "images/uploads/oil-motion-poster.jpg",
+      "gallery": [
+        {
+          "media": "video",
+          "video": "images/uploads/oil-motion.mp4",
+          "poster": "images/uploads/oil-motion-poster.jpg",
+          "caption_ua": "MIYA MAITE Oil · AI-відео",
+          "caption_en": "MIYA MAITE Oil · AI Video"
+        }
+      ]
+    },
+    {
+      "id": "case-27",
+      "category": "motion",
+      "title": {
+        "ua": "Giorgio Armani Acqua di Gioia — Product Motion",
+        "en": "Giorgio Armani Acqua di Gioia — Product Motion"
+      },
+      "task": {
+        "ua": "Створити атмосферне рекламне відео парфумів Acqua di Gioia на тему моря, яке підкреслює свіжий, водний характер аромату.",
+        "en": "Create an atmospheric ocean-themed promo video for the Acqua di Gioia fragrance that highlights the scent's fresh, aquatic character."
+      },
+      "concept": {
+        "ua": "Флакон на поверхні моря в час золотої години: бульбашки під водою, спокійна гладь і відбиття, а також портрет моделі, що виринає з води, — все витримано в теплій сонячній гамі.",
+        "en": "The bottle resting on the sea surface at golden hour: underwater bubbles, calm water and reflections, together with a portrait of a model emerging from the water — all in warm, sunlit tones."
+      },
+      "deliverables": {
+        "ua": "1 відео · AI product motion",
+        "en": "1 video · AI product motion"
+      },
+      "cover": "images/uploads/armani-water-motion-poster.jpg",
+      "gallery": [
+        {
+          "media": "video",
+          "video": "images/uploads/armani-water-motion.mp4",
+          "poster": "images/uploads/armani-water-motion-poster.jpg",
+          "caption_ua": "Acqua di Gioia · AI-відео",
+          "caption_en": "Acqua di Gioia · AI Video"
+        }
+      ]
+    },
+    {
+      "id": "case-28",
+      "category": "motion",
+      "title": {
+        "ua": "Кіт і господиня — 3D-анімована історія",
+        "en": "Cat & Owner — 3D Animated Story"
+      },
+      "task": {
+        "ua": "Створити теплу 3D-анімовану міні-історію про кота породи шотландська висловуха і його господиню — контент, що викликає емоційний відгук і легко розходиться в соцмережах.",
+        "en": "Create a warm 3D-animated mini-story about a Scottish Fold cat and its owner — content built for emotional response and easy sharing on social media."
+      },
+      "concept": {
+        "ua": "Нічна історія в дитячо-мультиплікаційному стилі: кіт будить господиню кілька разів за ніч, кадри з лотком і будильником створюють гумористичний ритм, а фінальний зворушливий кадр разом у ліжку завершує сюжет.",
+        "en": "A night-time story in a Pixar-style animation look: the cat wakes its owner up several times a night, shots of the litter box and alarm clock build a humorous rhythm, and a tender final shot together in bed closes the arc."
+      },
+      "deliverables": {
+        "ua": "1 відео · 3D-анімована історія для соцмереж",
+        "en": "1 video · 3D animated story for social media"
+      },
+      "cover": "images/uploads/cat-story-motion-poster.jpg",
+      "gallery": [
+        {
+          "media": "video",
+          "video": "images/uploads/cat-story-motion.mp4",
+          "poster": "images/uploads/cat-story-motion-poster.jpg",
+          "caption_ua": "Кіт і господиня · 3D-анімація",
+          "caption_en": "Cat & Owner · 3D Animation"
+        }
+      ]
+    },
+    {
+      "id": "case-29",
+      "category": "motion",
+      "title": {
+        "ua": "TommyLife — 3D-анімована історія персонажа",
+        "en": "TommyLife — 3D Animated Mascot Story"
+      },
+      "task": {
+        "ua": "Оживити ведмедика-талісман бренду дитячої ігрової кімнати TommyLife у рекламному ролику, що передає ідею пригод і залишає теплий, дитячий настрій.",
+        "en": "Bring the TommyLife children's playroom brand mascot to life in a promo video that carries the idea of adventure and a warm, childlike mood."
+      },
+      "concept": {
+        "ua": "Подорож ведмедика — таксі, літак, Париж, Нью-Йорк, узбережжя — як метафора мандрів уявою, що завершується поверненням додому: «найкращі пригоди тут», у грі з дітьми.",
+        "en": "The bear's journey — taxi, plane, Paris, New York, a beach — as a metaphor for a journey of imagination, resolving in a return home: \"the best adventures are here,\" playing with children."
+      },
+      "deliverables": {
+        "ua": "1 відео · 3D-анімований бренд-ролик",
+        "en": "1 video · 3D animated brand video"
+      },
+      "cover": "images/uploads/tommylife-bear-motion-poster.jpg",
+      "gallery": [
+        {
+          "media": "video",
+          "video": "images/uploads/tommylife-bear-motion.mp4",
+          "poster": "images/uploads/tommylife-bear-motion-poster.jpg",
+          "caption_ua": "TommyLife · 3D-анімація",
+          "caption_en": "TommyLife · 3D Animation"
+        }
+      ]
     }
   ]
 }
