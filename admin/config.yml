@@ -524,6 +524,16 @@ collections:
                 name: "gallery"
                 widget: "list"
                 fields:
-                  - { label: "Фото", name: "image", widget: "image" }
+                  - label: "Тип кадру"
+                    name: "media"
+                    widget: "select"
+                    options:
+                      - { label: "Фото", value: "image" }
+                      - { label: "Відео", value: "video" }
+                    default: "image"
+                    required: false
+                  - { label: "Фото", name: "image", widget: "image", required: false, hint: "Заповнюйте, якщо тип кадру — Фото" }
+                  - { label: "Відео-файл (mp4)", name: "video", widget: "file", required: false, hint: "Заповнюйте, якщо тип кадру — Відео" }
+                  - { label: "Постер для відео (кадр-заглушка)", name: "poster", widget: "image", required: false, hint: "Заповнюйте, якщо тип кадру — Відео" }
                   - { label: "Підпис — укр", name: "caption_ua", widget: "string", required: false }
                   - { label: "Підпис — англ", name: "caption_en", widget: "string", required: false }
