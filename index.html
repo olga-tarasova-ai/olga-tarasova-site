@@ -1087,10 +1087,13 @@
 
       const gallery = Array.isArray(item.gallery) ? item.gallery : [];
       const dishes = gallery.map(g => {
-        if (!g || !g.image) return '';
+        if (!g || !(g.image || (g.media === 'video' && g.video))) return '';
         const cUa = g.caption_ua || '', cEn = g.caption_en || cUa;
+        const media = g.media === 'video'
+          ? `<video autoplay loop muted playsinline poster="${escAttr(g.poster)}" src="${escAttr(g.video)}"></video>`
+          : `<img src="${escAttr(g.image)}" alt="" loading="lazy" decoding="async">`;
         return `<div class="dish square reveal in">
-            <div class="frame"><img src="${escAttr(g.image)}" alt="" loading="lazy" decoding="async"></div>
+            <div class="frame">${media}</div>
             ${cUa ? `<div class="name" data-ua="${escAttr(cUa)}" data-en="${escAttr(cEn)}">${escHtml(cUa)}</div>` : ''}
           </div>`;
       }).join('');
