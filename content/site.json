@@ -1,4 +1,4 @@
-{
+S{
   "hero": {
     "tag": {
       "ua": "AI Visual Creator ",
@@ -173,12 +173,12 @@
       "en": "Services"
     },
     "sub": {
-      "ua": "Від одного кадру до повної кампанії",
-      "en": "From a single frame to a full campaign"
+      "ua": "Візуальні рішення для брендів — від концепції до готового контенту.",
+      "en": "Visual solutions for brands — from concept to final content."
     },
     "intro": {
-      "ua": "Створюю візуальний контент під конкретну задачу бренду — запуск продукту, рекламну кампанію, сайт, соцмережі або маркетплейс.",
-      "en": "I create visual content for your brand's specific task — a product launch, an ad campaign, a website, social media or a marketplace listing."
+      "ua": "AI-візуали, рекламні кампанії та motion-контент для запусків, соцмереж, сайтів і digital-реклами.",
+      "en": "AI visuals, campaigns and motion content for launches, social media, websites and digital advertising."
     },
     "note": {
       "ua": "Створено за допомогою генеративного AI та професійного пост-продакшну.",
@@ -187,80 +187,58 @@
     "cards": {
       "c1": {
         "title": {
-          "ua": "Fashion Campaigns",
-          "en": "Fashion Campaigns"
+          "ua": "AI Campaigns",
+          "en": "AI Campaigns"
         },
         "desc": {
-          "ua": "AI-зйомки одягу, білизни та купальників — від каталогу до повноцінних editorial-кампаній.",
-          "en": "AI shoots of clothing, lingerie and swimwear — from catalogue to full editorial campaigns."
+          "ua": "Повна візуальна кампанія: концепція, артдирекшн і серія ключових кадрів для запуску продукту або бренду.",
+          "en": "Full visual campaign: concept, art direction and a series of key visuals for a product or brand launch."
         },
         "image": "images/lux8.webp"
       },
       "c2": {
         "title": {
-          "ua": "Beauty Campaigns",
-          "en": "Beauty Campaigns"
+          "ua": "Product Visuals",
+          "en": "Product Visuals"
         },
         "desc": {
-          "ua": "Макро, текстури та атмосферні кадри для косметики, skincare й парфумерії.",
-          "en": "Macro, textures and atmospheric shots for cosmetics, skincare and perfumery."
-        },
-        "image": "images/perfloc3.webp"
-      },
-      "c3": {
-        "title": {
-          "ua": "Product & E‑commerce",
-          "en": "Product & E‑commerce"
-        },
-        "desc": {
-          "ua": "Предметні кадри, lifestyle-зйомки та лістинги для маркетплейсів і сайту.",
-          "en": "Product shots, lifestyle imagery and listings for marketplaces and your website."
+          "ua": "Предметні та lifestyle-візуали для косметики, парфумерії, аксесуарів, упаковки та e-commerce.",
+          "en": "Product and lifestyle visuals for beauty, fragrance, accessories, packaging and e-commerce."
         },
         "image": "images/nespresso3.webp"
       },
-      "c4": {
+      "c3": {
         "title": {
-          "ua": "Jewelry & Accessories",
-          "en": "Jewelry & Accessories"
+          "ua": "Social Content",
+          "en": "Social Content"
         },
         "desc": {
-          "ua": "Прикраси й аксесуари — предметно та на моделях, з увагою до світла й деталі.",
-          "en": "Jewelry and accessories — as product and on-model, with attention to light and detail."
+          "ua": "Серії зображень для Instagram, Stories, digital-реклами, сезонних запусків і регулярного контенту.",
+          "en": "Visual content series for Instagram, Stories, digital advertising, seasonal launches and ongoing brand communication."
         },
-        "image": "images/necklace11.webp"
+        "image": "images/perfloc3.webp"
+      },
+      "c4": {
+        "title": {
+          "ua": "AI Motion",
+          "en": "AI Motion"
+        },
+        "desc": {
+          "ua": "Короткі рекламні ролики, анімація зображень та motion-контент для fashion, beauty і product-проєктів.",
+          "en": "Short advertising films, image animation and motion content for fashion, beauty and product projects."
+        },
+        "image": "images/motionposter2.webp"
       },
       "c5": {
         "title": {
-          "ua": "Food",
-          "en": "Food"
+          "ua": "Creative Direction",
+          "en": "Creative Direction"
         },
         "desc": {
-          "ua": "Реалістичні food-кадри для меню, доставки, соцмереж і рекламних кампаній.",
-          "en": "Realistic food imagery for menus, delivery, social media and ad campaigns."
+          "ua": "Візуальна концепція, moodboard, стилістика, світло, композиція та єдина артдирекція проєкту.",
+          "en": "Visual concept, moodboard, styling, lighting, composition and cohesive creative direction for the project."
         },
-        "image": "images/dish4.webp"
-      },
-      "c6": {
-        "title": {
-          "ua": "Interior",
-          "en": "Interior"
-        },
-        "desc": {
-          "ua": "Візуалізація та редизайн інтер’єрів зі збереженням простору й архітектури.",
-          "en": "Interior visualization and redesign preserving the space and architecture."
-        },
-        "image": "images/int_living_dark.webp"
-      },
-      "c7": {
-        "title": {
-          "ua": "AI Content & Motion",
-          "en": "AI Content & Motion"
-        },
-        "desc": {
-          "ua": "Відео для товарів, image-to-video та короткі рекламні ролики для соцмереж і кампаній.",
-          "en": "Product video, image-to-video and short ad clips for social media and campaigns."
-        },
-        "image": "images/motionposter2.webp"
+        "image": "images/necklace11.webp"
       }
     }
   },
