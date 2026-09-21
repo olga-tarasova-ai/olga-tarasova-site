@@ -185,7 +185,7 @@
 
   /* ===== WORK / MOSAIC CARDS ===== */
   .work{background:#100f0f;}
-  .m-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:300px 258px 380px 336px;gap:14px;}
+  .m-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:300px 258px 380px;gap:14px;}
   .m-card{
     position:relative;overflow:hidden;display:flex;flex-direction:column;
     padding:34px 32px;min-height:230px;
@@ -198,9 +198,7 @@
   .m-card.c2{grid-column:3/7;grid-row:1;}
   .m-card.c3{grid-column:3/5;grid-row:2;}
   .m-card.c4{grid-column:5/7;grid-row:2;}
-  .m-card.c5{grid-column:1/4;grid-row:3;}
-  .m-card.c6{grid-column:4/7;grid-row:3;}
-  .m-card.c7{grid-column:1/7;grid-row:4;}
+  .m-card.c5{grid-column:1/7;grid-row:3;}
   .m-num{font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:var(--burgundy-light);line-height:1;}
   .m-card .rule{margin:14px 0 20px;width:34px;}
   .m-title{
@@ -220,14 +218,13 @@
     background:linear-gradient(180deg,rgba(18,15,15,.34) 0%,rgba(15,13,13,.8) 58%,rgba(12,10,10,.94) 100%);
   }
   .m-card.has-img .m-desc{color:#d3ccc3;max-width:430px;}
-  .m-card.c3 .m-img img{object-position:center 42%;}
-  .m-card.c4 .m-img img{object-position:center 32%;filter:brightness(.86) contrast(1.08) saturate(.9);}
-  .m-card.c5 .m-img img{object-position:48% 38%;}
-  .m-card.c6 .m-img img{object-position:center 46%;}
+  .m-card.c2 .m-img img{object-position:center 42%;}
+  .m-card.c5 .m-img img{object-position:center 32%;filter:brightness(.86) contrast(1.08) saturate(.9);}
   .m-foot .soon{
     font-family:'Manrope',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
     border:1px solid rgba(241,236,228,.28);padding:7px 14px;color:#bdb6ad;
   }
+  .work-cta{margin-top:52px;text-align:center;}
 
 
   /* ===== PORTFOLIO / CASES ===== */
@@ -436,8 +433,8 @@
     .about-photo-col{aspect-ratio:3/4;}
     .about-text-col{padding:70px 7vw;}
     .m-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:none;gap:12px;}
-    .m-card.c1,.m-card.c2,.m-card.c3,.m-card.c4,.m-card.c5,.m-card.c6,.m-card.c7{grid-column:auto;grid-row:auto;}
-    .m-card.c7{grid-column:1/3;}
+    .m-card.c1,.m-card.c2,.m-card.c3,.m-card.c4,.m-card.c5{grid-column:auto;grid-row:auto;}
+    .m-card.c5{grid-column:1/3;}
     .m-card{min-height:300px;}
     .menu-grid{grid-template-columns:repeat(3,1fr);}
     .menu-grid.grid-4{grid-template-columns:repeat(3,1fr);}
@@ -452,6 +449,7 @@
     .wrap{padding:0 7vw;}
     header{padding:22px 7vw;}
     .m-grid{grid-template-columns:1fr;grid-template-rows:none;}
+    .m-card.c1,.m-card.c2,.m-card.c3,.m-card.c4,.m-card.c5{grid-column:1;}
     .menu-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
     .menu-grid.grid-4{grid-template-columns:repeat(2,1fr);gap:10px;}
     .ba{aspect-ratio:4/3;}
@@ -668,75 +666,55 @@
 <div>
 <h2 data-en="Services" data-key="services.heading" data-ua="Послуги">Послуги</h2>
 <span class="rule"></span>
-<div class="sub" data-en="From a single frame to a full campaign" data-key="services.sub" data-ua="Від одного кадру до повної кампанії">Від одного кадру до повної кампанії</div>
+<div class="sub" data-en="Visual solutions for brands — from concept to final content." data-key="services.sub" data-ua="Візуальні рішення для брендів — від концепції до готового контенту.">Візуальні рішення для брендів — від концепції до готового контенту.</div>
 </div>
-<p class="sec-intro" data-en="I create visual content for your brand's specific task — a product launch, an ad campaign, a website, social media or a marketplace listing." data-key="services.intro" data-ua="Створюю візуальний контент під конкретну задачу бренду — запуск продукту, рекламну кампанію, сайт, соцмережі або маркетплейс.">Створюю візуальний контент під конкретну задачу бренду — запуск продукту, рекламну кампанію, сайт, соцмережі або маркетплейс.</p>
+<p class="sec-intro" data-en="AI visuals, campaigns and motion content for launches, social media, websites and digital advertising." data-key="services.intro" data-ua="AI-візуали, рекламні кампанії та motion-контент для запусків, соцмереж, сайтів і digital-реклами.">AI-візуали, рекламні кампанії та motion-контент для запусків, соцмереж, сайтів і digital-реклами.</p>
 <p class="sec-note" data-en="Created with generative AI and professional post-production." data-key="services.note" data-ua="Створено за допомогою генеративного AI та професійного пост-продакшну.">Створено за допомогою генеративного AI та професійного пост-продакшну.</p>
 </div>
 <div class="m-grid">
 <article class="m-card c1 has-img reveal">
-<div class="m-img"><img alt="Fashion Campaigns" data-img-key="services.cards.c1.image" src="images/lux8.webp" loading="lazy" decoding="async"/></div>
+<div class="m-img"><img alt="AI Campaigns" data-img-key="services.cards.c1.image" src="images/lux8.webp" loading="lazy" decoding="async"/></div>
 <div class="m-body">
 <div class="m-num">01</div><span class="rule"></span>
-<h3 class="m-title" data-en="Fashion Campaigns" data-key="services.cards.c1.title" data-ua="Fashion Campaigns">Fashion Campaigns</h3>
-<p class="m-desc" data-en="AI shoots of clothing, lingerie and swimwear — from catalogue to full editorial campaigns." data-key="services.cards.c1.desc" data-ua="AI-зйомки одягу, білизни та купальників — від каталогу до повноцінних editorial-кампаній.">AI-зйомки одягу, білизни та купальників — від каталогу до повноцінних editorial-кампаній.</p>
-<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+<h3 class="m-title" data-en="AI Campaigns" data-key="services.cards.c1.title" data-ua="AI Campaigns">AI Campaigns</h3>
+<p class="m-desc" data-en="Full visual campaign: concept, art direction and a series of key visuals for a product or brand launch." data-key="services.cards.c1.desc" data-ua="Повна візуальна кампанія: концепція, артдирекшн і серія ключових кадрів для запуску продукту або бренду.">Повна візуальна кампанія: концепція, артдирекшн і серія ключових кадрів для запуску продукту або бренду.</p>
 </div>
 </article>
 <article class="m-card c2 has-img reveal">
-<div class="m-img"><img alt="Beauty Campaigns" data-img-key="services.cards.c2.image" src="images/perfloc3.webp" loading="lazy" decoding="async"/></div>
+<div class="m-img"><img alt="Product Visuals" data-img-key="services.cards.c2.image" src="images/nespresso3.webp" loading="lazy" decoding="async"/></div>
 <div class="m-body">
 <div class="m-num">02</div><span class="rule"></span>
-<h3 class="m-title" data-en="Beauty Campaigns" data-key="services.cards.c2.title" data-ua="Beauty Campaigns">Beauty Campaigns</h3>
-<p class="m-desc" data-en="Macro, textures and atmospheric shots for cosmetics, skincare and perfumery." data-key="services.cards.c2.desc" data-ua="Макро, текстури та атмосферні кадри для косметики, skincare й парфумерії.">Макро, текстури та атмосферні кадри для косметики, skincare й парфумерії.</p>
-<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+<h3 class="m-title" data-en="Product Visuals" data-key="services.cards.c2.title" data-ua="Product Visuals">Product Visuals</h3>
+<p class="m-desc" data-en="Product and lifestyle visuals for beauty, fragrance, accessories, packaging and e-commerce." data-key="services.cards.c2.desc" data-ua="Предметні та lifestyle-візуали для косметики, парфумерії, аксесуарів, упаковки та e-commerce.">Предметні та lifestyle-візуали для косметики, парфумерії, аксесуарів, упаковки та e-commerce.</p>
 </div>
 </article>
 <article class="m-card c3 has-img reveal">
-<div class="m-img"><img alt="Product &amp; E‑commerce" data-img-key="services.cards.c3.image" src="images/nespresso3.webp" loading="lazy" decoding="async"/></div>
+<div class="m-img"><img alt="Social Content" data-img-key="services.cards.c3.image" src="images/perfloc3.webp" loading="lazy" decoding="async"/></div>
 <div class="m-body">
 <div class="m-num">03</div><span class="rule"></span>
-<h3 class="m-title" data-en="Product &amp; E‑commerce" data-key="services.cards.c3.title" data-ua="Product &amp; E‑commerce">Product &amp; E‑commerce</h3>
-<p class="m-desc" data-en="Product shots, lifestyle imagery and listings for marketplaces and your website." data-key="services.cards.c3.desc" data-ua="Предметні кадри, lifestyle-зйомки та лістинги для маркетплейсів і сайту.">Предметні кадри, lifestyle-зйомки та лістинги для маркетплейсів і сайту.</p>
-<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+<h3 class="m-title" data-en="Social Content" data-key="services.cards.c3.title" data-ua="Social Content">Social Content</h3>
+<p class="m-desc" data-en="Visual content series for Instagram, Stories, digital advertising, seasonal launches and ongoing brand communication." data-key="services.cards.c3.desc" data-ua="Серії зображень для Instagram, Stories, digital-реклами, сезонних запусків і регулярного контенту.">Серії зображень для Instagram, Stories, digital-реклами, сезонних запусків і регулярного контенту.</p>
 </div>
 </article>
 <article class="m-card c4 has-img reveal">
-<div class="m-img"><img alt="Jewelry &amp; Accessories" data-img-key="services.cards.c4.image" src="images/necklace11.webp" loading="lazy" decoding="async"/></div>
+<div class="m-img"><img alt="AI Motion" data-img-key="services.cards.c4.image" src="images/motionposter2.webp" loading="lazy" decoding="async"/></div>
 <div class="m-body">
 <div class="m-num">04</div><span class="rule"></span>
-<h3 class="m-title" data-en="Jewelry &amp; Accessories" data-key="services.cards.c4.title" data-ua="Jewelry &amp; Accessories">Jewelry &amp; Accessories</h3>
-<p class="m-desc" data-en="Jewelry and accessories — as product and on-model, with attention to light and detail." data-key="services.cards.c4.desc" data-ua="Прикраси й аксесуари — предметно та на моделях, з увагою до світла й деталі.">Прикраси й аксесуари — предметно та на моделях, з увагою до світла й деталі.</p>
-<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+<h3 class="m-title" data-en="AI Motion" data-key="services.cards.c4.title" data-ua="AI Motion">AI Motion</h3>
+<p class="m-desc" data-en="Short advertising films, image animation and motion content for fashion, beauty and product projects." data-key="services.cards.c4.desc" data-ua="Короткі рекламні ролики, анімація зображень та motion-контент для fashion, beauty і product-проєктів.">Короткі рекламні ролики, анімація зображень та motion-контент для fashion, beauty і product-проєктів.</p>
 </div>
 </article>
 <article class="m-card c5 has-img reveal">
-<div class="m-img"><img alt="Food" data-img-key="services.cards.c5.image" src="images/dish4.webp" loading="lazy" decoding="async"/></div>
+<div class="m-img"><img alt="Creative Direction" data-img-key="services.cards.c5.image" src="images/necklace11.webp" loading="lazy" decoding="async"/></div>
 <div class="m-body">
 <div class="m-num">05</div><span class="rule"></span>
-<h3 class="m-title" data-en="Food" data-key="services.cards.c5.title" data-ua="Food">Food</h3>
-<p class="m-desc" data-en="Realistic food imagery for menus, delivery, social media and ad campaigns." data-key="services.cards.c5.desc" data-ua="Реалістичні food-кадри для меню, доставки, соцмереж і рекламних кампаній.">Реалістичні food-кадри для меню, доставки, соцмереж і рекламних кампаній.</p>
-<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
+<h3 class="m-title" data-en="Creative Direction" data-key="services.cards.c5.title" data-ua="Creative Direction">Creative Direction</h3>
+<p class="m-desc" data-en="Visual concept, moodboard, styling, lighting, composition and cohesive creative direction for the project." data-key="services.cards.c5.desc" data-ua="Візуальна концепція, moodboard, стилістика, світло, композиція та єдина артдирекція проєкту.">Візуальна концепція, moodboard, стилістика, світло, композиція та єдина артдирекція проєкту.</p>
 </div>
 </article>
-<article class="m-card c6 has-img reveal">
-<div class="m-img"><img alt="Interior" data-img-key="services.cards.c6.image" src="images/int_living_dark.webp" loading="lazy" decoding="async"/></div>
-<div class="m-body">
-<div class="m-num">06</div><span class="rule"></span>
-<h3 class="m-title" data-en="Interior" data-key="services.cards.c6.title" data-ua="Interior">Interior</h3>
-<p class="m-desc" data-en="Interior visualization and redesign preserving the space and architecture." data-key="services.cards.c6.desc" data-ua="Візуалізація та редизайн інтер’єрів зі збереженням простору й архітектури.">Візуалізація та редизайн інтер’єрів зі збереженням простору й архітектури.</p>
-<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
 </div>
-</article>
-<article class="m-card c7 has-img reveal">
-<div class="m-img"><img alt="AI Content & Motion" data-img-key="services.cards.c7.image" src="images/motionposter2.webp" loading="lazy" decoding="async"/></div>
-<div class="m-body">
-<div class="m-num">07</div><span class="rule"></span>
-<h3 class="m-title" data-en="AI Content &amp; Motion" data-key="services.cards.c7.title" data-ua="AI Content &amp; Motion">AI Content &amp; Motion</h3>
-<p class="m-desc" data-en="Product video, image-to-video and short ad clips for social media and campaigns." data-key="services.cards.c7.desc" data-ua="Відео для товарів, image-to-video та короткі рекламні ролики для соцмереж і кампаній.">Відео для товарів, image-to-video та короткі рекламні ролики для соцмереж і кампаній.</p>
-<div class="m-foot"><a class="soon" data-en="View work &rarr;" data-ua="Дивитись роботи &rarr;" href="#portfolio">Дивитись роботи →</a></div>
-</div>
-</article>
+<div class="work-cta">
+<a class="contact-btn" data-en="Discuss a project" data-ua="Обговорити проєкт" href="#contact">Обговорити проєкт</a>
 </div>
 </div>
 </section>

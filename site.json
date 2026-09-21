@@ -1,0 +1,325 @@
+{
+  "hero": {
+    "tag": {
+      "ua": "AI Visual Creator ",
+      "en": "AI Visual Creator"
+    },
+    "title_l1": {
+      "ua": "Зйомки, яких не було.",
+      "en": "Shoots that never happened."
+    },
+    "title_l2": {
+      "ua": "",
+      "en": ""
+    },
+    "title_l3": {
+      "ua": "Візуали, які працюють.",
+      "en": "Visuals that perform."
+    },
+    "lead": {
+      "ua": "Створюю рекламні AI-зйомки та візуальні кампанії для брендів — від концепції та арт-дирекшну до готового контенту для сайтів, соцмереж, маркетплейсів і реклами.",
+      "en": "I create advertising AI shoots and visual campaigns for brands — from concept and art direction to finished content for websites, social media, marketplaces and ads."
+    },
+    "cta": {
+      "ua": "Переглянути роботи",
+      "en": "View the work"
+    },
+    "cta2": {
+      "ua": "Обговорити проєкт",
+      "en": "Discuss a project"
+    }
+  },
+  "about": {
+    "p1": {
+      "ua": "Працюю на перетині комерційної фотографії, арт-дирекшну та генеративного AI.",
+      "en": "I work at the intersection of commercial photography, art direction and generative AI."
+    },
+    "p2": {
+      "ua": "Створюю не окремі красиві кадри, а цілісні серії з єдиним світлом, стилем і характером бренду.",
+      "en": "I don't create isolated pretty frames — I build complete series with consistent light, style and brand character."
+    },
+    "heading": {
+      "line1": {
+        "ua": "Я перетворюю продукт",
+        "en": "I turn a product"
+      },
+      "line2": {
+        "ua": "на візуальну ",
+        "en": "into a visual "
+      },
+      "accent": {
+        "ua": "історію.",
+        "en": "story."
+      }
+    },
+    "base_value": {
+      "ua": "Німеччина",
+      "en": "Germany"
+    },
+    "working_value": {
+      "ua": "По всьому світу",
+      "en": "Worldwide"
+    },
+    "base_label": {
+      "ua": "Base",
+      "en": "Based in"
+    },
+    "working_label": {
+      "ua": "AVAILABLE",
+      "en": "AVAILABLE"
+    },
+    "focus_value": {
+      "ua": "Бренд-візуали",
+      "en": "Brand Visuals"
+    },
+    "focus_label": {
+      "ua": "Focus",
+      "en": "Focus"
+    },
+    "cap": {
+      "ua": "Про мене",
+      "en": "About me"
+    }
+  },
+  "portfolio": {
+    "heading": {
+      "ua": "Портфоліо",
+      "en": "Portfolio"
+    },
+    "sub": {
+      "ua": "Від продуктового кадру до повної кампанії",
+      "en": "From a single product shot to a full campaign"
+    },
+    "intro": {
+      "ua": "Кожен кейс — це не окремий кадр, а цілісна серія: єдине світло, подача й настрій, які працюють разом як візуальна мова бренду. Оберіть напрямок, щоб переглянути роботи.",
+      "en": "Each case is not a single frame but a complete series: consistent light, styling and mood working together as the brand's visual language. Choose a direction to see the work."
+    },
+    "categories": {
+      "fashion": {
+        "title": {
+          "ua": "Fashion & Lingerie",
+          "en": "Fashion & Lingerie"
+        },
+        "sub": {
+          "ua": "Studio · Location · Editorial Campaign · Lookbook",
+          "en": "Studio · Location · Editorial Campaign · Lookbook"
+        },
+        "image": "images/uploads/hf_20260404_115549_6af8a9e1-0bc4-43ef-9727-8f8fb5048869.png"
+      },
+      "beauty": {
+        "title": {
+          "ua": "Beauty & Jewelry",
+          "en": "Beauty & Jewelry"
+        },
+        "sub": {
+          "ua": "Beauty · Skincare · Perfume · Jewelry",
+          "en": "Beauty · Skincare · Perfume · Jewelry"
+        },
+        "image": "images/uploads/ф4.png"
+      },
+      "product": {
+        "title": {
+          "ua": "Product & E‑commerce",
+          "en": "Product & E‑commerce"
+        },
+        "sub": {
+          "ua": "Product · Lifestyle · E‑commerce · Marketplace",
+          "en": "Product · Lifestyle · E‑commerce · Marketplace"
+        },
+        "image": "images/nespresso_lifestyle.webp"
+      },
+      "food": {
+        "title": {
+          "ua": "Food",
+          "en": "Food"
+        },
+        "sub": {
+          "ua": "Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign",
+          "en": "Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign"
+        },
+        "image": "images/uploads/меню-1-.png"
+      },
+      "interior": {
+        "title": {
+          "ua": "Interior",
+          "en": "Interior"
+        },
+        "sub": {
+          "ua": "Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation",
+          "en": "Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation"
+        },
+        "image": "images/interior_editorial.webp"
+      },
+      "motion": {
+        "title": {
+          "ua": "AI Content & Motion",
+          "en": "AI Content & Motion"
+        },
+        "sub": {
+          "ua": "Product Video · Image-to-Video · Campaign Series · Animation",
+          "en": "Product Video · Image-to-Video · Campaign Series · Animation"
+        },
+        "image": "images/motionposter1.webp"
+      }
+    },
+    "beyond_label": {
+      "ua": "За межами каталогу — маєте інший запит?",
+      "en": "Beyond the portfolio — have a different request?"
+    }
+  },
+  "services": {
+    "heading": {
+      "ua": "Послуги",
+      "en": "Services"
+    },
+    "sub": {
+      "ua": "Візуальні рішення для брендів — від концепції до готового контенту.",
+      "en": "Visual solutions for brands — from concept to final content."
+    },
+    "intro": {
+      "ua": "AI-візуали, рекламні кампанії та motion-контент для запусків, соцмереж, сайтів і digital-реклами.",
+      "en": "AI visuals, campaigns and motion content for launches, social media, websites and digital advertising."
+    },
+    "note": {
+      "ua": "Створено за допомогою генеративного AI та професійного пост-продакшну.",
+      "en": "Created with generative AI and professional post-production."
+    },
+    "cards": {
+      "c1": {
+        "title": {
+          "ua": "AI Campaigns",
+          "en": "AI Campaigns"
+        },
+        "desc": {
+          "ua": "Повна візуальна кампанія: концепція, артдирекшн і серія ключових кадрів для запуску продукту або бренду.",
+          "en": "Full visual campaign: concept, art direction and a series of key visuals for a product or brand launch."
+        },
+        "image": "images/lux8.webp"
+      },
+      "c2": {
+        "title": {
+          "ua": "Product Visuals",
+          "en": "Product Visuals"
+        },
+        "desc": {
+          "ua": "Предметні та lifestyle-візуали для косметики, парфумерії, аксесуарів, упаковки та e-commerce.",
+          "en": "Product and lifestyle visuals for beauty, fragrance, accessories, packaging and e-commerce."
+        },
+        "image": "images/nespresso3.webp"
+      },
+      "c3": {
+        "title": {
+          "ua": "Social Content",
+          "en": "Social Content"
+        },
+        "desc": {
+          "ua": "Серії зображень для Instagram, Stories, digital-реклами, сезонних запусків і регулярного контенту.",
+          "en": "Visual content series for Instagram, Stories, digital advertising, seasonal launches and ongoing brand communication."
+        },
+        "image": "images/perfloc3.webp"
+      },
+      "c4": {
+        "title": {
+          "ua": "AI Motion",
+          "en": "AI Motion"
+        },
+        "desc": {
+          "ua": "Короткі рекламні ролики, анімація зображень та motion-контент для fashion, beauty і product-проєктів.",
+          "en": "Short advertising films, image animation and motion content for fashion, beauty and product projects."
+        },
+        "image": "images/motionposter2.webp"
+      },
+      "c5": {
+        "title": {
+          "ua": "Creative Direction",
+          "en": "Creative Direction"
+        },
+        "desc": {
+          "ua": "Візуальна концепція, moodboard, стилістика, світло, композиція та єдина артдирекція проєкту.",
+          "en": "Visual concept, moodboard, styling, lighting, composition and cohesive creative direction for the project."
+        },
+        "image": "images/necklace11.webp"
+      }
+    }
+  },
+  "process": {
+    "heading": {
+      "ua": "Процес",
+      "en": "Process"
+    },
+    "sub": {
+      "ua": "Від брифу до готової серії візуалів",
+      "en": "From brief to a finished series of visuals"
+    },
+    "steps": {
+      "s1": {
+        "title": {
+          "ua": "Бриф і референси",
+          "en": "Brief & references"
+        },
+        "desc": {
+          "ua": "Обговорюємо задачу, бренд-гайд, настрій і приклади, на які варто орієнтуватися.",
+          "en": "We discuss the task, brand guide, mood and reference examples to aim for."
+        }
+      },
+      "s2": {
+        "title": {
+          "ua": "Концепція",
+          "en": "Concept"
+        },
+        "desc": {
+          "ua": "Формую візуальну ідею: образи, локації, світло, композицію та загальну стилістику серії.",
+          "en": "I shape the visual idea: looks, locations, light, composition and the overall style of the series."
+        }
+      },
+      "s3": {
+        "title": {
+          "ua": "Створення",
+          "en": "Creation"
+        },
+        "desc": {
+          "ua": "Створюю та відбираю серію візуалів за допомогою генеративного AI — з увагою до деталей, характеру бренду та художньої цілісності.",
+          "en": "I create and curate the series of visuals using generative AI — with attention to detail, brand character and artistic cohesion."
+        }
+      },
+      "s4": {
+        "title": {
+          "ua": "Фінал і адаптація",
+          "en": "Final & adaptation"
+        },
+        "desc": {
+          "ua": "Обробляю кадри та адаптую під потрібні формати — сайт, соцмережі, рекламу, маркетплейси.",
+          "en": "I finalize the shots and adapt them to the formats you need — website, social media, ads, marketplaces."
+        }
+      }
+    }
+  },
+  "contact": {
+    "cap": {
+      "ua": "Зв'язок",
+      "en": "Get in touch"
+    },
+    "heading": {
+      "line1": {
+        "ua": "Є продукт.",
+        "en": "There's a product."
+      },
+      "line2": {
+        "ua": "Створімо для нього ",
+        "en": "Let's build it a "
+      },
+      "accent": {
+        "ua": "світ.",
+        "en": "world."
+      }
+    },
+    "lead": {
+      "ua": "Розкажіть мені про бренд, продукт і задачу — я запропоную візуальний напрямок та формат проєкту.",
+      "en": "Tell me about your brand, product and task — I'll suggest a visual direction and project format."
+    },
+    "cta": {
+      "ua": "Обговорити проєкт →",
+      "en": "Discuss a project →"
+    }
+  }
+}
