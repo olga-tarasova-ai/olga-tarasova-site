@@ -19,7 +19,7 @@
         "ua": "10 зображень · студійна кампанія",
         "en": "10 images · studio campaign"
       },
-      "cover": "images/uploads/дсм-5-.png",
+      "cover": "images/uploads/дсм-5-.webp",
       "gallery": [
         {
           "image": "images/uploads/lingerie-studio-01.jpg",
@@ -94,16 +94,16 @@
       },
       "gallery": [
         {
-          "image": "images/uploads/hf_20260404_115549_6af8a9e1-0bc4-43ef-9727-8f8fb5048869.png"
+          "image": "images/uploads/hf_20260404_115549_6af8a9e1-0bc4-43ef-9727-8f8fb5048869.webp"
         },
         {
-          "image": "images/uploads/16.png"
+          "image": "images/uploads/16.webp"
         },
         {
-          "image": "images/uploads/12.png"
+          "image": "images/uploads/12.webp"
         }
       ],
-      "cover": "images/uploads/12.png"
+      "cover": "images/uploads/12.webp"
     },
     {
       "id": "case-24",

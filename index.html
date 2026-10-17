@@ -4,26 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Olga Tarasova — AI Visual Creator &amp; Art Direction</title>
-<meta content="Olga Tarasova — AI Visual Creator creating fashion, beauty, product, food and interior visual campaigns for brands worldwide." name="description"/>
-<meta content="Olga Tarasova — AI Visual Creator &amp; Art Direction" property="og:title"/>
-<meta content="AI-driven visual campaigns for fashion, beauty and lifestyle brands." property="og:description"/>
+<title>Ольга Тарасова — AI Visual Creator та арт-дирекшн для брендів</title>
+<meta content="Ольга Тарасова — AI Visual Creator. Візуальні кампанії, предметна зйомка, AI Motion та візуалізація інтер'єрів для fashion, beauty, food і lifestyle-брендів." name="description"/>
+<link href="https://olga-tarasova-site.netlify.app/" rel="canonical"/>
+<meta content="uk_UA" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="Ольга Тарасова — AI Visual Creator та арт-дирекшн" property="og:title"/>
+<meta content="Візуальні проєкти та креативні концепції: fashion, beauty, продукт, food, інтер'єри та AI Motion." property="og:description"/>
 <meta content="https://olga-tarasova-site.netlify.app/images/og-cover.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="https://olga-tarasova-site.netlify.app/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Olga Tarasova — AI Visual Creator &amp; Art Direction" name="twitter:title"/>
-<meta content="AI-driven visual campaigns for fashion, beauty and lifestyle brands." name="twitter:description"/>
+<meta content="Ольга Тарасова — AI Visual Creator та арт-дирекшн" name="twitter:title"/>
+<meta content="Візуальні проєкти та креативні концепції: fashion, beauty, продукт, food, інтер'єри та AI Motion." name="twitter:description"/>
 <meta content="https://olga-tarasova-site.netlify.app/images/og-cover.jpg" name="twitter:image"/>
 <link href="favicon.ico" rel="icon" sizes="any"/>
-<link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="images/favicon-16x16.webp" rel="icon" sizes="16x16" type="image/png"/>
 <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="images/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
 <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
-<link href="images/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
+<link href="images/android-chrome-512x512.webp" rel="icon" sizes="512x512" type="image/png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -204,10 +207,17 @@
   .m-for-text{font-size:.84rem;line-height:1.8;color:#d3ccc3;}
   .m-link{display:inline-block;margin-top:18px;font-family:'Manrope',sans-serif;font-weight:500;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:#e7e0d6;text-decoration:none;border-bottom:1px solid rgba(179,68,85,.6);padding-bottom:4px;transition:color .3s ease,border-color .3s ease;}
   .m-link:hover{color:#fff;border-color:#fff;}
+  @media(pointer:coarse){
+    .lang-btn{padding:13px 12px;min-height:44px;min-width:44px;}
+    .m-link{padding:14px 0 6px;margin-top:6px;}
+    .menu-toggle{min-width:44px;min-height:44px;}
+    .mobile-nav a{padding:6px 0;}
+  }
   .m-img{width:140px;height:176px;overflow:hidden;border:1px solid rgba(241,236,228,.1);}
   .m-img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9);}
   .m-card.c2 .m-img img{object-position:center 42%;}
   .m-card.c5 .m-img img{object-position:center 32%;}
+  .m-card.c6 .m-img img{object-position:center 60%;}
   .m-foot .soon{
     font-family:'Manrope',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
     border:1px solid rgba(241,236,228,.28);padding:7px 14px;color:#bdb6ad;
@@ -329,7 +339,7 @@
   .category-empty-note{margin-top:26px;padding:44px 30px;border:1px solid rgba(241,236,228,.1);text-align:center;font-family:'Manrope',sans-serif;font-size:.82rem;line-height:1.8;color:#a9a29a;}
 
   @media(max-width:1024px){
-    .category-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:none;grid-template-areas:none;gap:14px;}
+    .category-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-template-areas:none;gap:14px;}
     .category-card{aspect-ratio:4/3;min-height:240px;}
     .category-card[data-category]{grid-area:auto;}
     .category-card[data-category] .category-overlay > div{max-width:none;}
@@ -343,8 +353,8 @@
   @media(max-width:560px){
     .category-card{aspect-ratio:auto;min-height:320px;}
     .category-card[data-category]{grid-column:auto;}
-    .category-card[data-category="fashion"]{aspect-ratio:3/4;min-height:400px;}
-    .category-grid{grid-template-columns:1fr;gap:10px;}
+    .category-card[data-category="fashion"]{aspect-ratio:auto;min-height:400px;}
+    .category-grid{grid-template-columns:minmax(0,1fr);gap:10px;}
     .category-view-head{margin-top:40px;}
   }
 
@@ -558,7 +568,7 @@
 <div>
 <h2 data-en="Portfolio" data-key="portfolio.heading" data-ua="Портфоліо">Портфоліо</h2>
 <span class="rule"></span>
-<div class="sub" data-en="Completed projects for brands" data-key="portfolio.sub" data-ua="Реалізовані проєкти для брендів">Реалізовані проєкти для брендів</div>
+<div class="sub" data-en="Visual projects and creative concepts" data-key="portfolio.sub" data-ua="Візуальні проєкти та креативні концепції">Візуальні проєкти та креативні концепції</div>
 </div>
 <p class="sec-intro" data-en="These are my finished projects, not a list of services. Each case is a complete series with its own brief, concept and result. Choose a direction to open the cases." data-key="portfolio.intro" data-ua="Тут — мої роботи, а не перелік послуг. Кожен кейс — завершена серія зі своїм завданням, концепцією та результатом. Оберіть напрямок і відкрийте кейси.">Тут — мої роботи, а не перелік послуг. Кожен кейс — завершена серія зі своїм завданням, концепцією та результатом. Оберіть напрямок і відкрийте кейси.</p>
 </div>
@@ -632,14 +642,14 @@
 </div>
 <div class="beyond-strip">
 <span class="beyond-label" data-en="Beyond the portfolio — have a different request?" data-key="portfolio.beyond_label" data-ua="За межами каталогу — маєте інший запит?">За межами каталогу — маєте інший запит?</span>
-<span class="beyond-pills">AI Portraits · AI Avatars · Architecture · Photo Restoration · <a data-en="Custom Project →" data-ua="Custom Project →" href="#contact">Custom Project →</a></span>
+<span class="beyond-pills">AI Portraits · AI Avatars · Architecture · Photo Restoration · <a data-en="Custom Project →" data-ua="Індивідуальний проєкт →" href="#contact">Індивідуальний проєкт →</a></span>
 </div>
 <div class="category-view" id="categoryView" style="display:none">
 <div class="category-view-head">
 <button class="back-to-categories" data-en="← All directions" data-ua="← Всі напрямки" id="backToCategories">← Всі напрямки</button>
 <div class="category-view-title" id="categoryViewTitle"></div>
 </div>
-<div class="category-empty-note" data-en="Cases for this direction are coming soon." data-ua="Кейси цього напрямку скоро зʼявляться в портфоліо." id="categoryEmptyNote" style="display:none">Кейси цього напрямку скоро зʼявляться в портфоліо.</div>
+<div class="category-empty-note" data-en="Cases for this direction are coming soon." data-ua="Кейси цього напрямку скоро з'являться в портфоліо." id="categoryEmptyNote" style="display:none">Кейси цього напрямку скоро з'являться в портфоліо.</div>
 <div class="case-cover-grid" id="filteredCoverGrid">
 </div>
 </div>
@@ -670,7 +680,7 @@
 <div class="m-num">01</div>
 <div class="m-main">
 <h3 class="m-title" data-en="AI Campaigns" data-key="services.cards.c1.title" data-ua="AI Campaigns">AI Campaigns</h3>
-<p class="m-desc" data-en="Full visual campaign: concept, art direction and a series of key visuals for a product or brand launch." data-key="services.cards.c1.desc" data-ua="Повна візуальна кампанія: концепція, артдирекшн і серія ключових кадрів для запуску продукту або бренду.">Повна візуальна кампанія: концепція, артдирекшн і серія ключових кадрів для запуску продукту або бренду.</p>
+<p class="m-desc" data-en="Full visual campaign: concept, art direction and a series of key visuals for a product or brand launch." data-key="services.cards.c1.desc" data-ua="Повна візуальна кампанія: концепція, арт-дирекшн і серія ключових кадрів для запуску продукту або бренду.">Повна візуальна кампанія: концепція, арт-дирекшн і серія ключових кадрів для запуску продукту або бренду.</p>
 <a class="m-link" data-en="Discuss this →" data-ua="Обговорити →" href="#contact">Обговорити →</a>
 </div>
 <div class="m-for">
@@ -701,7 +711,7 @@
 </div>
 <div class="m-for">
 <span class="m-for-label" data-en="When you need it" data-ua="Коли це потрібно">Коли це потрібно</span>
-<p class="m-for-text" data-en="Instagram, Stories, digital ads, regular content" data-key="services.cards.c3.for" data-ua="Instagram, Stories, діджитал-реклама, регулярний контент">Instagram, Stories, діджитал-реклама, регулярний контент</p>
+<p class="m-for-text" data-en="Instagram, Stories, digital ads, regular content" data-key="services.cards.c3.for" data-ua="Instagram, Stories, digital-реклама, регулярний контент">Instagram, Stories, digital-реклама, регулярний контент</p>
 </div>
 <div class="m-img"><img alt="Social Content" data-img-key="services.cards.c3.image" src="images/perfloc3.webp" loading="lazy" decoding="async"/></div>
 </article>
@@ -709,12 +719,12 @@
 <div class="m-num">04</div>
 <div class="m-main">
 <h3 class="m-title" data-en="AI Motion" data-key="services.cards.c4.title" data-ua="AI Motion">AI Motion</h3>
-<p class="m-desc" data-en="Short advertising films, image animation and motion content for fashion, beauty and product projects." data-key="services.cards.c4.desc" data-ua="Короткі рекламні ролики, анімація зображень та motion-контент для fashion, beauty і product-проєктів.">Короткі рекламні ролики, анімація зображень та motion-контент для fashion, beauty і product-проєктів.</p>
+<p class="m-desc" data-en="Advertising films, image and character animation, creative videos and visual stories — from short motion content to narrative films for brands and original projects." data-key="services.cards.c4.desc" data-ua="Рекламні ролики, анімація зображень і персонажів, креативні відео та візуальні історії — від короткого motion-контенту до сюжетних роликів для брендів і авторських проєктів.">Рекламні ролики, анімація зображень і персонажів, креативні відео та візуальні історії — від короткого motion-контенту до сюжетних роликів для брендів і авторських проєктів.</p>
 <a class="m-link" data-en="Discuss this →" data-ua="Обговорити →" href="#contact">Обговорити →</a>
 </div>
 <div class="m-for">
 <span class="m-for-label" data-en="When you need it" data-ua="Коли це потрібно">Коли це потрібно</span>
-<p class="m-for-text" data-en="Ad films and animation without a film set" data-key="services.cards.c4.for" data-ua="Рекламні ролики й анімація без знімального майданчика">Рекламні ролики й анімація без знімального майданчика</p>
+<p class="m-for-text" data-en="Advertising, animation, creative videos and visual stories" data-key="services.cards.c4.for" data-ua="Реклама, анімація, креативні відео та візуальні історії">Реклама, анімація, креативні відео та візуальні історії</p>
 </div>
 <div class="m-img"><img alt="AI Motion" data-img-key="services.cards.c4.image" src="images/motionposter2.webp" loading="lazy" decoding="async"/></div>
 </article>
@@ -722,7 +732,7 @@
 <div class="m-num">05</div>
 <div class="m-main">
 <h3 class="m-title" data-en="Creative Direction" data-key="services.cards.c5.title" data-ua="Creative Direction">Creative Direction</h3>
-<p class="m-desc" data-en="Visual concept, moodboard, styling, lighting, composition and cohesive creative direction for the project." data-key="services.cards.c5.desc" data-ua="Візуальна концепція, moodboard, стилістика, світло, композиція та єдина артдирекція проєкту.">Візуальна концепція, moodboard, стилістика, світло, композиція та єдина артдирекція проєкту.</p>
+<p class="m-desc" data-en="Visual concept, moodboard, styling, lighting, composition and cohesive creative direction for the project." data-key="services.cards.c5.desc" data-ua="Візуальна концепція, moodboard, стилістика, світло, композиція та єдина арт-дирекція проєкту.">Візуальна концепція, moodboard, стилістика, світло, композиція та єдина арт-дирекція проєкту.</p>
 <a class="m-link" data-en="Discuss this →" data-ua="Обговорити →" href="#contact">Обговорити →</a>
 </div>
 <div class="m-for">
@@ -730,6 +740,19 @@
 <p class="m-for-text" data-en="A brand without a unified visual language, or ahead of a big launch" data-key="services.cards.c5.for" data-ua="Бренд без єдиної візуальної мови або перед великим запуском">Бренд без єдиної візуальної мови або перед великим запуском</p>
 </div>
 <div class="m-img"><img alt="Creative Direction" data-img-key="services.cards.c5.image" src="images/necklace11.webp" loading="lazy" decoding="async"/></div>
+</article>
+<article class="m-card c6 reveal">
+<div class="m-num">06</div>
+<div class="m-main">
+<h3 class="m-title" data-en="Interior Visualization &amp; Redesign" data-key="services.cards.c6.title" data-ua="Interior Visualization &amp; Redesign">Interior Visualization &amp; Redesign</h3>
+<p class="m-desc" data-en="Imagine what your space could become. I create realistic interior visualizations in a range of styles — from modern minimalism to bold design solutions. A fresh look at your interior before renovation begins." data-key="services.cards.c6.desc" data-ua="Покажіть, яким може стати ваш простір. Створюю реалістичні візуалізації інтер'єрів у різних стилях — від сучасного мінімалізму до сміливих дизайнерських рішень. Новий погляд на ваш інтер'єр ще до початку ремонту.">Покажіть, яким може стати ваш простір. Створюю реалістичні візуалізації інтер'єрів у різних стилях — від сучасного мінімалізму до сміливих дизайнерських рішень. Новий погляд на ваш інтер'єр ще до початку ремонту.</p>
+<a class="m-link" data-en="Discuss this →" data-ua="Обговорити →" href="#contact">Обговорити →</a>
+</div>
+<div class="m-for">
+<span class="m-for-label" data-en="When you need it" data-ua="Коли це потрібно">Коли це потрібно</span>
+<p class="m-for-text" data-en="Before a renovation, a redesign or a property presentation" data-key="services.cards.c6.for" data-ua="Перед ремонтом, редизайном або презентацією об'єкта">Перед ремонтом, редизайном або презентацією об'єкта</p>
+</div>
+<div class="m-img"><img alt="Interior Visualization &amp; Redesign" data-img-key="services.cards.c6.image" src="images/int_living_stone.webp" loading="lazy" decoding="async"/></div>
 </article>
 </div>
 <div class="work-cta">
@@ -807,8 +830,28 @@
   }, { threshold: .12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+  /* Lazy video: load and play only when near the viewport, pause when away */
+  const vio = ('IntersectionObserver' in window) ? new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      const v = e.target;
+      if (e.isIntersecting) {
+        if (!v.getAttribute('src') && v.dataset.src) { v.src = v.dataset.src; }
+        const p = v.play(); if (p && p.catch) p.catch(() => {});
+      } else if (v.getAttribute('src')) { v.pause(); }
+    });
+  }, { rootMargin: '200px 0px', threshold: 0.01 }) : null;
+  function lazyVideos(){
+    document.querySelectorAll('video[data-src]:not([data-lv])').forEach(v => {
+      v.dataset.lv = '1';
+      if (vio) vio.observe(v); else { v.src = v.dataset.src; v.autoplay = true; }
+    });
+  }
+  new MutationObserver(lazyVideos).observe(document.body, { childList: true, subtree: true });
+  lazyVideos();
+
   function setLang(lang){
     document.documentElement.lang = lang === 'ua' ? 'uk' : 'en';
+    document.title = lang === 'ua' ? 'Ольга Тарасова — AI Visual Creator та арт-дирекшн для брендів' : 'Olga Tarasova — AI Visual Creator & Art Direction';
     document.querySelectorAll('[data-ua]').forEach(el => {
       el.innerHTML = lang === 'ua' ? el.dataset.ua : el.dataset.en;
     });
@@ -1037,7 +1080,7 @@
             const courseUa = (it.course && it.course.ua) || '', courseEn = (it.course && it.course.en) || courseUa;
             const nameUa = (it.name && it.name.ua) || '', nameEn = (it.name && it.name.en) || nameUa;
             const media = it.media === 'video'
-              ? `<video aria-label="${escAttr(it.alt)}" autoplay loop muted playsinline poster="${escAttr(it.poster)}" src="${escAttr(it.video)}"></video>`
+              ? `<video aria-label="${escAttr(it.alt)}" loop muted playsinline preload="none" poster="${escAttr(it.poster)}" data-src="${escAttr(it.video)}"></video>`
               : `<img alt="${escAttr(it.alt)}" src="${escAttr(it.image)}" loading="lazy" decoding="async"/>`;
             return `<div class="${dishClass}">
                 <div class="frame">${media}</div>
@@ -1115,7 +1158,7 @@
         if (!g || !(g.image || (g.media === 'video' && g.video))) return '';
         const cUa = g.caption_ua || '', cEn = g.caption_en || cUa;
         const media = g.media === 'video'
-          ? `<video autoplay loop muted playsinline poster="${escAttr(g.poster)}" src="${escAttr(g.video)}"></video>`
+          ? `<video loop muted playsinline preload="none" poster="${escAttr(g.poster)}" data-src="${escAttr(g.video)}"></video>`
           : `<img src="${escAttr(g.image)}" alt="" loading="lazy" decoding="async">`;
         return `<div class="${dishCls}">
             <div class="frame">${media}</div>

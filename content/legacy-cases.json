@@ -479,7 +479,7 @@
         "en": "Create a studio product visual for the Maison Margiela REPLICA perfume."
       },
       "concept": {
-        "ua": "Чиста предметна композиція з дровом, лаймом і прянощами — консистентне світло для карток бренду.",
+        "ua": "Чиста предметна композиція з корягою, лаймом і прянощами — консистентне світло для карток бренду.",
         "en": "A clean still-life composition with driftwood, lime and spices — consistent light for brand assets."
       },
       "deliverables": {
@@ -850,7 +850,7 @@
     {
       "id": "case-10",
       "category": "fashion",
-      "cover": "images/uploads/локация-2-.png",
+      "cover": "images/uploads/локация-2-.webp",
       "title": {
         "ua": "Linen Dress — Location Campaign",
         "en": "Linen Dress — Location Campaign"
@@ -977,7 +977,7 @@
     {
       "id": "case-11",
       "category": "fashion",
-      "cover": "images/uploads/студия-13-.png",
+      "cover": "images/uploads/студия-13-.webp",
       "title": {
         "ua": "Linen Dress — Studio Campaign",
         "en": "Linen Dress — Studio Campaign"
@@ -1526,7 +1526,7 @@
         "en": "Present a new lingerie collection (black-and-pink set) in a warm, romantic atmosphere — as a counterpoint to the studio and urban settings of earlier cases."
       },
       "concept": {
-        "ua": "Маковe поле на заході сонця — контрове світло, польові квіти і довга трава створюють м'яку, живу editorial-історію.",
+        "ua": "Макове поле на заході сонця — контражурне світло, польові квіти і довга трава створюють м'яку, живу editorial-історію.",
         "en": "A poppy field at sunset — backlight, wildflowers and tall grass create a soft, lived-in editorial story."
       },
       "deliverables": {
@@ -1958,7 +1958,7 @@
       "category": "fashion",
       "cover": "images/luxcover.webp",
       "title": {
-        "ua": " Lingerie — Noir Editorial",
+        "ua": "Lingerie — Noir Editorial",
         "en": "Lingerie — Noir Editorial"
       },
       "task": {
@@ -1971,7 +1971,7 @@
       },
       "deliverables": {
         "ua": "флагманська кампанія",
-        "en": " signature campaign"
+        "en": "signature campaign"
       },
       "blocks": [
         {
@@ -2037,18 +2037,18 @@
             {
               "media": "image",
               "square": false,
-              "image": "images/uploads/hf_20260404_101406_bb64f711-eb44-449e-be56-4c5affbaec0a.png"
+              "image": "images/uploads/hf_20260404_101406_bb64f711-eb44-449e-be56-4c5affbaec0a.webp"
             },
             {
               "media": "image",
               "square": false,
               "video": "",
-              "image": "images/uploads/hf_20260331_202830_d6ebc345-0ad8-43f3-91a8-47a7b17aaf9d.png"
+              "image": "images/uploads/hf_20260331_202830_d6ebc345-0ad8-43f3-91a8-47a7b17aaf9d.webp"
             },
             {
               "media": "image",
               "square": false,
-              "image": "images/uploads/hf_20260404_105600_6e53e31a-d599-4833-9e78-24de2773f3ea.png"
+              "image": "images/uploads/hf_20260404_105600_6e53e31a-d599-4833-9e78-24de2773f3ea.webp"
             }
           ]
         }

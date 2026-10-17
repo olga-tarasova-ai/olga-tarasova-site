@@ -324,6 +324,14 @@ collections:
                       - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
                       - { label: "Коли це потрібно (короткий рядок)", name: "for", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
                       - { label: "Мініатюра послуги (розмір на сайті не змінюється)", name: "image", widget: "image" }
+                  - label: "06 · Interior Visualization & Redesign"
+                    name: "c6"
+                    widget: "object"
+                    fields:
+                      - { label: "Назва", name: "title", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Опис", name: "desc", widget: "object", fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }] }
+                      - { label: "Коли це потрібно (короткий рядок)", name: "for", widget: "object", fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }] }
+                      - { label: "Мініатюра послуги (розмір на сайті не змінюється)", name: "image", widget: "image" }
 
           - label: "Процес"
             name: "process"
