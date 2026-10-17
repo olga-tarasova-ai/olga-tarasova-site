@@ -525,6 +525,8 @@ collections:
                 widget: "object"
                 fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
               - { label: "Обкладинка (фото для картки)", name: "cover", widget: "image" }
+              - { label: "Пропорції кадрів у галереї (порожньо = квадрат)", name: "aspect", widget: "select", required: false, options: [{ label: "3:4", value: "3/4" }, { label: "4:5", value: "4/5" }, { label: "9:16 (вертикальні)", value: "9/16" }] }
+              - { label: "Колонок у галереї на комп'ютері (порожньо = 5)", name: "columns", widget: "select", required: false, options: [{ label: "3", value: "3" }, { label: "4", value: "4" }, { label: "5", value: "5" }] }
               - label: "Галерея"
                 name: "gallery"
                 widget: "list"

@@ -239,6 +239,8 @@
   .dish .name{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.08rem;letter-spacing:.03em;margin-top:7px;line-height:1.35;}
   .menu-grid.grid-4{grid-template-columns:repeat(4,1fr);}
   .dish.square img{aspect-ratio:1/1;object-fit:cover;}
+  .menu-grid.grid-3{grid-template-columns:repeat(3,1fr);}
+  .menu-grid.ar-custom .dish img,.menu-grid.ar-custom .dish video{aspect-ratio:var(--ar);object-fit:cover;}
 
   .ba{position:relative;aspect-ratio:3/2;overflow:hidden;border:1px solid rgba(241,236,228,.12);background:#191716;}
   .ba.ba-portrait{aspect-ratio:3/4;max-width:520px;margin:0 auto;}
@@ -426,6 +428,7 @@
     .m-card .m-img{grid-column:3;grid-row:1/3;width:110px;height:140px;}
     .menu-grid{grid-template-columns:repeat(3,1fr);}
     .menu-grid.grid-4{grid-template-columns:repeat(3,1fr);}
+    .menu-grid.grid-3{grid-template-columns:repeat(3,1fr);}
     .ba{aspect-ratio:16/10;}
     .process-grid{grid-template-columns:1fr;gap:44px;}
     .process-photo{max-width:440px;margin:0 auto;}
@@ -442,6 +445,7 @@
     .m-card .m-img{grid-column:1;grid-row:auto;order:-1;width:100%;height:190px;}
     .menu-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
     .menu-grid.grid-4{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .menu-grid.grid-3{grid-template-columns:repeat(2,1fr);gap:10px;}
     .ba{aspect-ratio:4/3;}
     .case{margin-bottom:72px;}
     .badge{display:none;}
@@ -1101,13 +1105,19 @@
       filteredCoverGrid.appendChild(card);
 
       const gallery = Array.isArray(item.gallery) ? item.gallery : [];
+      // optional per-case layout: aspect ("3/4","4/5","9/16") and columns (3,4,5); without it the old square grid is used
+      const arOk = ['3/4','4/5','9/16'].includes(String(item.aspect || ''));
+      const colsN = String(item.columns || '');
+      const gridCls = 'menu-grid' + (colsN === '3' ? ' grid-3' : colsN === '4' ? ' grid-4' : '') + (arOk ? ' ar-custom' : '');
+      const gridStyle = arOk ? ` style="--ar:${item.aspect}"` : '';
+      const dishCls = arOk ? 'dish reveal in' : 'dish square reveal in';
       const dishes = gallery.map(g => {
         if (!g || !(g.image || (g.media === 'video' && g.video))) return '';
         const cUa = g.caption_ua || '', cEn = g.caption_en || cUa;
         const media = g.media === 'video'
           ? `<video autoplay loop muted playsinline poster="${escAttr(g.poster)}" src="${escAttr(g.video)}"></video>`
           : `<img src="${escAttr(g.image)}" alt="" loading="lazy" decoding="async">`;
-        return `<div class="dish square reveal in">
+        return `<div class="${dishCls}">
             <div class="frame">${media}</div>
             ${cUa ? `<div class="name" data-ua="${escAttr(cUa)}" data-en="${escAttr(cEn)}">${escHtml(cUa)}</div>` : ''}
           </div>`;
@@ -1129,7 +1139,7 @@
             ${briefRow('Результат', 'Deliverables', delivUa, delivEn)}
           </div>
         </div>
-        <div class="menu-grid">${dishes}</div>`;
+        <div class="${gridCls}"${gridStyle}>${dishes}</div>`;
       caseModalScroll.appendChild(modalBlock);
 
       const catCard = document.querySelector(`.category-card[data-category="${item.category}"]`);

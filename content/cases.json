@@ -284,6 +284,147 @@
           "caption_en": "TommyLife · 3D Animation"
         }
       ]
+    },
+    {
+      "id": "case-30",
+      "category": "fashion",
+      "aspect": "4/5",
+      "columns": "3",
+      "title": {
+        "ua": "KIZKO FURS — Night City Campaign",
+        "en": "KIZKO FURS — Night City Campaign"
+      },
+      "task": {
+        "ua": "Показати джинсову куртку з хутряною обробкою та аплікаціями-серцями й зірками у вечірньому місті — як річ для життя, а не лише для студії.",
+        "en": "Show the denim jacket with fur trim and heart-and-star appliqués in the evening city — as a piece for real life, not only for the studio."
+      },
+      "concept": {
+        "ua": "Нічне місто, мотоцикл і тепле світло ліхтарів: чорний денім і червоний хутряний акцент працюють як графічна пляма в кадрі. Ритм серії — від портрета до повного зросту, від ночі до паризького вечора.",
+        "en": "A night city, a motorcycle and the warm light of street lamps: black denim and red fur read as a graphic accent in every frame. The series moves from portrait to full length, from night streets to a Parisian evening."
+      },
+      "deliverables": {
+        "ua": "6 зображень · нічна fashion-кампанія",
+        "en": "6 images · night fashion campaign"
+      },
+      "cover": "images/uploads/kizko-night-cover.webp",
+      "gallery": [
+        {
+          "image": "images/uploads/kizko-night-01.webp"
+        },
+        {
+          "image": "images/uploads/kizko-night-02.webp"
+        },
+        {
+          "image": "images/uploads/kizko-night-03.webp"
+        },
+        {
+          "image": "images/uploads/kizko-night-04.webp"
+        },
+        {
+          "image": "images/uploads/kizko-night-05.webp"
+        },
+        {
+          "image": "images/uploads/kizko-night-06.webp"
+        }
+      ]
+    },
+    {
+      "id": "case-31",
+      "category": "fashion",
+      "aspect": "9/16",
+      "columns": "4",
+      "title": {
+        "ua": "KIZKO FURS — Paris Street Campaign",
+        "en": "KIZKO FURS — Paris Street Campaign"
+      },
+      "task": {
+        "ua": "Показати куртку у вуличному контексті: рух, силует і деталі крою в природному світлі.",
+        "en": "Show the jacket in a street context: movement, silhouette and construction details in natural light."
+      },
+      "concept": {
+        "ua": "Паризька вулиця, велосипед, бетон і кам'яні стіни — стримане міське тло, на якому червоне хутро на манжетах і комірі читається першим. До серії додано відео з велосипедом.",
+        "en": "A Parisian street, a bicycle, concrete and stone walls — a restrained urban backdrop where the red fur on collar and cuffs reads first. The series includes a short video on the bicycle."
+      },
+      "deliverables": {
+        "ua": "3 зображення + 1 відео · street-кампанія",
+        "en": "3 images + 1 video · street campaign"
+      },
+      "cover": "images/uploads/kizko-paris-cover.webp",
+      "gallery": [
+        {
+          "image": "images/uploads/kizko-paris-01.webp"
+        },
+        {
+          "image": "images/uploads/kizko-paris-02.webp"
+        },
+        {
+          "media": "video",
+          "video": "images/uploads/kizko-paris-video.mp4",
+          "poster": "images/uploads/kizko-paris-video-poster.jpg"
+        },
+        {
+          "image": "images/uploads/kizko-paris-03.webp"
+        }
+      ]
+    },
+    {
+      "id": "case-32",
+      "category": "fashion",
+      "aspect": "9/16",
+      "columns": "5",
+      "title": {
+        "ua": "KIZKO FURS — Studio Campaign",
+        "en": "KIZKO FURS — Studio Campaign"
+      },
+      "task": {
+        "ua": "Зібрати студійну серію, яка докладно показує куртку: спину з аплікаціями, хутряні комір і манжети, підкладку та посадку.",
+        "en": "Build a studio series that shows the jacket in detail: the back with its appliqués, the fur collar and cuffs, the lining and the fit."
+      },
+      "concept": {
+        "ua": "Три студійні настрої одного образу: темний фон із глибоким контрастом, світла студія з гострими тінями та м'який сірий портрет. Червоний хутряний акцент і білі зірки тримають серію цілісною, а відео додають рух.",
+        "en": "Three studio moods for one look: a dark backdrop with deep contrast, a bright studio with crisp shadows and a soft grey portrait. The red fur accent and white stars hold the series together, and short videos add movement."
+      },
+      "deliverables": {
+        "ua": "8 зображень + 2 відео · студійна кампанія",
+        "en": "8 images + 2 videos · studio campaign"
+      },
+      "cover": "images/uploads/kizko-studio-cover.webp",
+      "gallery": [
+        {
+          "image": "images/uploads/kizko-studio-01.webp"
+        },
+        {
+          "image": "images/uploads/kizko-studio-02.webp"
+        },
+        {
+          "image": "images/uploads/kizko-studio-03.webp"
+        },
+        {
+          "media": "video",
+          "video": "images/uploads/kizko-studio-video-1.mp4",
+          "poster": "images/uploads/kizko-studio-video-1-poster.jpg"
+        },
+        {
+          "image": "images/uploads/kizko-studio-04.webp"
+        },
+        {
+          "image": "images/uploads/kizko-studio-05.webp"
+        },
+        {
+          "image": "images/uploads/kizko-studio-06.webp"
+        },
+        {
+          "media": "video",
+          "video": "images/uploads/kizko-studio-video-2.mp4",
+          "poster": "images/uploads/kizko-studio-video-2-poster.jpg"
+        },
+        {
+          "image": "images/uploads/kizko-studio-07.webp"
+        },
+        {
+          "image": "images/uploads/kizko-studio-08.webp"
+        }
+      ]
     }
   ]
 }
