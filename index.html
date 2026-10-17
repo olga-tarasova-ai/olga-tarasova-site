@@ -464,6 +464,25 @@
     .about-photo-col{aspect-ratio:1/1;}
     .about-photo-col img{object-position:50% 7%;}
   }
+
+  /* ===== Mobile refinements (final polish) ===== */
+  @media(max-width:900px){
+    section[id]:not(#about):not(#hero){scroll-margin-top:24px;}
+  }
+  @media(max-width:560px){
+    section{padding:62px 0;}
+    .contact{padding-top:90px;}
+    section[id]:not(#about):not(#hero){scroll-margin-top:44px;}
+    .logo .tag{font-size:.9rem;letter-spacing:.1em;white-space:nowrap;color:#e3dcd2;}
+    .hero p.lead{font-size:.94rem;}
+    .cover-overlay{padding:12px;background:linear-gradient(180deg,rgba(20,17,17,0) 45%,rgba(14,12,12,.92) 100%);}
+    .cover-title{font-size:clamp(.8rem,3.9vw,.98rem);letter-spacing:.02em;line-height:1.2;margin-top:4px;}
+  }
+  @media(max-width:360px){
+    .case-cover-grid{grid-template-columns:1fr;gap:14px;}
+    .cover-overlay{padding:18px;}
+    .cover-title{font-size:1.1rem;}
+  }
 </style>
 </head>
 <body>
@@ -524,7 +543,7 @@
 <p class="lead" data-en="I create advertising AI shoots and visual campaigns for brands — from concept and art direction to finished content for websites, social media, marketplaces and ads." data-key="hero.lead" data-ua="Створюю рекламні AI-зйомки та візуальні кампанії для брендів — від концепції та арт-дирекшну до готового контенту для сайтів, соцмереж, маркетплейсів і реклами.">Створюю рекламні AI-зйомки та візуальні кампанії для брендів — від концепції та арт-дирекшну до готового контенту для сайтів, соцмереж, маркетплейсів і реклами.</p>
 <div class="hero-cta-row">
 <a class="hero-cta" href="#portfolio">
-<span data-en="View the work" data-key="hero.cta" data-ua="Переглянути роботи">Переглянути роботи</span>
+<span data-en="View portfolio" data-key="hero.cta" data-ua="Переглянути портфоліо">Переглянути портфоліо</span>
 <span class="line"></span>
 <span class="dia"></span>
 </a>
@@ -570,7 +589,7 @@
 <span class="rule"></span>
 <div class="sub" data-en="Visual projects and creative concepts" data-key="portfolio.sub" data-ua="Візуальні проєкти та креативні концепції">Візуальні проєкти та креативні концепції</div>
 </div>
-<p class="sec-intro" data-en="These are my finished projects, not a list of services. Each case is a complete series with its own brief, concept and result. Choose a direction to open the cases." data-key="portfolio.intro" data-ua="Тут — мої роботи, а не перелік послуг. Кожен кейс — завершена серія зі своїм завданням, концепцією та результатом. Оберіть напрямок і відкрийте кейси.">Тут — мої роботи, а не перелік послуг. Кожен кейс — завершена серія зі своїм завданням, концепцією та результатом. Оберіть напрямок і відкрийте кейси.</p>
+<p class="sec-intro" data-en="Every project is its own visual story. From the first idea to the final frame: concept, atmosphere and the details that shape a brand's character." data-key="portfolio.intro" data-ua="Кожен проєкт — це окрема візуальна історія. Від першої ідеї до фінального кадру: концепція, атмосфера та деталі, які створюють характер бренду.">Кожен проєкт — це окрема візуальна історія. Від першої ідеї до фінального кадру: концепція, атмосфера та деталі, які створюють характер бренду.</p>
 </div>
 <div class="category-grid" id="categoryGrid">
 <div class="category-card" data-category="fashion">
@@ -579,7 +598,7 @@
 <div>
 <div class="category-n" data-en="Direction 01" data-ua="Напрямок 01">Напрямок 01</div>
 <div class="category-title" data-en="Fashion &amp; Lingerie" data-key="portfolio.categories.fashion.title" data-ua="Fashion &amp; Lingerie">Fashion &amp; Lingerie</div>
-<div class="category-sub" data-en="Studio · Location · Editorial Campaign · Lookbook" data-key="portfolio.categories.fashion.sub" data-ua="Studio · Location · Editorial Campaign · Lookbook">Studio · Location · Editorial Campaign · Lookbook</div>
+<div class="category-sub" data-en="Studio · Location · Editorial Campaign · Lookbook" data-key="portfolio.categories.fashion.sub" data-ua="Студія · Локація · Editorial-кампанії · Лукбуки">Студія · Локація · Editorial-кампанії · Лукбуки</div>
 <div class="category-view-badge"><span data-en="View cases" data-ua="Переглянути кейси">Переглянути кейси</span><span>→</span></div>
 </div>
 </div>
@@ -590,7 +609,7 @@
 <div>
 <div class="category-n" data-en="Direction 02" data-ua="Напрямок 02">Напрямок 02</div>
 <div class="category-title" data-en="Beauty &amp; Jewelry" data-key="portfolio.categories.beauty.title" data-ua="Beauty &amp; Jewelry">Beauty &amp; Jewelry</div>
-<div class="category-sub" data-en="Beauty · Skincare · Perfume · Jewelry" data-key="portfolio.categories.beauty.sub" data-ua="Beauty · Skincare · Perfume · Jewelry">Beauty · Skincare · Perfume · Jewelry</div>
+<div class="category-sub" data-en="Beauty · Skincare · Perfume · Jewelry" data-key="portfolio.categories.beauty.sub" data-ua="Б'юті · Догляд за шкірою · Парфумерія · Прикраси">Б'юті · Догляд за шкірою · Парфумерія · Прикраси</div>
 <div class="category-view-badge"><span data-en="View cases" data-ua="Переглянути кейси">Переглянути кейси</span><span>→</span></div>
 </div>
 </div>
@@ -601,7 +620,7 @@
 <div>
 <div class="category-n" data-en="Direction 03" data-ua="Напрямок 03">Напрямок 03</div>
 <div class="category-title" data-en="Product &amp; E‑commerce" data-key="portfolio.categories.product.title" data-ua="Product &amp; E‑commerce">Product &amp; E‑commerce</div>
-<div class="category-sub" data-en="Product · Lifestyle · E‑commerce · Marketplace" data-key="portfolio.categories.product.sub" data-ua="Product · Lifestyle · E‑commerce · Marketplace">Product · Lifestyle · E‑commerce · Marketplace</div>
+<div class="category-sub" data-en="Product · Lifestyle · E‑commerce · Marketplace" data-key="portfolio.categories.product.sub" data-ua="Предметна зйомка · Lifestyle · E‑commerce · Маркетплейси">Предметна зйомка · Lifestyle · E‑commerce · Маркетплейси</div>
 <div class="category-view-badge"><span data-en="View cases" data-ua="Переглянути кейси">Переглянути кейси</span><span>→</span></div>
 </div>
 </div>
@@ -612,7 +631,7 @@
 <div>
 <div class="category-n" data-en="Direction 04" data-ua="Напрямок 04">Напрямок 04</div>
 <div class="category-title" data-en="Food" data-key="portfolio.categories.food.title" data-ua="Food">Food</div>
-<div class="category-sub" data-en="Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign" data-key="portfolio.categories.food.sub" data-ua="Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign">Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign</div>
+<div class="category-sub" data-en="Food Photography · Dish Visualization · Menu Content · Advertising Campaigns" data-key="portfolio.categories.food.sub" data-ua="Фуд-фотографія · Візуалізація страв · Контент для меню · Рекламні кампанії">Фуд-фотографія · Візуалізація страв · Контент для меню · Рекламні кампанії</div>
 <div class="category-view-badge"><span data-en="View cases" data-ua="Переглянути кейси">Переглянути кейси</span><span>→</span></div>
 </div>
 </div>
@@ -623,7 +642,7 @@
 <div>
 <div class="category-n" data-en="Direction 05" data-ua="Напрямок 05">Напрямок 05</div>
 <div class="category-title" data-en="Interior" data-key="portfolio.categories.interior.title" data-ua="Interior">Interior</div>
-<div class="category-sub" data-en="Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation" data-key="portfolio.categories.interior.sub" data-ua="Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation">Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation</div>
+<div class="category-sub" data-en="Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation" data-key="portfolio.categories.interior.sub" data-ua="Покращення фото · Заміна меблів · Редизайн кімнати · Повна стильова трансформація">Покращення фото · Заміна меблів · Редизайн кімнати · Повна стильова трансформація</div>
 <div class="category-view-badge"><span data-en="View cases" data-ua="Переглянути кейси">Переглянути кейси</span><span>→</span></div>
 </div>
 </div>
@@ -634,7 +653,7 @@
 <div>
 <div class="category-n" data-en="Direction 06" data-ua="Напрямок 06">Напрямок 06</div>
 <div class="category-title" data-en="AI Content &amp; Motion" data-key="portfolio.categories.motion.title" data-ua="AI Content &amp; Motion">AI Content &amp; Motion</div>
-<div class="category-sub" data-en="Product Video · Image-to-Video · Campaign Series · Animation" data-key="portfolio.categories.motion.sub" data-ua="Product Video · Image-to-Video · Campaign Series · Animation">Product Video · Image-to-Video · Campaign Series · Animation</div>
+<div class="category-sub" data-en="Product Video · Image-to-Video · Campaign Series · Animation" data-key="portfolio.categories.motion.sub" data-ua="Відео про продукт · Оживлення зображень · Серії для кампаній · Анімація">Відео про продукт · Оживлення зображень · Серії для кампаній · Анімація</div>
 <div class="category-view-badge"><span data-en="View cases" data-ua="Переглянути кейси">Переглянути кейси</span><span>→</span></div>
 </div>
 </div>
@@ -672,7 +691,7 @@
 <span class="rule"></span>
 <div class="sub" data-en="What exactly you can order" data-key="services.sub" data-ua="Що саме ви можете замовити">Що саме ви можете замовити</div>
 </div>
-<p class="sec-intro" data-en="These are the ways we can work together: pick what your brand needs. Examples of finished projects are in the “Portfolio” section." data-key="services.intro" data-ua="Це формати співпраці: оберіть, що потрібно вашому бренду. Приклади виконаних проєктів — у розділі «Портфоліо».">Це формати співпраці: оберіть, що потрібно вашому бренду. Приклади виконаних проєктів — у розділі «Портфоліо».</p>
+<p class="sec-intro" data-en="From a single visual to a full advertising campaign — I create content that helps brands stand out." data-key="services.intro" data-ua="Від окремого візуалу до повноцінної рекламної кампанії — створюю контент, який допомагає брендам виділятися.">Від окремого візуалу до повноцінної рекламної кампанії — створюю контент, який допомагає брендам виділятися.</p>
 <p class="sec-note" data-en="Created with generative AI and professional post-production." data-key="services.note" data-ua="Створено за допомогою генеративного AI та професійного пост-продакшну.">Створено за допомогою генеративного AI та професійного пост-продакшну.</p>
 </div>
 <div class="m-grid">
@@ -680,12 +699,12 @@
 <div class="m-num">01</div>
 <div class="m-main">
 <h3 class="m-title" data-en="AI Campaigns" data-key="services.cards.c1.title" data-ua="AI Campaigns">AI Campaigns</h3>
-<p class="m-desc" data-en="Full visual campaign: concept, art direction and a series of key visuals for a product or brand launch." data-key="services.cards.c1.desc" data-ua="Повна візуальна кампанія: концепція, арт-дирекшн і серія ключових кадрів для запуску продукту або бренду.">Повна візуальна кампанія: концепція, арт-дирекшн і серія ключових кадрів для запуску продукту або бренду.</p>
+<p class="m-desc" data-en="A complete visual campaign: concept, art direction and a series of key visuals, ready to launch." data-key="services.cards.c1.desc" data-ua="Повна візуальна кампанія: концепція, арт-дирекшн і серія ключових кадрів, готових до запуску.">Повна візуальна кампанія: концепція, арт-дирекшн і серія ключових кадрів, готових до запуску.</p>
 <a class="m-link" data-en="Discuss this →" data-ua="Обговорити →" href="#contact">Обговорити →</a>
 </div>
 <div class="m-for">
 <span class="m-for-label" data-en="When you need it" data-ua="Коли це потрібно">Коли це потрібно</span>
-<p class="m-for-text" data-en="Product, brand or seasonal collection launches" data-key="services.cards.c1.for" data-ua="Запуск продукту, бренду або сезонної колекції">Запуск продукту, бренду або сезонної колекції</p>
+<p class="m-for-text" data-en="When you're launching a product, brand or seasonal collection and need one cohesive visual identity." data-key="services.cards.c1.for" data-ua="Коли ви запускаєте продукт, бренд або сезонну колекцію і потрібен єдиний візуальний образ.">Коли ви запускаєте продукт, бренд або сезонну колекцію і потрібен єдиний візуальний образ.</p>
 </div>
 <div class="m-img"><img alt="AI Campaigns" data-img-key="services.cards.c1.image" src="images/lux8.webp" loading="lazy" decoding="async"/></div>
 </article>
@@ -698,7 +717,7 @@
 </div>
 <div class="m-for">
 <span class="m-for-label" data-en="When you need it" data-ua="Коли це потрібно">Коли це потрібно</span>
-<p class="m-for-text" data-en="Catalogue, website, marketplace product page" data-key="services.cards.c2.for" data-ua="Каталог, сайт, картка товару на маркетплейсі">Каталог, сайт, картка товару на маркетплейсі</p>
+<p class="m-for-text" data-en="When you need high-quality visuals for a catalogue, website or marketplace without arranging a traditional photoshoot" data-key="services.cards.c2.for" data-ua="Коли потрібні якісні візуали для каталогу, сайту чи маркетплейсу без організації традиційної фотозйомки">Коли потрібні якісні візуали для каталогу, сайту чи маркетплейсу без організації традиційної фотозйомки</p>
 </div>
 <div class="m-img"><img alt="Product Visuals" data-img-key="services.cards.c2.image" src="images/nespresso3.webp" loading="lazy" decoding="async"/></div>
 </article>
@@ -706,12 +725,12 @@
 <div class="m-num">03</div>
 <div class="m-main">
 <h3 class="m-title" data-en="Social Content" data-key="services.cards.c3.title" data-ua="Social Content">Social Content</h3>
-<p class="m-desc" data-en="Visual content series for Instagram, Stories, digital advertising, seasonal launches and ongoing brand communication." data-key="services.cards.c3.desc" data-ua="Серії зображень для Instagram, Stories, digital-реклами, сезонних запусків і регулярного контенту.">Серії зображень для Instagram, Stories, digital-реклами, сезонних запусків і регулярного контенту.</p>
+<p class="m-desc" data-en="I create image series for Instagram, Stories, digital ads and a brand's regular content." data-key="services.cards.c3.desc" data-ua="Створюю серії зображень для Instagram, Stories, digital-реклами та регулярного контенту бренду.">Створюю серії зображень для Instagram, Stories, digital-реклами та регулярного контенту бренду.</p>
 <a class="m-link" data-en="Discuss this →" data-ua="Обговорити →" href="#contact">Обговорити →</a>
 </div>
 <div class="m-for">
 <span class="m-for-label" data-en="When you need it" data-ua="Коли це потрібно">Коли це потрібно</span>
-<p class="m-for-text" data-en="Instagram, Stories, digital ads, regular content" data-key="services.cards.c3.for" data-ua="Instagram, Stories, digital-реклама, регулярний контент">Instagram, Stories, digital-реклама, регулярний контент</p>
+<p class="m-for-text" data-en="When you need to refresh content regularly, keep a consistent brand style or launch ad campaigns." data-key="services.cards.c3.for" data-ua="Коли потрібно регулярно оновлювати контент, підтримувати єдиний стиль бренду або запускати рекламні кампанії.">Коли потрібно регулярно оновлювати контент, підтримувати єдиний стиль бренду або запускати рекламні кампанії.</p>
 </div>
 <div class="m-img"><img alt="Social Content" data-img-key="services.cards.c3.image" src="images/perfloc3.webp" loading="lazy" decoding="async"/></div>
 </article>
@@ -719,12 +738,12 @@
 <div class="m-num">04</div>
 <div class="m-main">
 <h3 class="m-title" data-en="AI Motion" data-key="services.cards.c4.title" data-ua="AI Motion">AI Motion</h3>
-<p class="m-desc" data-en="Advertising films, image and character animation, creative videos and visual stories — from short motion content to narrative films for brands and original projects." data-key="services.cards.c4.desc" data-ua="Рекламні ролики, анімація зображень і персонажів, креативні відео та візуальні історії — від короткого motion-контенту до сюжетних роликів для брендів і авторських проєктів.">Рекламні ролики, анімація зображень і персонажів, креативні відео та візуальні історії — від короткого motion-контенту до сюжетних роликів для брендів і авторських проєктів.</p>
+<p class="m-desc" data-en="I create advertising videos, image and character animation, creative videos and visual stories — from short motion content to narrative projects." data-key="services.cards.c4.desc" data-ua="Створюю рекламні ролики, анімацію зображень і персонажів, креативні відео та візуальні історії — від короткого motion-контенту до сюжетних проєктів.">Створюю рекламні ролики, анімацію зображень і персонажів, креативні відео та візуальні історії — від короткого motion-контенту до сюжетних проєктів.</p>
 <a class="m-link" data-en="Discuss this →" data-ua="Обговорити →" href="#contact">Обговорити →</a>
 </div>
 <div class="m-for">
 <span class="m-for-label" data-en="When you need it" data-ua="Коли це потрібно">Коли це потрібно</span>
-<p class="m-for-text" data-en="Advertising, animation, creative videos and visual stories" data-key="services.cards.c4.for" data-ua="Реклама, анімація, креативні відео та візуальні історії">Реклама, анімація, креативні відео та візуальні історії</p>
+<p class="m-for-text" data-en="When still images aren't enough and you need to bring a product to life, tell a story or make a video for ads and social media." data-key="services.cards.c4.for" data-ua="Коли статичних кадрів замало: потрібно оживити продукт, розповісти історію або зробити ролик для реклами й соцмереж.">Коли статичних кадрів замало: потрібно оживити продукт, розповісти історію або зробити ролик для реклами й соцмереж.</p>
 </div>
 <div class="m-img"><img alt="AI Motion" data-img-key="services.cards.c4.image" src="images/motionposter2.webp" loading="lazy" decoding="async"/></div>
 </article>
@@ -732,12 +751,12 @@
 <div class="m-num">05</div>
 <div class="m-main">
 <h3 class="m-title" data-en="Creative Direction" data-key="services.cards.c5.title" data-ua="Creative Direction">Creative Direction</h3>
-<p class="m-desc" data-en="Visual concept, moodboard, styling, lighting, composition and cohesive creative direction for the project." data-key="services.cards.c5.desc" data-ua="Візуальна концепція, moodboard, стилістика, світло, композиція та єдина арт-дирекція проєкту.">Візуальна концепція, moodboard, стилістика, світло, композиція та єдина арт-дирекція проєкту.</p>
+<p class="m-desc" data-en="Visual concept, moodboard, styling, lighting and composition — one art direction for the whole project." data-key="services.cards.c5.desc" data-ua="Візуальна концепція, moodboard, стилістика, світло й композиція — єдина арт-дирекція для всього проєкту.">Візуальна концепція, moodboard, стилістика, світло й композиція — єдина арт-дирекція для всього проєкту.</p>
 <a class="m-link" data-en="Discuss this →" data-ua="Обговорити →" href="#contact">Обговорити →</a>
 </div>
 <div class="m-for">
 <span class="m-for-label" data-en="When you need it" data-ua="Коли це потрібно">Коли це потрібно</span>
-<p class="m-for-text" data-en="A brand without a unified visual language, or ahead of a big launch" data-key="services.cards.c5.for" data-ua="Бренд без єдиної візуальної мови або перед великим запуском">Бренд без єдиної візуальної мови або перед великим запуском</p>
+<p class="m-for-text" data-en="When a brand lacks a unified visual language or is preparing for a major launch." data-key="services.cards.c5.for" data-ua="Коли бренд не має єдиної візуальної мови або готується до великого запуску.">Коли бренд не має єдиної візуальної мови або готується до великого запуску.</p>
 </div>
 <div class="m-img"><img alt="Creative Direction" data-img-key="services.cards.c5.image" src="images/necklace11.webp" loading="lazy" decoding="async"/></div>
 </article>

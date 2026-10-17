@@ -21,8 +21,8 @@
       "en": "I create advertising AI shoots and visual campaigns for brands — from concept and art direction to finished content for websites, social media, marketplaces and ads."
     },
     "cta": {
-      "ua": "Переглянути роботи",
-      "en": "View the work"
+      "ua": "Переглянути портфоліо",
+      "en": "View portfolio"
     },
     "cta2": {
       "ua": "Обговорити проєкт",
@@ -91,8 +91,8 @@
       "en": "Visual projects and creative concepts"
     },
     "intro": {
-      "ua": "Тут — мої роботи, а не перелік послуг. Кожен кейс — завершена серія зі своїм завданням, концепцією та результатом. Оберіть напрямок і відкрийте кейси.",
-      "en": "These are my finished projects, not a list of services. Each case is a complete series with its own brief, concept and result. Choose a direction to open the cases."
+      "ua": "Кожен проєкт — це окрема візуальна історія. Від першої ідеї до фінального кадру: концепція, атмосфера та деталі, які створюють характер бренду.",
+      "en": "Every project is its own visual story. From the first idea to the final frame: concept, atmosphere and the details that shape a brand's character."
     },
     "categories": {
       "fashion": {
@@ -101,7 +101,7 @@
           "en": "Fashion & Lingerie"
         },
         "sub": {
-          "ua": "Studio · Location · Editorial Campaign · Lookbook",
+          "ua": "Студія · Локація · Editorial-кампанії · Лукбуки",
           "en": "Studio · Location · Editorial Campaign · Lookbook"
         },
         "image": "images/uploads/hf_20260404_115549_6af8a9e1-0bc4-43ef-9727-8f8fb5048869.webp"
@@ -112,7 +112,7 @@
           "en": "Beauty & Jewelry"
         },
         "sub": {
-          "ua": "Beauty · Skincare · Perfume · Jewelry",
+          "ua": "Б'юті · Догляд за шкірою · Парфумерія · Прикраси",
           "en": "Beauty · Skincare · Perfume · Jewelry"
         },
         "image": "images/uploads/ф4.webp"
@@ -123,7 +123,7 @@
           "en": "Product & E‑commerce"
         },
         "sub": {
-          "ua": "Product · Lifestyle · E‑commerce · Marketplace",
+          "ua": "Предметна зйомка · Lifestyle · E‑commerce · Маркетплейси",
           "en": "Product · Lifestyle · E‑commerce · Marketplace"
         },
         "image": "images/nespresso_lifestyle.webp"
@@ -134,8 +134,8 @@
           "en": "Food"
         },
         "sub": {
-          "ua": "Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign",
-          "en": "Menu from Scratch · Delivery Upgrade · Social Content · Food Product · Creative Campaign"
+          "ua": "Фуд-фотографія · Візуалізація страв · Контент для меню · Рекламні кампанії",
+          "en": "Food Photography · Dish Visualization · Menu Content · Advertising Campaigns"
         },
         "image": "images/uploads/меню-1-.webp"
       },
@@ -145,7 +145,7 @@
           "en": "Interior"
         },
         "sub": {
-          "ua": "Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation",
+          "ua": "Покращення фото · Заміна меблів · Редизайн кімнати · Повна стильова трансформація",
           "en": "Photo Enhancement · Furniture Replacement · Room Redesign · Full Style Transformation"
         },
         "image": "images/interior_editorial.webp"
@@ -156,7 +156,7 @@
           "en": "AI Content & Motion"
         },
         "sub": {
-          "ua": "Product Video · Image-to-Video · Campaign Series · Animation",
+          "ua": "Відео про продукт · Оживлення зображень · Серії для кампаній · Анімація",
           "en": "Product Video · Image-to-Video · Campaign Series · Animation"
         },
         "image": "images/motionposter1.webp"
@@ -177,8 +177,8 @@
       "en": "What exactly you can order"
     },
     "intro": {
-      "ua": "Це формати співпраці: оберіть, що потрібно вашому бренду. Приклади виконаних проєктів — у розділі «Портфоліо».",
-      "en": "These are the ways we can work together: pick what your brand needs. Examples of finished projects are in the “Portfolio” section."
+      "ua": "Від окремого візуалу до повноцінної рекламної кампанії — створюю контент, який допомагає брендам виділятися.",
+      "en": "From a single visual to a full advertising campaign — I create content that helps brands stand out."
     },
     "note": {
       "ua": "Створено за допомогою генеративного AI та професійного пост-продакшну.",
@@ -191,13 +191,13 @@
           "en": "AI Campaigns"
         },
         "desc": {
-          "ua": "Повна візуальна кампанія: концепція, арт-дирекшн і серія ключових кадрів для запуску продукту або бренду.",
-          "en": "Full visual campaign: concept, art direction and a series of key visuals for a product or brand launch."
+          "ua": "Повна візуальна кампанія: концепція, арт-дирекшн і серія ключових кадрів, готових до запуску.",
+          "en": "A complete visual campaign: concept, art direction and a series of key visuals, ready to launch."
         },
         "image": "images/lux8.webp",
         "for": {
-          "ua": "Запуск продукту, бренду або сезонної колекції",
-          "en": "Product, brand or seasonal collection launches"
+          "ua": "Коли ви запускаєте продукт, бренд або сезонну колекцію і потрібен єдиний візуальний образ.",
+          "en": "When you're launching a product, brand or seasonal collection and need one cohesive visual identity."
         }
       },
       "c2": {
@@ -211,8 +211,8 @@
         },
         "image": "images/nespresso3.webp",
         "for": {
-          "ua": "Каталог, сайт, картка товару на маркетплейсі",
-          "en": "Catalogue, website, marketplace product page"
+          "ua": "Коли потрібні якісні візуали для каталогу, сайту чи маркетплейсу без організації традиційної фотозйомки",
+          "en": "When you need high-quality visuals for a catalogue, website or marketplace without arranging a traditional photoshoot"
         }
       },
       "c3": {
@@ -221,13 +221,13 @@
           "en": "Social Content"
         },
         "desc": {
-          "ua": "Серії зображень для Instagram, Stories, digital-реклами, сезонних запусків і регулярного контенту.",
-          "en": "Visual content series for Instagram, Stories, digital advertising, seasonal launches and ongoing brand communication."
+          "ua": "Створюю серії зображень для Instagram, Stories, digital-реклами та регулярного контенту бренду.",
+          "en": "I create image series for Instagram, Stories, digital ads and a brand's regular content."
         },
         "image": "images/perfloc3.webp",
         "for": {
-          "ua": "Instagram, Stories, digital-реклама, регулярний контент",
-          "en": "Instagram, Stories, digital ads, regular content"
+          "ua": "Коли потрібно регулярно оновлювати контент, підтримувати єдиний стиль бренду або запускати рекламні кампанії.",
+          "en": "When you need to refresh content regularly, keep a consistent brand style or launch ad campaigns."
         }
       },
       "c4": {
@@ -236,13 +236,13 @@
           "en": "AI Motion"
         },
         "desc": {
-          "ua": "Рекламні ролики, анімація зображень і персонажів, креативні відео та візуальні історії — від короткого motion-контенту до сюжетних роликів для брендів і авторських проєктів.",
-          "en": "Advertising films, image and character animation, creative videos and visual stories — from short motion content to narrative films for brands and original projects."
+          "ua": "Створюю рекламні ролики, анімацію зображень і персонажів, креативні відео та візуальні історії — від короткого motion-контенту до сюжетних проєктів.",
+          "en": "I create advertising videos, image and character animation, creative videos and visual stories — from short motion content to narrative projects."
         },
         "image": "images/motionposter2.webp",
         "for": {
-          "ua": "Реклама, анімація, креативні відео та візуальні історії",
-          "en": "Advertising, animation, creative videos and visual stories"
+          "ua": "Коли статичних кадрів замало: потрібно оживити продукт, розповісти історію або зробити ролик для реклами й соцмереж.",
+          "en": "When still images aren't enough and you need to bring a product to life, tell a story or make a video for ads and social media."
         }
       },
       "c5": {
@@ -251,13 +251,13 @@
           "en": "Creative Direction"
         },
         "desc": {
-          "ua": "Візуальна концепція, moodboard, стилістика, світло, композиція та єдина арт-дирекція проєкту.",
-          "en": "Visual concept, moodboard, styling, lighting, composition and cohesive creative direction for the project."
+          "ua": "Візуальна концепція, moodboard, стилістика, світло й композиція — єдина арт-дирекція для всього проєкту.",
+          "en": "Visual concept, moodboard, styling, lighting and composition — one art direction for the whole project."
         },
         "image": "images/necklace11.webp",
         "for": {
-          "ua": "Бренд без єдиної візуальної мови або перед великим запуском",
-          "en": "A brand without a unified visual language, or ahead of a big launch"
+          "ua": "Коли бренд не має єдиної візуальної мови або готується до великого запуску.",
+          "en": "When a brand lacks a unified visual language or is preparing for a major launch."
         }
       },
       "c6": {
