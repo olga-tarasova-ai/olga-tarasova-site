@@ -425,6 +425,99 @@
           "image": "images/uploads/kizko-studio-08.webp"
         }
       ]
+    },
+    {
+      "id": "case-33",
+      "category": "fashion",
+      "aspect": "9/16",
+      "columns": "5",
+      "title": {
+        "ua": "Sheer Black — Studio Series",
+        "en": "Sheer Black — Studio Series"
+      },
+      "task": {
+        "ua": "Показати крій і прозору сітку комплекту так, щоб деталі читалися на тілі, а вся серія виглядала як одна зйомка.",
+        "en": "Show the cut and the sheer mesh of the set so the details read on the body and the whole series looks like one shoot."
+      },
+      "concept": {
+        "ua": "Тепле направлене світло й м'яка тінь на тлі: без декору, акцент на лінії тіла, бретелях і фактурі сітки. Крупний план додає серії деталь крою, відео — рух і пластику пози.",
+        "en": "Warm directional light and a soft shadow on the backdrop: no props, the focus on body lines, straps and mesh texture. A close-up adds the construction detail, the video adds movement."
+      },
+      "deliverables": {
+        "ua": "4 зображення + 1 відео · студійна серія",
+        "en": "4 images + 1 video · studio series"
+      },
+      "cover": "images/uploads/red-studio-cover.webp",
+      "gallery": [
+        {
+          "image": "images/uploads/red-studio-01.webp"
+        },
+        {
+          "image": "images/uploads/red-studio-02.webp"
+        },
+        {
+          "image": "images/uploads/red-studio-03.webp"
+        },
+        {
+          "image": "images/uploads/red-studio-04.webp"
+        },
+        {
+          "media": "video",
+          "video": "images/uploads/red-studio-video.mp4",
+          "poster": "images/uploads/red-studio-video-poster.jpg"
+        }
+      ]
+    },
+    {
+      "id": "case-34",
+      "category": "fashion",
+      "aspect": "9/16",
+      "columns": "4",
+      "title": {
+        "ua": "Sheer Black — Paris & Suite",
+        "en": "Sheer Black — Paris & Suite"
+      },
+      "task": {
+        "ua": "Перенести ту саму білизняну серію на локацію та в інтер'єр, зберігши єдиний стиль і впізнавану модель.",
+        "en": "Move the same lingerie series to a location and an interior while keeping one style and the same model."
+      },
+      "concept": {
+        "ua": "Два середовища в одному настрої: паризький балкон із кованими перилами, денним світлом і мереживними рукавичками — та світлий номер із білою постіллю, перлами і чорними човниками. Один комплект, дві історії: вулична зухвалість і камерна ранкова сцена.",
+        "en": "Two environments in one mood: a Parisian balcony with wrought iron, daylight and lace gloves — and a bright suite with white linen, pearls and black heels. One set, two stories: a bold street scene and a quiet morning one."
+      },
+      "deliverables": {
+        "ua": "7 зображень + 1 відео · локація та інтер'єр",
+        "en": "7 images + 1 video · location and interior"
+      },
+      "cover": "images/uploads/red-paris-cover.webp",
+      "gallery": [
+        {
+          "image": "images/uploads/red-paris-01.webp"
+        },
+        {
+          "image": "images/uploads/red-paris-02.webp"
+        },
+        {
+          "image": "images/uploads/red-paris-03.webp"
+        },
+        {
+          "media": "video",
+          "video": "images/uploads/red-paris-video.mp4",
+          "poster": "images/uploads/red-paris-video-poster.jpg"
+        },
+        {
+          "image": "images/uploads/red-suite-01.webp"
+        },
+        {
+          "image": "images/uploads/red-suite-02.webp"
+        },
+        {
+          "image": "images/uploads/red-suite-03.webp"
+        },
+        {
+          "image": "images/uploads/red-suite-04.webp"
+        }
+      ]
     }
   ]
 }
