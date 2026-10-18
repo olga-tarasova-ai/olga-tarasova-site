@@ -527,6 +527,39 @@
           "image": "images/uploads/red-suite-04.webp"
         }
       ]
+    },
+    {
+      "id": "case-35",
+      "category": "motion",
+      "aspect": "9/16",
+      "columns": "3",
+      "title": {
+        "ua": "«Служниця» — книжковий трейлер",
+        "en": "The Housemaid (Служниця) — Book Trailer"
+      },
+      "task": {
+        "ua": "Створити кінематографічний трейлер-інтригу за мотивами психологічного трилера Фріди Макфадден, який з першої секунди тримає напругу і підводить до книги.",
+        "en": "Create a cinematic teaser based on Freida McFadden's psychological thriller that holds tension from the first second and leads the viewer to the book."
+      },
+      "concept": {
+        "ua": "Холодне світло й темні інтер'єри, крупні плани героїні, будинок у тумані та зловісно привітний господар. Три короткі титри — «RIDMI презентує», запитання «Хто з них жертва, хто мисливець?» і назва книги — ведуть до фіналу «відповідь у книзі». Звук і монтаж працюють на напругу.",
+        "en": "Cold light and dark interiors, close-ups of the heroine, a house in the fog and an unsettlingly friendly host. Three short title cards — “RIDMI presents”, the question “Who is the victim and who is the hunter?” and the book title — lead to the closing line “the answer is in the book”. Sound and editing build the tension."
+      },
+      "deliverables": {
+        "ua": "1 відео · 55 с · книжковий трейлер зі звуком",
+        "en": "1 video · 55 s · book trailer with sound"
+      },
+      "cover": "images/uploads/sluzhnytsia-cover.webp",
+      "gallery": [
+        {
+          "media": "video",
+          "video": "images/uploads/sluzhnytsia-trailer.mp4",
+          "poster": "images/uploads/sluzhnytsia-trailer-poster.jpg",
+          "sound": true,
+          "caption_ua": "Книжковий трейлер · зі звуком",
+          "caption_en": "Book trailer · with sound"
+        }
+      ]
     }
   ]
 }

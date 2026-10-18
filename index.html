@@ -1180,13 +1180,13 @@
       const arOk = ['3/4','4/5','9/16'].includes(String(item.aspect || ''));
       const colsN = String(item.columns || '');
       const gridCls = 'menu-grid' + (colsN === '3' ? ' grid-3' : colsN === '4' ? ' grid-4' : '') + (arOk ? ' ar-custom' : '');
-      const gridStyle = arOk ? ` style="--ar:${item.aspect}"` : '';
+      const gridStyle = arOk ? ` style="--ar:${item.aspect}${gallery.length === 1 ? ';grid-template-columns:minmax(0,420px);justify-content:start' : ''}"` : '';
       const dishCls = arOk ? 'dish reveal in' : 'dish square reveal in';
       const dishes = gallery.map(g => {
         if (!g || !(g.image || (g.media === 'video' && g.video))) return '';
         const cUa = g.caption_ua || '', cEn = g.caption_en || cUa;
         const media = g.media === 'video'
-          ? `<video loop muted playsinline preload="none" poster="${escAttr(g.poster)}" data-src="${escAttr(g.video)}"></video>`
+          ? `<video loop muted playsinline${g.sound ? ' controls' : ''} preload="none" poster="${escAttr(g.poster)}" data-src="${escAttr(g.video)}"></video>`
           : `<img src="${escAttr(g.image)}" alt="" loading="lazy" decoding="async">`;
         return `<div class="${dishCls}">
             <div class="frame">${media}</div>
