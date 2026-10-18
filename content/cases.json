@@ -560,6 +560,39 @@
           "caption_en": "Book trailer · with sound"
         }
       ]
+    },
+    {
+      "id": "case-36",
+      "category": "motion",
+      "aspect": "9/16",
+      "columns": "3",
+      "title": {
+        "ua": "«Малюк» — 3D-анімована історія",
+        "en": "The Little One — 3D Animated Story"
+      },
+      "task": {
+        "ua": "Перетворити особисту історію очікування дитини на теплий 3D-мультфільм, який зворушує з перших секунд і яким хочеться ділитися.",
+        "en": "Turn a personal story of expecting a baby into a warm 3D animated film that moves the viewer from the first seconds and is made to be shared."
+      },
+      "concept": {
+        "ua": "Реальний кадр пари з УЗД переходить у казковий світ: золоті хмари, небесні двері, бабуся-хранителька з книгою історій і маля, яке готується з'явитися на світ разом зі своїм вірним бульдогом. Фінал повертає в реальний двір — світло, обійми й очікування. Повна версія зі звуком.",
+        "en": "A real shot of the couple with the ultrasound turns into a fairy-tale world: golden clouds, heavenly doors, a guardian grandmother with a book of stories and a baby getting ready to be born together with a loyal bulldog. The finale returns to the real yard — light, an embrace and anticipation. Full version with sound."
+      },
+      "deliverables": {
+        "ua": "1 відео · 1:49 · повна версія зі звуком",
+        "en": "1 video · 1:49 · full version with sound"
+      },
+      "cover": "images/uploads/malysh-cover.webp",
+      "gallery": [
+        {
+          "media": "video",
+          "video": "images/uploads/malysh-full-cartoon.mp4",
+          "poster": "images/uploads/malysh-full-cartoon-poster.jpg",
+          "sound": true,
+          "caption_ua": "Повна версія · зі звуком",
+          "caption_en": "Full version · with sound"
+        }
+      ]
     }
   ]
 }
