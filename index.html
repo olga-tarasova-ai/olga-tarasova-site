@@ -104,6 +104,53 @@
   .mobile-nav .lang-switch{margin-top:22px;font-size:.9rem;}
   .mobile-nav .lang-btn{font-size:.85rem;}
 
+
+  /* ===== NAV B: visible sections + Portfolio categories row ===== */
+  header{display:grid;grid-template-columns:auto auto;justify-content:space-between;align-items:start;column-gap:30px;row-gap:0;}
+  header .hd-cats{grid-column:1/-1;}
+  .header-right{gap:min(30px,2vw);}
+  nav.main-nav{gap:min(34px,2.4vw);}
+  @media(max-width:1180px){nav.main-nav a{letter-spacing:.1em;}}
+  @media(max-width:1100px){nav.main-nav{gap:17px;}nav.main-nav a{letter-spacing:.06em;font-size:.9rem;}.header-right{gap:16px;}}
+  nav.main-nav a{white-space:nowrap;}
+  @media(min-width:981px){.logo .name{white-space:nowrap;}}
+  @media(min-width:981px){.menu-toggle{display:none;}}
+  @media(max-width:980px){nav.main-nav{display:none;}.header-right .lang-switch{display:none;}.menu-toggle{display:flex;}.hd-cats{display:none;}}
+  /* active section: same thin line as the hover effect, simply kept visible */
+  nav.main-nav a.is-active{color:var(--ivory);}
+  nav.main-nav a.is-active::after{width:100%;}
+  .hd-cats{max-height:0;opacity:0;overflow:hidden;pointer-events:none;border-top:0 solid transparent;margin-top:0;
+    transition:max-height .4s cubic-bezier(.3,0,.2,1),opacity .3s ease,margin-top .4s cubic-bezier(.3,0,.2,1),border-color .3s ease;}
+  header.scrolled.has-cats .hd-cats{max-height:52px;opacity:1;pointer-events:auto;margin-top:14px;border-top:1px solid rgba(241,236,228,.1);}
+  .hd-cats-in{display:flex;justify-content:flex-end;gap:min(30px,2.2vw);padding:11px 0 1px;}
+  .hd-cats a{font-family:'Manrope',sans-serif;font-weight:500;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:#AAA5A0;position:relative;padding-bottom:4px;white-space:nowrap;}
+  .hd-cats a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--burgundy-light);transition:width .3s ease;}
+  .hd-cats a:hover{color:var(--ivory);}
+  .hd-cats a:hover::after,.hd-cats a.is-active::after{width:100%;}
+  .hd-cats a.is-active{color:var(--ivory);}
+  .hd-cats a:focus-visible,nav.main-nav a:focus-visible{outline:1px solid rgba(241,236,228,.9);outline-offset:6px;}
+  /* mobile menu */
+  .mobile-nav{padding:84px 7vw 96px;}
+  .m-cats{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:16px 30px;margin:-2px 0 4px;}
+  .m-cats a{font-family:'Manrope',sans-serif;font-weight:500;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:#AAA5A0;padding:8px 0;}
+  .m-cats a:active{color:var(--ivory);}
+  .mobile-nav .lang-switch{position:absolute;left:0;right:0;bottom:max(28px,env(safe-area-inset-bottom));justify-content:center;margin-top:0;}
+  .mobile-nav .lang-switch span{opacity:.6;}
+  /* menu button turns into a minimal thin cross while the menu is open */
+  .burger span{transition:transform .3s ease,opacity .2s ease,top .3s ease;}
+  header.menu-open .burger span:nth-child(1){top:6px;transform:rotate(45deg);}
+  header.menu-open .burger span:nth-child(2){opacity:0;}
+  header.menu-open .burger span:nth-child(3){top:6px;transform:rotate(-45deg);}
+  @media(max-width:380px){.m-cats{gap:12px 22px}.m-cats a{font-size:.7rem;letter-spacing:.16em}}
+
+
+  /* nav can't sit clear of the portrait: compact menu button instead (desktop widths) */
+  header.nav-compact nav.main-nav{display:none;}
+  header.nav-compact .header-right .lang-switch{display:none;}
+  header.nav-compact .menu-toggle{display:flex;}
+  /* DE: hyphenation for long German words */
+  html[lang="de"] :is(p,.meta,.m-for-text,.category-sub,.cover-title,.case-head h3,.case-brief .row span,.step p,.about-text-col p){hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word;}
+
   /* ===== HERO ===== */
   .hero{
     position:relative;min-height:100vh;overflow:hidden;
@@ -241,6 +288,9 @@
   .case-n{display:none;}
   .case-head h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.45rem,2.6vw,2.1rem);text-transform:uppercase;letter-spacing:.045em;margin-top:10px;}
   .case-head .meta{font-size:.8rem;line-height:1.85;color:#a9a29a;max-width:430px;}
+  /* independent AI concept label under the project title */
+  .case-ai{display:flex;align-items:center;gap:10px;margin-top:12px;font-family:'Manrope',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.16em;line-height:1.7;text-transform:uppercase;color:#a9a29a;max-width:430px;}
+  .case-ai::before{content:'';width:18px;height:1px;background:#a9a29a;opacity:.7;flex:none;}
   .case-brief{display:flex;flex-direction:column;gap:11px;max-width:430px;}
   .case-brief .row{display:flex;gap:16px;align-items:baseline;}
   .case-brief .lab{flex:0 0 100px;font-family:'Manrope',sans-serif;font-weight:600;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--burgundy-light);}
@@ -513,6 +563,55 @@
     html{scroll-behavior:auto;}
     .reveal{opacity:1!important;transform:none!important;transition:none!important;}
   }
+
+  /* ===== FULLSCREEN GALLERY (lightbox) + cover → project transition ===== */
+  .lb{position:fixed;inset:0;z-index:1200;touch-action:none;overscroll-behavior:contain;-webkit-user-select:none;user-select:none;}
+  .lb[hidden]{display:none;}
+  .lb-bg{position:absolute;inset:0;background:#0a0808;opacity:0;}
+  .lb-track{position:absolute;inset:0;display:flex;will-change:transform;}
+  .lb.single .lb-arrow,.lb.single .lb-count{display:none;}
+  .lb-slide{flex:0 0 100%;height:100%;display:flex;align-items:center;justify-content:center;
+    padding:calc(env(safe-area-inset-top,0px) + 60px) 0 calc(env(safe-area-inset-bottom,0px) + 60px);box-sizing:border-box;}
+  .lb-slide img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;
+    -webkit-user-drag:none;pointer-events:none;will-change:transform;}
+  .lb-ui{opacity:0;transition:opacity .35s ease;}
+  .lb.ui-on .lb-ui{opacity:1;}
+  .lb-close,.lb-arrow{position:absolute;width:46px;height:46px;border:1px solid rgba(241,236,228,.28);background:rgba(20,17,17,.55);
+    color:#e7e1d8;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:border-color .3s ease,opacity .35s ease;}
+  .lb-close:hover,.lb-arrow:hover{border-color:rgba(241,236,228,.7);}
+  .lb:focus,.lb-close:focus,.lb-arrow:focus{outline:none;}
+  .lb-close:focus-visible,.lb-arrow:focus-visible{outline:1.5px solid #f1ece4;outline-offset:4px;border-color:rgba(241,236,228,.7);}
+  .strip-track figure{position:relative;outline:none;}
+  .strip-track figure:focus-visible::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 2px #f1ece4,inset 0 0 0 4px rgba(10,8,8,.6);}
+  .case-modal .dish .frame:focus:not(:focus-visible){outline:none;}
+  .lb-close{top:calc(env(safe-area-inset-top,0px) + 14px);right:calc(env(safe-area-inset-right,0px) + 14px);}
+  .lb-arrow{top:50%;margin-top:-23px;display:none;}
+  .lb-prev{left:22px;} .lb-next{right:22px;}
+  .lb-arrow[disabled],.lb.ui-on .lb-arrow[disabled]{opacity:0;pointer-events:none;}
+  .lb svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;}
+  .lb-count{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 22px);text-align:center;
+    font-family:'Manrope',sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.24em;color:#cfc8bf;pointer-events:none;}
+  @media(hover:hover) and (pointer:fine){
+    .lb-arrow{display:flex;}
+    .lb-slide{padding-left:96px;padding-right:96px;}
+    .case-modal .dish .frame:has(img){cursor:zoom-in;}
+  }
+  .case-modal .dish .frame:has(img):focus-visible{outline:1px solid rgba(241,236,228,.6);outline-offset:3px;}
+  /* minimal close crosses: no permanent square, large invisible hit area */
+  .lb .lb-close,.case-modal .case-modal-close{width:48px;height:48px;border:0;background:transparent;border-radius:50%;padding:0;color:#e9e3d9;
+    -webkit-tap-highlight-color:transparent;filter:drop-shadow(0 0 5px rgba(10,8,8,.55));transition:color .25s ease;}
+  .lb .lb-close{top:calc(env(safe-area-inset-top,0px) + 10px);right:calc(env(safe-area-inset-right,0px) + 10px);}
+  .case-modal .case-modal-close{top:10px;right:10px;font-size:0;line-height:0;}
+  .lb .lb-close:hover,.case-modal .case-modal-close:hover{border:0;color:#fff;}
+  .lb .lb-close svg{width:20px;height:20px;stroke-width:1.05;}
+  .case-modal .case-modal-close::before,.case-modal .case-modal-close::after{content:"";position:absolute;left:50%;top:50%;width:20px;height:1.1px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg);}
+  .case-modal .case-modal-close::after{transform:translate(-50%,-50%) rotate(-45deg);}
+  .lb .lb-close:focus,.case-modal .case-modal-close:focus{outline:none;}
+  .lb .lb-close:focus-visible,.case-modal .case-modal-close:focus-visible{outline:1px solid rgba(241,236,228,.9);outline-offset:-5px;}
+  .cover-fly{position:fixed;z-index:1100;overflow:hidden;pointer-events:none;background:#1c1918;border:1px solid rgba(241,236,228,.08);}
+  .cover-fly img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  .cover-fly .fly-hero{position:absolute;inset:0;}
+  @media(prefers-reduced-motion:reduce){.lb-ui{transition:none;}}
 </style>
 </head>
 <body>
@@ -523,33 +622,39 @@
 </div>
 <div class="header-right">
 <nav class="main-nav">
-<a data-en="Portfolio" data-ua="Портфоліо" href="#portfolio">Портфоліо</a>
-<a data-en="Services" data-ua="Послуги" href="#work">Послуги</a>
-<a data-en="About" data-ua="Про мене" href="#about">Про мене</a>
-<a data-en="Process" data-ua="Процес" href="#process">Процес</a>
-<a data-en="Contact" data-ua="Контакти" href="#contact">Контакти</a>
+<a data-de="Portfolio" data-en="Portfolio" data-ua="Портфоліо" href="#portfolio">Портфоліо</a>
+<a data-de="Leistungen" data-en="Services" data-ua="Послуги" href="#work">Послуги</a>
+<a data-de="Über mich" data-en="About" data-ua="Про мене" href="#about">Про мене</a>
+<a data-de="Ablauf" data-en="Process" data-ua="Процес" href="#process">Процес</a>
+<a data-de="Kontakt" data-en="Contact" data-ua="Контакти" href="#contact">Контакти</a>
 </nav>
 <div class="lang-switch">
 <button class="lang-btn active" data-lang="ua">UA</button>
 <span>/</span>
 <button class="lang-btn" data-lang="en">EN</button>
+<span>/</span>
+<button class="lang-btn" data-lang="de">DE</button>
 </div>
 <button class="menu-toggle" id="menuToggle">
-<span data-en="Menu" data-ua="Меню">Меню</span>
+<span data-de="Menü" data-en="Menu" data-ua="Меню">Меню</span>
 <span class="burger"><span></span><span></span><span></span></span>
 </button>
 </div>
+<div class="hd-cats" id="hdCats"><div class="hd-cats-in" role="navigation" aria-label="Portfolio"><a data-cat="fashion" data-de="Fashion" data-en="Fashion" data-ua="Fashion" href="#portfolio">Fashion</a><a data-cat="beauty" data-de="Beauty" data-en="Beauty" data-ua="Beauty" href="#portfolio">Beauty</a><a data-cat="product" data-de="Produkt" data-en="Product" data-ua="Product" href="#portfolio">Product</a><a data-cat="food" data-de="Food" data-en="Food" data-ua="Food" href="#portfolio">Food</a><a data-cat="interior" data-de="Interior" data-en="Interior" data-ua="Interior" href="#portfolio">Interior</a><a data-cat="motion" data-de="Motion" data-en="Motion" data-ua="Motion" href="#portfolio">Motion</a></div></div>
 </header>
 <div class="mobile-nav" id="mobileNav">
-<a data-en="Portfolio" data-ua="Портфоліо" href="#portfolio">Портфоліо</a>
-<a data-en="Services" data-ua="Послуги" href="#work">Послуги</a>
-<a data-en="About" data-ua="Про мене" href="#about">Про мене</a>
-<a data-en="Process" data-ua="Процес" href="#process">Процес</a>
-<a data-en="Contact" data-ua="Контакти" href="#contact">Контакти</a>
+<a data-de="Portfolio" data-en="Portfolio" data-ua="Портфоліо" href="#portfolio">Портфоліо</a>
+<div class="m-cats"><a data-cat="fashion" data-de="Fashion" data-en="Fashion" data-ua="Fashion" href="#portfolio">Fashion</a><a data-cat="beauty" data-de="Beauty" data-en="Beauty" data-ua="Beauty" href="#portfolio">Beauty</a><a data-cat="product" data-de="Produkt" data-en="Product" data-ua="Product" href="#portfolio">Product</a><a data-cat="food" data-de="Food" data-en="Food" data-ua="Food" href="#portfolio">Food</a><a data-cat="interior" data-de="Interior" data-en="Interior" data-ua="Interior" href="#portfolio">Interior</a><a data-cat="motion" data-de="Motion" data-en="Motion" data-ua="Motion" href="#portfolio">Motion</a></div>
+<a data-de="Leistungen" data-en="Services" data-ua="Послуги" href="#work">Послуги</a>
+<a data-de="Über mich" data-en="About" data-ua="Про мене" href="#about">Про мене</a>
+<a data-de="Ablauf" data-en="Process" data-ua="Процес" href="#process">Процес</a>
+<a data-de="Kontakt" data-en="Contact" data-ua="Контакти" href="#contact">Контакти</a>
 <div class="lang-switch">
 <button class="lang-btn active" data-lang="ua">UA</button>
 <span>/</span>
 <button class="lang-btn" data-lang="en">EN</button>
+<span>/</span>
+<button class="lang-btn" data-lang="de">DE</button>
 </div>
 </div>
 <!-- ===== HERO ===== -->
@@ -568,7 +673,7 @@
 </div>
 <div class="hero-inner">
 <div class="hero-copy">
-<h1 data-en='&lt;span class="ln"&gt;Shoots that never happened.&lt;/span&gt;&lt;span class="ln accent"&gt;Visuals that perform.&lt;/span&gt;' data-key="hero.title" data-ua='&lt;span class="ln"&gt;Зйомки, яких не було.&lt;/span&gt;&lt;span class="ln accent"&gt;Візуали, які працюють.&lt;/span&gt;'><span class="ln">Зйомки, яких не було.</span><span class="ln accent">Візуали, які працюють.</span></h1>
+<h1 data-en='&lt;span class="ln"&gt;Shootings that never happened.&lt;/span&gt;&lt;span class="ln accent"&gt;Visuals that perform.&lt;/span&gt;' data-key="hero.title" data-ua='&lt;span class="ln"&gt;Зйомки, яких не було.&lt;/span&gt;&lt;span class="ln accent"&gt;Візуали, які працюють.&lt;/span&gt;'><span class="ln">Зйомки, яких не було.</span><span class="ln accent">Візуали, які працюють.</span></h1>
 <span class="rule"></span>
 <p class="lead" data-en="I create advertising AI shoots and visual campaigns for brands — from concept and art direction to finished content for websites, social media, marketplaces and ads." data-key="hero.lead" data-ua="Створюю рекламні AI-зйомки та візуальні кампанії для брендів — від концепції та арт-дирекшну до готового контенту для сайтів, соцмереж, маркетплейсів і реклами.">Створюю рекламні AI-зйомки та візуальні кампанії для брендів — від концепції та арт-дирекшну до готового контенту для сайтів, соцмереж, маркетплейсів і реклами.</p>
 <div class="hero-cta-row">
@@ -888,6 +993,41 @@
 <div>AI Visual Creator &amp; Art Direction</div>
 </div>
 </section>
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" hidden>
+<div class="lb-bg"></div>
+<div class="lb-track" id="lbTrack"></div>
+<button class="lb-close lb-ui" id="lbClose" type="button"><svg viewBox="0 0 18 18"><path d="M3 3l12 12M15 3L3 15"/></svg></button>
+<button class="lb-arrow lb-prev lb-ui" id="lbPrev" type="button"><svg viewBox="0 0 18 18"><path d="M11.5 3.5L6 9l5.5 5.5"/></svg></button>
+<button class="lb-arrow lb-next lb-ui" id="lbNext" type="button"><svg viewBox="0 0 18 18"><path d="M6.5 3.5L12 9l-5.5 5.5"/></svg></button>
+<div class="lb-count lb-ui" id="lbCount" aria-live="polite"></div>
+</div>
+<script>
+window.__DEM = {};
+(function(){
+  const M = window.__DEM; let keys = [];
+  const un = t => String(t).replace(/&amp;/g,'&');
+  window.__de = function(en){
+    if (en == null) return en;
+    const a = un(en);
+    if (M[a] !== undefined) return M[a];
+    const cm = /^Case (\d+)$/.exec(a); if (cm) return 'Projekt ' + cm[1];
+    if (M[a.trim()] !== undefined) return M[a.trim()];
+    if (/<[a-z]/i.test(a)){ // composite html: translate known fragments
+      let out = a, hit = false;
+      keys.forEach(k => { if (out.indexOf(k) > -1){ out = out.split(k).join(M[k]); hit = true; } });
+      if (hit) return out;
+    }
+    return null;
+  };
+  fetch('content/translations-de.json', { cache:'no-store' }).then(r => r.ok ? r.json() : null).then(j => {
+    if (!j || !Array.isArray(j.pairs)) return;
+    j.pairs.forEach(p => { if (p.en && p.de) M[p.en] = p.de; });
+    keys = Object.keys(M).filter(k => k.length > 3).sort((a, b) => b.length - a.length);
+    const act = document.querySelector('.lang-btn.active');
+    if (act && act.dataset.lang === 'de' && typeof setLang === 'function') setLang('de');
+  }).catch(() => {});
+})();
+</script>
 <script>
   const header = document.getElementById('siteHeader');
   window.addEventListener('scroll', () => {
@@ -896,8 +1036,8 @@
 
   const menuToggle = document.getElementById('menuToggle');
   const mobileNav = document.getElementById('mobileNav');
-  menuToggle.addEventListener('click', () => mobileNav.classList.toggle('open'));
-  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+  menuToggle.addEventListener('click', () => { mobileNav.classList.toggle('open'); header.classList.toggle('menu-open', mobileNav.classList.contains('open')); });
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mobileNav.classList.remove('open'); header.classList.remove('menu-open'); }));
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
@@ -931,7 +1071,7 @@
     document.querySelectorAll('.strip').forEach(root => {
       const vp = root.querySelector('.strip-viewport'), track = root.querySelector('.strip-track');
       const imgs = [...track.querySelectorAll('img')];
-      let loaded = false, setW = 0, x = 0, vel = 0, autoK = 0, hover = false, resumeAt = 0, drag = null, run = false, last = 0, raf = 0, inView = true;
+      let shift = 0, loaded = false, setW = 0, x = 0, vel = 0, autoK = 0, hover = false, resumeAt = 0, drag = null, run = false, last = 0, raf = 0, inView = true;
       const load = () => { if (loaded) return; loaded = true; imgs.forEach(i => { i.loading = 'eager'; if (i.dataset.src) i.src = i.dataset.src; }); };
       const measure = () => {
         const figs = track.querySelectorAll(':scope > figure, :scope > .strip-dup > figure');
@@ -942,9 +1082,9 @@
       const frame = t => {
         const dt = Math.min(.05, (t - last) / 1000); last = t;
         if (!drag) {
-          const want = (hover || t < resumeAt || reduce.matches) ? 0 : 1;
+          const want = (hover || window.__stripHold || vp._kb || t < resumeAt || reduce.matches) ? 0 : 1;
           autoK += (want - autoK) * Math.min(1, dt * 2.5);
-          x += vel * dt; vel *= Math.pow(.06, dt);
+          x += vel * dt; vel *= Math.pow(.06, dt); if (shift){ const st = Math.abs(shift) < .4 ? shift : shift * Math.min(1, dt * 7); x += st; shift -= st; }
           x -= (setW / CYCLE) * autoK * dt;
         }
         wrap(); track.style.transform = 'translate3d(' + x.toFixed(2) + 'px,0,0)';
@@ -968,16 +1108,39 @@
       });
       const end = () => { if (!drag) return; const was = drag.on; drag = null; vp.classList.remove('dragging'); if (was) resumeAt = performance.now() + 3000; else vel = 0; };
       vp.addEventListener('pointerup', end); vp.addEventListener('pointercancel', end);
+      vp._vel = () => vel;
+      vp.querySelectorAll('.strip-track > figure').forEach(f => { f.tabIndex = 0; f.setAttribute('role', 'button'); });
+      vp.addEventListener('focusin', e => {
+        const f = e.target.closest && e.target.closest('figure'); if (!f || !f.matches(':focus-visible')) return;
+        vp._kb = true; vp.scrollLeft = 0; vp.scrollTop = 0; vel = 0;
+        const r = f.getBoundingClientRect(), v = vp.getBoundingClientRect(), pad = Math.min(40, v.width * .08);
+        if (r.left >= v.left + pad && r.right <= v.right - pad) return;
+        let d = (v.left + v.width / 2) - (r.left + r.width / 2);
+        if (setW) d = ((d + setW / 2) % setW + setW) % setW - setW / 2;
+        shift = d;
+      });
+      vp.addEventListener('focusout', e => { if (!vp.contains(e.relatedTarget)) { vp._kb = false; resumeAt = performance.now() + 3000; } });
+      vp.addEventListener('scroll', () => { vp.scrollLeft = 0; vp.scrollTop = 0; });
     });
   })();
 
   function setLang(lang){
-    document.documentElement.lang = lang === 'ua' ? 'uk' : 'en';
-    document.title = lang === 'ua' ? 'Ольга Тарасова — AI Visual Creator та арт-дирекшн для брендів' : 'Olga Tarasova — AI Visual Creator & Art Direction';
+    document.documentElement.lang = lang === 'ua' ? 'uk' : (lang === 'de' ? 'de' : 'en');
+    document.title = lang === 'ua' ? 'Ольга Тарасова — AI Visual Creator та арт-дирекшн для брендів' : (lang === 'de' ? 'Olga Tarasova — AI Visual Creator & Art Direction für Marken' : 'Olga Tarasova — AI Visual Creator & Art Direction');
     document.querySelectorAll('[data-ua]').forEach(el => {
-      el.innerHTML = lang === 'ua' ? el.dataset.ua : el.dataset.en;
+      if (lang === 'ua') el.innerHTML = el.dataset.ua;
+      else if (lang === 'de'){ const d = el.dataset.de !== undefined ? el.dataset.de : window.__de(el.dataset.en); el.innerHTML = d != null ? d : el.dataset.en; }
+      else el.innerHTML = el.dataset.en;
     });
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+    const md = document.querySelector('meta[name="description"]'); if (md) md.setAttribute('content', {"ua": "Ольга Тарасова — AI Visual Creator. Візуальні кампанії, предметна зйомка, AI Motion та візуалізація інтер'єрів для fashion, beauty, food і lifestyle-брендів.", "en": "Olga Tarasova — AI Visual Creator. Visual campaigns, product photography, AI motion and interior visualization for fashion, beauty, food and lifestyle brands.", "de": "Olga Tarasova — AI Visual Creator. Visuelle Kampagnen, Produktfotografie, AI Motion und Interior-Visualisierung für Fashion-, Beauty-, Food- und Lifestyle-Marken."}[lang] || md.getAttribute('content'));
+  }
+  function aiConceptLabel(item){
+    if (!item || !item.independent_concept) return '';
+    const ua = 'Вільна AI-концепція · Створено не на замовлення бренду';
+    const en = 'Independent AI concept · Not commissioned by the brand';
+    const de = 'Freies AI-Konzept · Nicht im Auftrag der Marke erstellt';
+    return `<div class="case-ai" data-ua="${ua}" data-en="${en}" data-de="${de}">${ua}</div>`;
   }
   function initBaSlider(ba){
     const input = ba.querySelector('input[type=range]');
@@ -1072,11 +1235,438 @@
     caseModal.classList.remove('open');
     document.body.classList.remove('modal-open');
   }
-  document.querySelectorAll('.cover-card').forEach(card => {
-    card.addEventListener('click', () => openCase(card.dataset.case));
-  });
   caseModal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeCaseModal));
   document.addEventListener('keydown', e => { if(e.key === 'Escape') closeCaseModal(); });
+  // ===== COVER → PROJECT transition + FULLSCREEN GALLERY =====
+  (function(){
+    const reduceMq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const EASE = 'cubic-bezier(.3,0,.2,1)';
+    const panel = caseModal.querySelector('.case-modal-panel');
+    const overlay = caseModal.querySelector('.case-modal-overlay');
+    const lb = document.getElementById('lightbox');
+    const track = document.getElementById('lbTrack');
+    const bg = lb.querySelector('.lb-bg');
+    const btnClose = document.getElementById('lbClose'), btnPrev = document.getElementById('lbPrev'), btnNext = document.getElementById('lbNext');
+    const counter = document.getElementById('lbCount');
+    const T = {
+      ua: { close:'Закрити', prev:'Попередній кадр', next:'Наступний кадр', dialog:'Галерея проєкту', frame:'Відкрити фото на весь екран' },
+      en: { close:'Close', prev:'Previous photo', next:'Next photo', dialog:'Project gallery', frame:'Open photo full screen' },
+      de: { close:'Schließen', prev:'Vorheriges Foto', next:'Nächstes Foto', dialog:'Projektgalerie', frame:'Foto im Vollbild öffnen' }
+    };
+    const tr = () => T[currentLangFallback()] || T.en;
+    const pad = n => String(n).padStart(2, '0');
+    const inView = r => r.width > 0 && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth;
+    const run = (el, frames, opts) => { try { return el.animate(frames, Object.assign({ fill:'both' }, opts)); } catch(e){ return null; } };
+    const done = a => a ? a.finished.catch(() => {}) : Promise.resolve();
+
+    // input modality: focus ring only for keyboard users
+    let kbd = false;
+    window.addEventListener('keydown', () => { kbd = true; }, true);
+    window.addEventListener('pointerdown', () => { kbd = false; }, true);
+    lb.tabIndex = -1;
+
+    // ---------- cover card → project (shared-element) ----------
+    let openCard = null, flyBusy = false;
+    const baseOpen = openCase, baseClose = closeCaseModal;
+    const srcOf = im => (im && (im.currentSrc || im.src)) || '';
+    const fileOf = u => { try { return decodeURIComponent(new URL(u, location.href).pathname).replace(/^.*\//, '').replace(/\.[a-z0-9]+$/i, '').replace(/[-_]\d+x\d+$/, ''); } catch(e){ return u; } };
+    // The "hero" is the first large piece of media in the opened project: photo, video (its poster) or before/after slider.
+    function heroOf(){
+      const root = caseModalScroll.querySelector('.case.active'); if (!root) return null;
+      const el = root.querySelector('.ba, .dish .frame'); if (!el) return null;
+      if (el.classList.contains('ba')){
+        const b = el.querySelector('.ba-before img'), a = el.querySelector('.ba-after img'), inp = el.querySelector('input[type=range]');
+        if (!a || !b) return null;
+        const v = inp ? parseFloat(inp.value) : 50;
+        return { frame: el, kind:'ba', ready: !!(a.complete && a.naturalWidth && b.complete && b.naturalWidth), srcs:[srcOf(b), srcOf(a)], v: isNaN(v) ? 50 : v, key: srcOf(a) };
+      }
+      const im = el.querySelector('img'), vid = el.querySelector('video');
+      if (im) return { frame: el, kind:'img', ready: !!(im.complete && im.naturalWidth), srcs:[srcOf(im)], key: srcOf(im) };
+      if (vid && vid.getAttribute('poster')) return { frame: el, kind:'img', ready:true, srcs:[vid.getAttribute('poster')], key: vid.getAttribute('poster') };
+      return null;
+    }
+    function heroLayer(h){
+      const d = document.createElement('div'); d.className = 'fly-hero';
+      if (h.kind === 'ba'){
+        d.innerHTML = '<img alt="" src="' + escAttr(h.srcs[0]) + '"><img alt="" style="clip-path:inset(0 0 0 ' + h.v + '%)" src="' + escAttr(h.srcs[1]) + '">';
+      } else d.innerHTML = '<img alt="" src="' + escAttr(h.srcs[0]) + '">';
+      return d;
+    }
+    function makeFly(card, rect, h, heroOn){
+      const src = card.querySelector('img');
+      if (!src) return null;
+      const f = document.createElement('div'); f.className = 'cover-fly';
+      f.innerHTML = '<img alt="" src="' + escAttr(srcOf(src)) + '">';
+      if (h){ const l = heroLayer(h); l.style.opacity = heroOn ? '1' : '0'; f.appendChild(l); }
+      Object.assign(f.style, { left:rect.left+'px', top:rect.top+'px', width:rect.width+'px', height:rect.height+'px' });
+      document.body.appendChild(f);
+      return f;
+    }
+    const boxFrames = (a, b) => [
+      { left:a.left+'px', top:a.top+'px', width:a.width+'px', height:a.height+'px' },
+      { left:b.left+'px', top:b.top+'px', width:b.width+'px', height:b.height+'px' }
+    ];
+    window.__trans = 'B';
+    // load the hero media of a project in advance, so the cover can fly into it without waiting
+    window.__preloadHero = function(id){
+      const root = document.getElementById(id); if (!root) return;
+      const el = root.querySelector('.ba, .dish .frame'); if (!el) return;
+      el.querySelectorAll('img').forEach(im => { im.loading = 'eager'; if (!im.complete && (im.currentSrc || im.src)) { const t = new Image(); t.src = im.currentSrc || im.src; } });
+      const v = el.querySelector('video[poster]'); if (v) { const t = new Image(); t.src = v.getAttribute('poster'); }
+    };
+    document.querySelectorAll('.cover-card').forEach(c => {
+      ['pointerenter', 'touchstart', 'focus'].forEach(ev => c.addEventListener(ev, () => window.__preloadHero(c.dataset.case), { passive:true }));
+    });
+    const chrome = (a, b) => ({ backgroundColor:a, borderColor:b });
+    const CH0 = chrome('rgba(20,17,17,0)', 'rgba(241,236,228,0)'), CH1 = chrome('rgb(20,17,17)', 'rgba(241,236,228,.14)');
+    const closeBtn = caseModal.querySelector('.case-modal-close');
+    const live = [];
+    const runc = (el, fr, o) => { const x = run(el, fr, o); if (x) live.push(x); return x; };
+    const clearAnims = () => {
+      live.splice(0).forEach(x => { try { x.cancel(); } catch(e){} });
+      [panel, overlay, caseModalScroll, closeBtn].forEach(el => el.getAnimations().forEach(x => x.cancel()));
+    };
+    // how much of the hero is inside the scroll viewport (it may sit partly below the fold)
+    function fit(rect){
+      const sr = caseModalScroll.getBoundingClientRect();
+      const top = Math.max(0, sr.top - rect.top), bot = Math.max(0, rect.bottom - sr.bottom);
+      return { t: top, b: bot, ok: rect.height > 40 && (rect.height - top - bot) / rect.height > .45 };
+    }
+    const inset = (t, b) => 'inset(' + t + 'px 0px ' + b + 'px 0px)';
+    // photo differs from the cover → the two dissolve while docking (late on opening, early on closing), never mid-air
+    const sameMedia = (card, h) => { const c = card.querySelector('img'); return !!c && fileOf(srcOf(c)) === fileOf(h.key); };
+
+    function openA(card){
+      const from = card.getBoundingClientRect();
+      const to = panel.getBoundingClientRect();
+      const fly = makeFly(card, from); if (!fly) return;
+      flyBusy = true;
+      runc(overlay, [{opacity:0},{opacity:1}], { duration:420, easing:'ease' });
+      runc(panel, [{opacity:0},{opacity:0,offset:.45},{opacity:1}], { duration:640, easing:'ease' });
+      const a = runc(fly, boxFrames(from, to), { duration:640, easing:EASE });
+      runc(fly, [{opacity:1},{opacity:1,offset:.55},{opacity:0}], { duration:640, easing:'ease' });
+      done(a).then(() => { fly.remove(); flyBusy = false; clearAnims(); });
+    }
+    function openB(card){
+      const h = heroOf();
+      if (!h || !h.ready) return openA(card);
+      const from = card.getBoundingClientRect();
+      const to = h.frame.getBoundingClientRect();
+      const f = fit(to);
+      if (!f.ok) return openA(card);
+      const fly = makeFly(card, from, h, false); if (!fly) return openA(card);
+      flyBusy = true;
+      const same = sameMedia(card, h);
+      h.frame.style.visibility = 'hidden';
+      runc(overlay, [{opacity:0},{opacity:1}], { duration:460, easing:'ease' });
+      runc(panel, [CH0, CH1], { duration:520, delay:140, easing:'ease' });
+      runc(caseModalScroll, [{opacity:0},{opacity:1}], { duration:420, delay:380, easing:'ease', fill:'backwards' });
+      runc(closeBtn, [{opacity:0},{opacity:1}], { duration:420, delay:380, easing:'ease', fill:'backwards' });
+      const fl = [{ clipPath: inset(0, 0) }, { clipPath: inset(f.t, f.b) }];
+      runc(fly, boxFrames(from, to).map((k, i) => Object.assign(k, fl[i])), { duration:700, easing:EASE });
+      runc(fly.querySelector('.fly-hero'), same
+        ? [{opacity:0},{opacity:0,offset:.25},{opacity:1,offset:.8},{opacity:1}]
+        : [{opacity:0},{opacity:0,offset:.62},{opacity:1,offset:.98},{opacity:1}], { duration:700, easing:'ease' });
+      setTimeout(() => {
+        h.frame.style.visibility = '';
+        runc(fly, [{opacity:1},{opacity:0}], { duration:160, easing:'ease' });
+      }, 800);
+      setTimeout(() => { clearAnims(); fly.remove(); flyBusy = false; }, 980);
+    }
+    window.openCase = openCase = function(id, card){
+      if (!flyBusy) clearAnims();
+      baseOpen(id);
+      openCard = card || null;
+      if (!card || reduceMq.matches || flyBusy) return;
+      const from = card.getBoundingClientRect();
+      if (!inView(from)) return;
+      openB(card);
+    };
+    function closeA(card, from, to){
+      const fly = makeFly(card, from); if (!fly) { openCard = null; return baseClose(); }
+      flyBusy = true; openCard = null;
+      runc(panel, [{opacity:1},{opacity:0}], { duration:260, easing:'ease' });
+      runc(overlay, [{opacity:1},{opacity:0}], { duration:480, easing:'ease', delay:120 });
+      runc(fly, [{opacity:0},{opacity:1,offset:.4},{opacity:1}], { duration:520, easing:'ease' });
+      const a = runc(fly, boxFrames(from, to), { duration:520, easing:EASE });
+      done(a).then(() => { clearAnims(); baseClose(); fly.remove(); flyBusy = false; });
+    }
+    function closeB(card, to, h, f){
+      const from = h.frame.getBoundingClientRect();
+      const fly = makeFly(card, from, h, true); if (!fly) return closeA(card, panel.getBoundingClientRect(), to);
+      fly.style.clipPath = inset(f.t, f.b);
+      flyBusy = true; openCard = null;
+      const same = sameMedia(card, h);
+      h.frame.style.visibility = 'hidden';
+      runc(caseModalScroll, [{opacity:1},{opacity:0}], { duration:300, easing:'ease' });
+      runc(closeBtn, [{opacity:1},{opacity:0}], { duration:300, easing:'ease' });
+      runc(panel, [CH1, CH0], { duration:420, delay:200, easing:'ease' });
+      runc(overlay, [{opacity:1},{opacity:0}], { duration:500, delay:120, easing:'ease' });
+      const fl = [{ clipPath: inset(f.t, f.b) }, { clipPath: inset(0, 0) }];
+      const a = runc(fly, boxFrames(from, to).map((k, i) => Object.assign(k, fl[i])), { duration:600, easing:EASE });
+      runc(fly.querySelector('.fly-hero'), same
+        ? [{opacity:1},{opacity:1,offset:.25},{opacity:0,offset:.8},{opacity:0}]
+        : [{opacity:1},{opacity:0,offset:.38},{opacity:0}], { duration:600, easing:'ease' });
+      done(a).then(() => { clearAnims(); baseClose(); h.frame.style.visibility = ''; fly.remove(); flyBusy = false; });
+    }
+    window.closeCaseModal = closeCaseModal = function(){
+      if (flyBusy) return;
+      const card = openCard;
+      const to = card && card.isConnected ? card.getBoundingClientRect() : null;
+      if (!card || !to || !inView(to) || reduceMq.matches || !caseModal.classList.contains('open')) { openCard = null; return baseClose(); }
+      const h = heroOf();
+      if (h && h.ready){
+        const f = fit(h.frame.getBoundingClientRect());
+        if (f.ok) return closeB(card, to, h, f);
+      }
+      closeA(card, panel.getBoundingClientRect(), to);
+    };
+    // re-bind handlers that captured the old openCase/closeCaseModal
+    document.querySelectorAll('.cover-card').forEach(card => card.addEventListener('click', () => openCase(card.dataset.case, card)));
+    caseModal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', e => { e.stopImmediatePropagation(); closeCaseModal(); }, true));
+
+    // ---------- fullscreen gallery ----------
+    let fromStrip = false, items = [], index = 0, isOpen = false, W = 0, busy = false, pushed = false, lastFocus = null;
+    const frameOf = img => img.closest('.frame');
+    function buildSlides(){
+      track.innerHTML = '';
+      items.forEach((it, i) => {
+        const s = document.createElement('div'); s.className = 'lb-slide';
+        const im = document.createElement('img'); im.alt = it.alt || ''; im.decoding = 'async'; im.draggable = false;
+        s.appendChild(im); track.appendChild(s); it.slide = s; it.img = im;
+      });
+    }
+    const load = i => { const it = items[i]; if (it && !it.img.getAttribute('src')) it.img.src = it.src; };
+    const loadAround = () => { [index, index+1, index-1, index+2].forEach(load); };
+    function setX(px, animate){
+      track.style.transition = animate ? 'transform .5s ' + EASE : 'none';
+      track.style.transform = 'translate3d(' + px + 'px,0,0)';
+    }
+    function update(){
+      counter.textContent = pad(index + 1) + ' / ' + pad(items.length);
+      btnPrev.disabled = index === 0; btnNext.disabled = index === items.length - 1;
+      items.forEach((it, i) => it.slide.setAttribute('aria-hidden', i === index ? 'false' : 'true'));
+    }
+    function go(i, animate = true){
+      i = Math.max(0, Math.min(items.length - 1, i));
+      index = i; W = lb.clientWidth; loadAround(); update();
+      setX(-i * W, animate && !reduceMq.matches);
+    }
+    // visual-crop FLIP: image element → rectangle of its thumbnail (object-fit:cover look)
+    function flipState(img, target){
+      const L = img.getBoundingClientRect(); // layout rect (call when untransformed)
+      const w = L.width, h = L.height;
+      const s = Math.max(target.width / w, target.height / h);
+      const dx = (target.left + target.width/2) - (L.left + w/2);
+      const dy = (target.top + target.height/2) - (L.top + h/2);
+      const ix = Math.max(0, (w - target.width / s) / 2), iy = Math.max(0, (h - target.height / s) / 2);
+      return { transform:'translate(' + dx + 'px,' + dy + 'px) scale(' + s + ')', clipPath:'inset(' + iy + 'px ' + ix + 'px)' };
+    }
+    const FULL = { transform:'translate(0px,0px) scale(1)', clipPath:'inset(0px 0px)' };
+
+    function open(caseEl, startFrame){
+      const frames = [...caseEl.querySelectorAll('.dish .frame')].filter(f => f.querySelector('img'));
+      openFrames(frames, startFrame, false);
+    }
+    function openFrames(frames, startFrame, single){
+      if (isOpen || !frames.length) return;
+      items = frames.map(f => { const im = f.tagName === 'IMG' ? f : f.querySelector('img'); return { frame:f, src:im.currentSrc || im.src, alt:im.alt }; });
+      index = Math.max(0, frames.indexOf(startFrame));
+      lb.classList.toggle('single', !!single); fromStrip = !!single;
+      if (single) window.__stripHold = true;
+      lastFocus = document.activeElement;
+      const t = tr();
+      lb.setAttribute('aria-label', t.dialog); btnClose.setAttribute('aria-label', t.close);
+      btnPrev.setAttribute('aria-label', t.prev); btnNext.setAttribute('aria-label', t.next);
+      buildSlides(); lb.hidden = false; isOpen = true; busy = true;
+      lb.classList.remove('ui-on');
+      go(index, false); load(index);
+      try { history.pushState({ lb:1 }, ''); pushed = true; } catch(e){ pushed = false; }
+      const cur = items[index];
+      const start = () => {
+        const thumb = cur.frame.getBoundingClientRect();
+        const useFlip = !reduceMq.matches && inView(thumb) && cur.img.naturalWidth;
+        const ba = run(bg, [{opacity:0},{opacity:1}], { duration: reduceMq.matches ? 200 : 450, easing:'ease' });
+        done(ba).then(() => { if (ba) ba.cancel(); bg.style.opacity = '1'; });
+        let a = null;
+        if (useFlip){
+          const from = flipState(cur.img, thumb);
+          cur.frame.style.visibility = 'hidden';
+          a = run(cur.img, [from, FULL], { duration:640, easing:EASE });
+        } else {
+          run(cur.img, [{opacity:0},{opacity:1}], { duration:260, easing:'ease' });
+        }
+        setTimeout(() => lb.classList.add('ui-on'), useFlip ? 260 : 120);
+        done(a).then(() => { cur.frame.style.visibility = ''; if (a) a.cancel(); busy = false; });
+        if (!a) setTimeout(() => { busy = false; }, 280);
+        if (kbd) btnClose.focus({ preventScroll:true }); else lb.focus({ preventScroll:true });
+      };
+      (cur.img.decode ? cur.img.decode().catch(() => {}) : Promise.resolve()).then(start);
+    }
+
+    function close(fromPop){
+      if (!isOpen || busy) return;
+      busy = true;
+      if (pushed && !fromPop){ pushed = false; try { history.back(); } catch(e){} }
+      else pushed = false;
+      const cur = items[index];
+      // make the thumbnail of the current photo visible in the project panel
+      if (!fromStrip) try { cur.frame.scrollIntoView({ block:'nearest' }); } catch(e){}
+      const thumb = cur.frame.getBoundingClientRect();
+      const useFlip = !reduceMq.matches && inView(thumb);
+      lb.classList.remove('ui-on');
+      const fin = () => {
+        lb.hidden = true; isOpen = false; busy = false;
+        track.innerHTML = ''; cur.frame.style.visibility = '';
+        bg.getAnimations().forEach(x => x.cancel()); bg.style.opacity = '';
+        items = []; window.__stripHold = false; fromStrip = false; lb.classList.remove('single');
+        if (lastFocus && lastFocus.focus) try { lastFocus.focus({ preventScroll:true }); } catch(e){}
+      };
+      const curTransform = cur.img.style.transform || FULL.transform;
+      const curClip = cur.img.style.clipPath || FULL.clipPath;
+      cur.img.getAnimations().forEach(x => x.cancel());
+      cur.img.style.transform = ''; cur.img.style.clipPath = '';
+      const bgNow = parseFloat(getComputedStyle(bg).opacity); const bgFrom = isNaN(bgNow) ? 1 : bgNow;
+      if (useFlip){
+        cur.frame.style.visibility = 'hidden';
+        const to = flipState(cur.img, thumb);
+        bg.style.opacity = ''; run(bg, [{opacity:bgFrom},{opacity:0}], { duration:520, easing:'ease' });
+        const a = run(cur.img, [{ transform:curTransform, clipPath:curClip }, to], { duration:560, easing:EASE });
+        done(a).then(() => { cur.frame.style.visibility = ''; fin(); });
+      } else {
+        const a = run(lb, [{opacity:1},{opacity:0}], { duration:240, easing:'ease' });
+        done(a).then(() => { if (a) a.cancel(); fin(); });
+      }
+    }
+    window.addEventListener('popstate', () => { if (isOpen) close(true); });
+
+    // ---------- opening from a photo in the project ----------
+    function enhance(){
+      caseModalScroll.querySelectorAll('.dish .frame').forEach(f => {
+        if (!f.querySelector('img') || f.dataset.lb) return;
+        f.dataset.lb = '1'; f.tabIndex = 0; f.setAttribute('role', 'button'); f.setAttribute('aria-label', tr().frame);
+      });
+    }
+    new MutationObserver(enhance).observe(caseModalScroll, { childList:true, subtree:true });
+    enhance();
+    caseModalScroll.addEventListener('click', e => {
+      const f = e.target.closest('.dish .frame');
+      if (!f || !f.querySelector('img')) return;
+      open(f.closest('.case'), f);
+    });
+    caseModalScroll.addEventListener('keydown', e => {
+      if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('.dish .frame')){ e.preventDefault(); e.target.click(); }
+    });
+
+    // ---------- opening a single photo from the Portfolio strip ----------
+    (function(){
+      const vp = document.querySelector('.strip-viewport'); if (!vp) return;
+      let d = null;
+      vp.addEventListener('pointerdown', e => {
+        d = { x:e.clientX, y:e.clientY, fast: Math.abs(vp._vel ? vp._vel() : 0) > 40 };
+      }, true);
+      vp.addEventListener('click', e => {
+        const im = e.target.closest && e.target.closest('.strip-track img');
+        const st = d; d = null;
+        if (!im || !st || st.fast || isOpen || busy) return;
+        if (Math.hypot(e.clientX - st.x, e.clientY - st.y) > 6) return;
+        if (!im.complete || !im.naturalWidth) return;
+        openFrames([im], im, true);
+      });
+    })();
+
+    (function(){
+      const vp = document.querySelector('.strip-viewport'); if (!vp) return;
+      const figs = () => vp.querySelectorAll('.strip-track > figure');
+      const relabel = () => figs().forEach(f => f.setAttribute('aria-label', tr().frame));
+      relabel();
+      new MutationObserver(relabel).observe(document.documentElement, { attributes:true, attributeFilter:['lang'] });
+      vp.addEventListener('keydown', e => {
+        if ((e.key !== 'Enter' && e.key !== ' ') || !e.target.matches || !e.target.matches('.strip-track > figure')) return;
+        e.preventDefault();
+        const im = e.target.querySelector('img');
+        if (im && im.complete && im.naturalWidth) openFrames([im], im, true);
+      });
+    })();
+
+    // ---------- controls ----------
+    btnClose.addEventListener('click', () => close());
+    btnPrev.addEventListener('click', () => go(index - 1));
+    btnNext.addEventListener('click', () => go(index + 1));
+    window.addEventListener('keydown', e => {
+      if (!isOpen) return;
+      const k = e.key;
+      if (k === 'Escape'){ e.preventDefault(); e.stopImmediatePropagation(); close(); }
+      else if (k === 'ArrowRight'){ e.preventDefault(); go(index + 1); }
+      else if (k === 'ArrowLeft'){ e.preventDefault(); go(index - 1); }
+      else if (k === 'Home'){ e.preventDefault(); go(0); }
+      else if (k === 'End'){ e.preventDefault(); go(items.length - 1); }
+      else if (k === 'Tab'){
+        const f = [btnClose, btnPrev, btnNext].filter(b => !b.disabled && getComputedStyle(b).display !== 'none');
+        if (!f.length) return;
+        const i = f.indexOf(document.activeElement);
+        e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
+      }
+    }, true);
+    window.addEventListener('resize', () => { if (isOpen) { W = lb.clientWidth; setX(-index * W, false); } });
+
+    // ---------- gestures: swipe left/right, drag down to close ----------
+    let g = null;
+    lb.addEventListener('pointerdown', e => {
+      if (!isOpen || busy || e.button > 0 || e.target.closest('button')) return;
+      g = { id:e.pointerId, x:e.clientX, y:e.clientY, t:performance.now(), axis:null, dx:0, dy:0, lastX:e.clientX, lastT:performance.now(), vx:0, vy:0, lastY:e.clientY };
+      try { lb.setPointerCapture(e.pointerId); } catch(err){}
+    });
+    lb.addEventListener('pointermove', e => {
+      if (!g || e.pointerId !== g.id) return;
+      g.dx = e.clientX - g.x; g.dy = e.clientY - g.y;
+      const now = performance.now(), dt = Math.max(1, now - g.lastT);
+      g.vx = (e.clientX - g.lastX) / dt; g.vy = (e.clientY - g.lastY) / dt; g.lastX = e.clientX; g.lastY = e.clientY; g.lastT = now;
+      if (!g.axis){
+        if (Math.abs(g.dx) < 8 && Math.abs(g.dy) < 8) return;
+        g.axis = Math.abs(g.dx) > Math.abs(g.dy) ? 'x' : (g.dy > 0 ? 'y' : 'none');
+      }
+      if (g.axis === 'x'){
+        let dx = g.dx;
+        if ((index === 0 && dx > 0) || (index === items.length - 1 && dx < 0)) dx *= .35;   // rubber band at the ends
+        setX(-index * W + dx, false);
+      } else if (g.axis === 'y'){
+        const dy = Math.max(0, g.dy), k = Math.min(1, dy / (innerHeight * .6));
+        const im = items[index].img;
+        im.style.transform = 'translate(' + g.dx * .6 + 'px,' + dy + 'px) scale(' + (1 - k * .25) + ')';
+        bg.style.opacity = String(1 - k * .85);
+        lb.classList.remove('ui-on');
+      }
+    });
+    const end = e => {
+      if (!g || (e && e.pointerId !== g.id)) return;
+      const s = g; g = null;
+      try { lb.releasePointerCapture(s.id); } catch(err){}
+      if (s.axis === 'x'){
+        const th = Math.min(120, W * .2);
+        if (s.dx < -th || s.vx < -.45) go(index + 1);
+        else if (s.dx > th || s.vx > .45) go(index - 1);
+        else go(index);
+      } else if (s.axis === 'y'){
+        if (s.dy > 110 || s.vy > .6){ closeFromDrag(); }
+        else {
+          const im = items[index].img;
+          run(im, [{ transform:im.style.transform }, { transform:'translate(0px,0px) scale(1)' }], { duration:320, easing:EASE }).finished.then(() => { im.getAnimations().forEach(x => x.cancel()); im.style.transform = ''; }).catch(() => {});
+          im.style.transform = '';
+          run(bg, [{ opacity:parseFloat(bg.style.opacity) || 1 }, { opacity:1 }], { duration:320 }); bg.style.opacity = '';
+          lb.classList.add('ui-on');
+        }
+      } else if (!s.axis && e && e.type === 'pointerup' && !e.target.closest('.lb-slide img')){
+        const im = items[index].img.getBoundingClientRect();
+        const inside = e.clientX >= im.left && e.clientX <= im.right && e.clientY >= im.top && e.clientY <= im.bottom;
+        if (!inside) close();
+      }
+    };
+    function closeFromDrag(){ close(); }
+    lb.addEventListener('pointerup', end);
+    lb.addEventListener('pointercancel', end);
+  })();
+
 
   // ===== PORTFOLIO CATEGORY PICKER =====
   const categoryGrid = document.getElementById('categoryGrid');
@@ -1117,7 +1707,7 @@
     const t = categoryTitles[cat] || { ua: '', en: '' };
     categoryViewTitle.dataset.ua = t.ua;
     categoryViewTitle.dataset.en = t.en;
-    categoryViewTitle.innerHTML = currentLang() === 'ua' ? t.ua : t.en;
+    categoryViewTitle.innerHTML = currentLang() === 'ua' ? t.ua : (currentLang() === 'de' ? (window.__de(t.en) || t.en) : t.en);
     categoryEmptyNote.style.display = visibleCount === 0 ? '' : 'none';
     filteredCoverGrid.style.display = visibleCount === 0 ? 'none' : '';
     categoryGrid.style.display = 'none';
@@ -1126,16 +1716,78 @@
     scrollToEl(categoryView);
   }
 
-  document.querySelectorAll('.category-card').forEach(card => {
-    card.addEventListener('click', () => openCategory(card.dataset.category));
-  });
-
-  backToCategories.addEventListener('click', () => {
-    categoryView.style.display = 'none';
-    categoryGrid.style.display = '';
-    beyondStrip.style.display = '';
-    scrollToEl(categoryGrid);
-  });
+  // ---- smooth category <-> project-list transition ----
+  (function(){
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const EASE = 'cubic-bezier(.3,0,.2,1)';
+    const play = (el, kf, o) => { try { return el.animate(kf, Object.assign({ fill:'both' }, o)); } catch(e){ return null; } };
+    const fin = a => a ? a.finished.catch(() => {}) : Promise.resolve();
+    const jump = y => window.scrollTo({ top:y, left:0, behavior:'instant' });
+    let busy = false, savedY = null;
+    const clear = els => els.forEach(el => el && el.getAnimations().forEach(a => a.cancel()));
+    const reveal = (els, base) => {
+      const list = els.filter(Boolean);
+      const anims = list.map((el, i) => play(el, [{ opacity:0, transform:'translateY(14px)' }, { opacity:1, transform:'translateY(0)' }], { duration:400, delay:(base || 0) + Math.min(i, 6) * 40, easing:EASE }));
+      Promise.all(anims.map(fin)).then(() => clear(list));
+    };
+    document.querySelectorAll('.category-card').forEach(card => {
+      card.addEventListener('click', () => {
+        if (busy) return;
+        const cat = card.dataset.category;
+        savedY = window.scrollY;
+        if (reduce.matches){ openCategory(cat); jump(categoryView.getBoundingClientRect().top + window.scrollY - 110); [...filteredCoverGrid.querySelectorAll('.cover-card')].filter(c => c.style.display !== 'none').forEach(c => window.__preloadHero && window.__preloadHero(c.dataset.case)); return; }
+        busy = true;
+        const outs = [categoryGrid, beyondStrip];
+        Promise.all(outs.map(el => fin(play(el, [{ opacity:1, transform:'translateY(0)' }, { opacity:0, transform:'translateY(-8px)' }], { duration:190, easing:'ease' })))).then(() => {
+          openCategory(cat);
+          clear(outs);
+          jump(categoryView.getBoundingClientRect().top + window.scrollY - 110);
+          const head = categoryView.querySelector('.category-view-head');
+          const cards = [...filteredCoverGrid.querySelectorAll('.cover-card')].filter(c => c.style.display !== 'none');
+          cards.forEach(c => window.__preloadHero && window.__preloadHero(c.dataset.case));
+          reveal([head, ...cards, categoryEmptyNote.style.display === 'none' ? null : categoryEmptyNote]);
+          setTimeout(() => { busy = false; }, 420);
+        });
+      });
+    });
+    window.__catGo = function(cat){
+      if (busy) return;
+      const open = categoryView.style.display !== 'none';
+      const vis = () => [...filteredCoverGrid.querySelectorAll('.cover-card')].filter(c => c.style.display !== 'none');
+      if (!open){ const card = document.querySelector('.category-card[data-category="' + cat + '"]'); if (card) card.click(); return; }
+      const cur = vis()[0];
+      if (cur && cur.dataset.category === cat){ scrollToEl(categoryView); return; }
+      const swap = () => { openCategory(cat); jump(categoryView.getBoundingClientRect().top + window.scrollY - 110); };
+      if (reduce.matches){ swap(); return; }
+      busy = true;
+      fin(play(categoryView, [{ opacity:1, transform:'translateY(0)' }, { opacity:0, transform:'translateY(-8px)' }], { duration:190, easing:'ease' })).then(() => {
+        swap();
+        clear([categoryView]);
+        const head = categoryView.querySelector('.category-view-head');
+        const cards = vis();
+        cards.forEach(c => window.__preloadHero && window.__preloadHero(c.dataset.case));
+        reveal([head, ...cards]);
+        setTimeout(() => { busy = false; }, 420);
+      });
+    };
+    backToCategories.addEventListener('click', () => {
+      if (busy) return;
+      const back = () => {
+        categoryView.style.display = 'none';
+        categoryGrid.style.display = '';
+        beyondStrip.style.display = '';
+        if (savedY != null) jump(savedY); else scrollToEl(categoryGrid);
+      };
+      if (reduce.matches){ back(); return; }
+      busy = true;
+      fin(play(categoryView, [{ opacity:1, transform:'translateY(0)' }, { opacity:0, transform:'translateY(-8px)' }], { duration:190, easing:'ease' })).then(() => {
+        back();
+        clear([categoryView]);
+        reveal([...categoryGrid.querySelectorAll('.category-card')].concat([beyondStrip]));
+        setTimeout(() => { busy = false; }, 420);
+      });
+    });
+  })();
 
   // ---- Existing portfolio cases (content/legacy-cases.json, edited via /admin) ----
   // Renders the 21 original case studies from JSON, preserving their bespoke
@@ -1167,7 +1819,7 @@
           <div class="cover-title" data-ua="${escAttr(titleUa)}" data-en="${escAttr(titleEn)}">${escHtml(titleUa)}</div>
           <div class="cover-view"><span data-ua="Переглянути" data-en="View case">Переглянути</span><span>→</span></div>
         </div>`;
-      card.addEventListener('click', () => openCase(item.id));
+      card.addEventListener('click', () => openCase(item.id, card));
       filteredCoverGrid.appendChild(card);
 
       const briefRow = (labUa, labEn, valUa, valEn) => valUa ? `<div class="row"><span class="lab" data-ua="${escAttr(labUa)}" data-en="${escAttr(labEn)}">${escHtml(labUa)}</span><span class="val" data-ua="${escAttr(valUa)}" data-en="${escAttr(valEn)}">${escHtml(valUa)}</span></div>` : '';
@@ -1222,6 +1874,7 @@
           <div>
             <div class="case-n" data-ua="Кейс ${n}" data-en="Case ${n}">Кейс ${n}</div>
             <h3 data-ua="${escAttr(titleUa)}" data-en="${escAttr(titleEn)}">${escHtml(titleUa)}</h3>
+            ${aiConceptLabel(item)}
           </div>
           <div class="case-brief">
             ${briefRow('Завдання', 'Task', taskUa, taskEn)}
@@ -1266,7 +1919,7 @@
           <div class="cover-title" data-ua="${escAttr(titleUa)}" data-en="${escAttr(titleEn)}">${escHtml(titleUa)}</div>
           <div class="cover-view"><span data-ua="Переглянути" data-en="View case">Переглянути</span><span>→</span></div>
         </div>`;
-      card.addEventListener('click', () => openCase(item.id));
+      card.addEventListener('click', () => openCase(item.id, card));
       filteredCoverGrid.appendChild(card);
 
       const gallery = Array.isArray(item.gallery) ? item.gallery : [];
@@ -1297,6 +1950,7 @@
           <div>
             <div class="case-n" data-ua="Кейс" data-en="Case">Кейс</div>
             <h3 data-ua="${escAttr(titleUa)}" data-en="${escAttr(titleEn)}">${escHtml(titleUa)}</h3>
+            ${aiConceptLabel(item)}
           </div>
           <div class="case-brief">
             ${briefRow('Завдання', 'Task', taskUa, taskEn)}
@@ -1330,6 +1984,101 @@
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
     .then(data => renderCmsCases(data && data.cases));
+</script>
+
+<script>
+(function(){
+  const hdr = document.getElementById('siteHeader');
+  const cats = document.getElementById('hdCats');
+  const mob = document.getElementById('mobileNav');
+  const main = [...document.querySelectorAll('nav.main-nav a')];
+  const catLinks = [...document.querySelectorAll('.hd-cats a, .m-cats a')];
+  const ids = ['portfolio','work','about','process','contact'];
+  const view = document.getElementById('categoryView');
+  const grid = document.getElementById('filteredCoverGrid');
+  let ticking = false;
+  function update(){
+    ticking = false;
+    const y = innerHeight * 0.38;
+    let cur = null;
+    ids.forEach(id => { const el = document.getElementById(id); if (!el) return; const r = el.getBoundingClientRect(); if (r.top <= y && r.bottom > y) cur = id; });
+    main.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + cur));
+    hdr.classList.toggle('has-cats', cur === 'portfolio');
+    let cat = null;
+    if (view && view.style.display !== 'none'){
+      const c = [...grid.querySelectorAll('.cover-card')].find(x => x.style.display !== 'none');
+      cat = c ? c.dataset.category : null;
+    }
+    catLinks.forEach(a => a.classList.toggle('is-active', !!cat && a.dataset.cat === cat));
+  }
+  const req = () => { if (!ticking){ ticking = true; requestAnimationFrame(update); } };
+  addEventListener('scroll', req, { passive:true });
+  addEventListener('resize', req);
+  if (view) new MutationObserver(req).observe(view, { attributes:true, attributeFilter:['style'] });
+  if (grid) new MutationObserver(req).observe(grid, { subtree:true, attributes:true, attributeFilter:['style'] });
+  catLinks.forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    const cat = a.dataset.cat;
+    if (a.closest('.m-cats')){
+      const pf = document.getElementById('portfolio');
+      if (!(view && view.style.display !== 'none')) window.scrollTo({ top: pf.getBoundingClientRect().top + scrollY - 90, left:0, behavior:'instant' });
+      setTimeout(() => window.__catGo && window.__catGo(cat), 60);
+    } else if (window.__catGo) window.__catGo(cat);
+  }));
+  update();
+})();
+</script>
+
+<script>
+(function(){
+  const hdr = document.getElementById('siteHeader');
+  const nav = hdr.querySelector('nav.main-nav');
+  const logo = hdr.querySelector('.logo');
+  const cv = document.createElement('canvas'), W = 120;
+  function place(){
+    nav.style.marginRight = '0px'; nav.style.gap = '';
+    hdr.classList.remove('nav-compact');
+    const img = document.querySelector('.hero-photo');
+    if (innerWidth <= 980 || !img || !img.complete || !img.naturalWidth) return;
+    const r = img.getBoundingClientRect(), top = r.top + scrollY;
+    if (r.width < 50) return;
+    const H = Math.round(W * img.naturalHeight / img.naturalWidth); cv.width = W; cv.height = H;
+    let data; try { const c = cv.getContext('2d', { willReadFrequently:true }); c.clearRect(0,0,W,H); c.drawImage(img,0,0,W,H); data = c.getImageData(0,0,W,H).data; } catch(e){ return; }
+    const y0 = Math.max(0, Math.floor((18 - top) / r.height * H)), y1 = Math.min(H - 1, Math.ceil((72 - top) / r.height * H));
+    let mn = 1e9, mx = -1;
+    for (let y = y0; y <= y1; y++) for (let x = 0; x < W; x++) if (data[(y * W + x) * 4 + 3] > 40){ if (x < mn) mn = x; if (x > mx) mx = x; }
+    if (mx < 0) return;
+    const zl = r.left + mn / W * r.width - 24, zr = r.left + (mx + 1) / W * r.width + 24;
+    nav.dataset.zl = Math.round(zl); nav.dataset.zr = Math.round(zr);
+    const lr = logo.getBoundingClientRect();
+    // widest of UA / EN / DE at the tightest allowed spacing: the decision must not depend on the chosen language
+    const pr = nav.cloneNode(true); pr.id = '';
+    pr.style.cssText = 'display:flex!important;position:absolute;visibility:hidden;left:0;top:0;gap:22px;margin:0';
+    hdr.appendChild(pr);
+    let worst = 0;
+    ['ua','en','de'].forEach(l => { pr.querySelectorAll('a').forEach(a => { a.innerHTML = a.dataset[l] !== undefined ? a.dataset[l] : a.dataset.en; }); worst = Math.max(worst, pr.getBoundingClientRect().width); });
+    hdr.removeChild(pr);
+    if (zl - (lr.right + 28) < worst){ hdr.classList.add('nav-compact'); return; }
+    hdr.classList.remove('nav-compact');
+    nav.style.gap = '';
+    let nr = nav.getBoundingClientRect();
+    if (nr.right < zl || nr.left > zr) return;
+    const base = parseFloat(getComputedStyle(nav).columnGap) || 30;
+    for (const g of [base, 26, 22]){
+      if (g < base) nav.style.gap = g + 'px';
+      nr = nav.getBoundingClientRect();
+      const shift = nr.right - zl;
+      if (nr.left - shift >= lr.right + 28){ nav.style.marginRight = Math.round(shift) + 'px'; return; }
+    }
+    nav.style.gap = '';
+  }
+  let t = 0; const go = () => { cancelAnimationFrame(t); t = requestAnimationFrame(place); };
+  addEventListener('resize', go); addEventListener('load', go); addEventListener('orientationchange', go);
+  document.querySelectorAll('.hero-photo').forEach(i => i.addEventListener('load', go));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
+  new MutationObserver(go).observe(nav, { childList:true, subtree:true, characterData:true });
+  go();
+})();
 </script>
 </body>
 </html>

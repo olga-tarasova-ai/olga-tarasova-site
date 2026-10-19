@@ -163,7 +163,8 @@
           "caption_ua": "KENZO L'EAU PURE · AI-відео",
           "caption_en": "KENZO L'EAU PURE · AI Video"
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-26",
@@ -193,7 +194,8 @@
           "caption_ua": "MIYA MAITE Oil · AI-відео",
           "caption_en": "MIYA MAITE Oil · AI Video"
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-27",
@@ -223,7 +225,8 @@
           "caption_ua": "Acqua di Gioia · AI-відео",
           "caption_en": "Acqua di Gioia · AI Video"
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-28",
@@ -283,7 +286,8 @@
           "caption_ua": "TommyLife · 3D-анімація",
           "caption_en": "TommyLife · 3D Animation"
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-30",
@@ -326,7 +330,8 @@
         {
           "image": "images/uploads/kizko-night-06.webp"
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-31",
@@ -365,7 +370,8 @@
         {
           "image": "images/uploads/kizko-paris-03.webp"
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-32",
@@ -424,7 +430,8 @@
         {
           "image": "images/uploads/kizko-studio-08.webp"
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-33",
@@ -535,7 +542,7 @@
       "columns": "3",
       "title": {
         "ua": "«Служниця» — книжковий трейлер",
-        "en": "The Housemaid (Служниця) — Book Trailer"
+        "en": "The Housemaid — Book Trailer"
       },
       "task": {
         "ua": "Створити кінематографічний трейлер-інтригу за мотивами психологічного трилера Фріди Макфадден, який з першої секунди тримає напругу і підводить до книги.",
@@ -559,7 +566,8 @@
           "caption_ua": "Книжковий трейлер · зі звуком",
           "caption_en": "Book trailer · with sound"
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-36",
