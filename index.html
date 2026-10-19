@@ -613,6 +613,20 @@
   .cover-fly .fly-hero{position:absolute;inset:0;}
   @media(prefers-reduced-motion:reduce){.lb-ui{transition:none;}}
 </style>
+<style id="hero-stable">
+/* Hero stays put when the language changes: the headline always reserves 5 lines, so only the text differs.
+   Desktop: lines are bottom-aligned and the copy is lifted by half a line, so lead/buttons and the 4-line
+   languages keep their current position and a 5th line grows upward. Mobile: top-aligned reserve. */
+.hero{--hs:clamp(2.5rem,5vw,4.5rem);}
+.hero h1{font-size:var(--hs);min-height:5.1em;display:flex;flex-direction:column;justify-content:flex-end;}
+.hero-copy{transform:translateY(calc(var(--hs) * -.51));}
+.hero-cta>span:first-child{min-width:17.8em;}
+@media(max-width:900px){
+  .hero h1{justify-content:flex-start;}
+  .hero-copy{transform:none;}
+  .hero-cta>span:first-child{min-width:0;}
+}
+</style>
 </head>
 <body>
 <header id="siteHeader">
