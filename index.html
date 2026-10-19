@@ -627,6 +627,39 @@
   .hero-cta>span:first-child{min-width:0;}
 }
 </style>
+<style id="sound-css">
+/* Background sound button: quiet round control, bottom right */
+.snd{position:fixed;z-index:1050;right:max(22px,env(safe-area-inset-right,0px));bottom:max(22px,env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;padding:0;margin:0;color:#e7e1d8;cursor:pointer;
+  border:1px solid rgba(241,236,228,.28);background:rgba(16,15,15,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);opacity:.78;
+  font-family:'Manrope',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;-webkit-tap-highlight-color:transparent;
+  transition:opacity .3s ease,border-color .3s ease,color .3s ease;}
+.snd svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;overflow:visible;}
+.snd .ic-on,.snd .ic-off{transition:opacity .35s ease;}
+.snd[aria-pressed="false"] .ic-on{opacity:0;}
+.snd[aria-pressed="true"] .ic-off{opacity:0;}
+.snd .t{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);opacity:0;pointer-events:none;white-space:nowrap;color:#cfc8bf;transition:opacity .3s ease;}
+.snd .t-on,.snd .t-off{display:none;}
+.snd[aria-pressed="false"] .t-off{display:inline;}
+.snd[aria-pressed="true"] .t-on{display:inline;}
+.snd:hover{opacity:1;border-color:rgba(241,236,228,.55);}
+.snd:hover .t{opacity:1;}
+.snd[aria-pressed="true"]{opacity:.95;border-color:rgba(241,236,228,.5);}
+.snd:focus-visible{outline:1px solid rgba(241,236,228,.75);outline-offset:4px;}
+@media(hover:none){.snd .t{display:none;}}
+/* inside a project the button stays reachable but gets out of the way */
+.snd::before{content:"";position:absolute;inset:-4px;border-radius:50%;}
+/* inside an open project: sits in the top bar of the modal, left of the close cross */
+body.case-open .snd{top:calc(4vh + 17px);bottom:auto;right:calc((100vw - min(1080px,92vw))/2 + 74px);width:40px;height:40px;opacity:.7;}
+body.case-open .snd[aria-pressed="true"]{opacity:.9;}
+@media(max-width:600px){
+  .snd{width:34px;height:34px;right:max(14px,env(safe-area-inset-right,0px));bottom:max(14px,env(safe-area-inset-bottom,0px));}
+  .snd svg{width:16px;height:16px;}
+  .snd::before{inset:-5px;}
+  body.case-open .snd{width:34px;height:34px;top:calc(4vh + 21px);bottom:auto;right:calc((100vw - min(1080px,92vw))/2 + 70px);}
+}
+@media(prefers-reduced-motion:reduce){.snd,.snd *{transition:none!important;}}
+</style>
 </head>
 <body>
 <header id="siteHeader">
@@ -2092,6 +2125,75 @@ window.__DEM = {};
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
   new MutationObserver(go).observe(nav, { childList:true, subtree:true, characterData:true });
   go();
+})();
+</script>
+<button type="button" class="snd" id="soundBtn" aria-pressed="false" aria-label="Sound" data-al-ua="Фонова музика" data-al-en="Background music" data-al-de="Hintergrundmusik">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 9.6h3l4.6-3.7v12.2l-4.6-3.7h-3z"/><g class="ic-on"><path d="M15.2 9.3a3.8 3.8 0 0 1 0 5.4"/><path d="M17.8 6.8a7.4 7.4 0 0 1 0 10.4"/></g><g class="ic-off"><path d="M15.6 9.8l4.6 4.4M20.2 9.8l-4.6 4.4"/></g></svg>
+<span class="t"><span class="t-off" data-ua="Звук · вимк." data-en="Sound · off" data-de="Ton · aus">Звук · вимк.</span><span class="t-on" data-ua="Звук · увімк." data-en="Sound · on" data-de="Ton · an">Звук · увімк.</span></span>
+</button>
+<script id="sound-js">
+(function(){
+  var SRC='audio/bg-nocturnal-elegance.mp3', VOL=0.2, FADE_IN=2200, FADE_OUT=1400, DUCK=700, XF=5;
+  var btn=document.getElementById('soundBtn'); if(!btn) return;
+  var wants=false, ducked=false, ctx=null, a=null, b=null, ga=null, gb=null, cur=0, built=false, xfading=false, timer=null;
+  function lang(){ var l=document.documentElement.lang; return l==='uk'?'ua':(l==='de'?'de':'en'); }
+  function label(){ var l=lang(); var base=btn.getAttribute('data-al-'+l)||'Sound'; var st={ua:['вимкнено','увімкнено'],en:['off','on'],de:['aus','an']}[l][wants?1:0]; btn.setAttribute('aria-label',base+': '+st); btn.title=base+': '+st; }
+  new MutationObserver(label).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  function build(){
+    if(built) return true; var AC=window.AudioContext||window.webkitAudioContext; if(!AC) return false;
+    try{
+      ctx=new AC();
+      var mk=function(){ var el=new Audio(); el.preload='auto'; el.loop=false; el.setAttribute('playsinline',''); el.setAttribute('webkit-playsinline',''); el.src=SRC; var src=ctx.createMediaElementSource(el); var g=ctx.createGain(); g.gain.value=0; src.connect(g); g.connect(ctx.destination); return {el:el,g:g}; };
+      var A=mk(),B=mk(); a=A.el; ga=A.g; b=B.el; gb=B.g; built=true; return true;
+    }catch(e){ return false; }
+  }
+  function ramp(g,to,sec){ var t=ctx.currentTime; try{ g.gain.cancelScheduledValues(t); g.gain.setValueAtTime(g.gain.value,t); g.gain.linearRampToValueAtTime(to,t+sec); }catch(e){ g.gain.value=to; } }
+  function active(){ return cur===0?{el:a,g:ga,o:{el:b,g:gb}}:{el:b,g:gb,o:{el:a,g:ga}}; }
+  function tick(){
+    var x=active(), d=x.el.duration;
+    if(!xfading && isFinite(d) && d>XF*3 && x.el.currentTime>d-XF-0.3){
+      xfading=true; x.o.el.currentTime=0; var p=x.o.el.play(); if(p&&p.catch)p.catch(function(){});
+      ramp(x.o.g,VOL,XF); ramp(x.g,0,XF);
+      setTimeout(function(){ x.el.pause(); try{x.el.currentTime=0;}catch(e){} cur=cur===0?1:0; xfading=false; },XF*1000+120);
+    }
+  }
+  function startTimer(){ if(!timer) timer=setInterval(tick,300); }
+  function stopTimer(){ clearInterval(timer); timer=null; }
+  function play(ms){
+    if(!build()) return; if(ctx.state!=='running'){ var r=ctx.resume(); if(r&&r.catch)r.catch(function(){}); }
+    var x=active(); var p=x.el.play(); if(p&&p.catch)p.catch(function(){}); ramp(x.g,VOL,ms/1000); startTimer();
+  }
+  function pause(ms){
+    if(!built) return; var x=active(); ramp(x.g,0,ms/1000); ramp(x.o.g,0,ms/1000);
+    setTimeout(function(){ if(!(wants&&!ducked&&!document.hidden)){ a.pause(); b.pause(); xfading=false; stopTimer(); } },ms+80);
+  }
+  function sync(){ btn.setAttribute('aria-pressed',wants?'true':'false'); label(); }
+  btn.addEventListener('click',function(){
+    wants=!wants;
+    if(wants){
+      if(!build()){ wants=false; sync(); return; }
+      // unlock the second element inside the user gesture (iOS Safari)
+      var u=active().o.el; var pr=u.play(); if(pr&&pr.then){ pr.then(function(){u.pause();try{u.currentTime=0;}catch(e){}}).catch(function(){}); }
+      if(!ducked) play(FADE_IN);
+    } else { pause(FADE_OUT); }
+    sync();
+  });
+  // pause while a project with video is open; resume only if the visitor had turned the music on
+  var modal=document.getElementById('caseModal');
+  function videoOpen(){ if(!modal||!modal.classList.contains('open')) return false; var c=modal.querySelector('.case.active'); return !!(c&&c.querySelector('video')); }
+  function check(){
+    document.body.classList.toggle('case-open',!!(modal&&modal.classList.contains('open')));
+    var v=videoOpen();
+    if(v&&!ducked){ ducked=true; if(wants) pause(DUCK); }
+    else if(!v&&ducked){ ducked=false; if(wants) play(FADE_IN); }
+    sync();
+  }
+  if(modal) new MutationObserver(check).observe(modal,{attributes:true,attributeFilter:['class']});
+  // tab in background: fade out, and come back when visible again
+  document.addEventListener('visibilitychange',function(){ if(!built) return; if(document.hidden){ if(wants&&!ducked) pause(500); } else if(wants&&!ducked){ play(FADE_IN); } });
+  window.addEventListener('pagehide',function(){ if(built){ a.pause(); b.pause(); } });
+  window.addEventListener('pageshow',function(e){ if(e.persisted&&wants&&!ducked&&built) play(FADE_IN); });
+  label();
 })();
 </script>
 </body>
