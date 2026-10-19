@@ -400,12 +400,12 @@
                 "en": "Beauty"
               },
               "name": {
-                "ua": "Блиск для губ · Макро",
-                "en": "Lip gloss · Macro"
+                "ua": "Блиск для губ · На моделі",
+                "en": "Lip gloss · On model"
               },
               "media": "image",
-              "image": "images/gloss1.webp",
-              "alt": "Lip gloss · Macro"
+              "image": "images/gloss2.webp",
+              "alt": "Lip gloss · On model"
             },
             {
               "square": false,
@@ -414,12 +414,12 @@
                 "en": "Beauty"
               },
               "name": {
-                "ua": "Блиск для губ · На моделі",
-                "en": "Lip gloss · On model"
+                "ua": "Блиск для губ · Макро",
+                "en": "Lip gloss · Macro"
               },
               "media": "image",
-              "image": "images/gloss2.webp",
-              "alt": "Lip gloss · On model"
+              "image": "images/gloss1.webp",
+              "alt": "Lip gloss · Macro"
             },
             {
               "square": false,
@@ -499,6 +499,20 @@
                 "en": "Studio"
               },
               "name": {
+                "ua": "REPLICA · Композиція",
+                "en": "REPLICA · Composition"
+              },
+              "media": "image",
+              "image": "images/perfstudio6.webp",
+              "alt": "REPLICA · Studio 6"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Студія",
+                "en": "Studio"
+              },
+              "name": {
                 "ua": "REPLICA · Дрова й лайм",
                 "en": "REPLICA · Driftwood & lime"
               },
@@ -569,20 +583,6 @@
                 "en": "Studio"
               },
               "name": {
-                "ua": "REPLICA · Композиція",
-                "en": "REPLICA · Composition"
-              },
-              "media": "image",
-              "image": "images/perfstudio6.webp",
-              "alt": "REPLICA · Studio 6"
-            },
-            {
-              "square": false,
-              "course": {
-                "ua": "Студія",
-                "en": "Studio"
-              },
-              "name": {
                 "ua": "REPLICA · Етикетка",
                 "en": "REPLICA · Label"
               },
@@ -620,6 +620,20 @@
           "type": "menu",
           "grid4": false,
           "items": [
+            {
+              "square": false,
+              "course": {
+                "ua": "Локація",
+                "en": "Location"
+              },
+              "name": {
+                "ua": "REPLICA · На сонці",
+                "en": "REPLICA · In the sun"
+              },
+              "media": "image",
+              "image": "images/perfloc5.webp",
+              "alt": "REPLICA · Location 5"
+            },
             {
               "square": false,
               "course": {
@@ -675,20 +689,6 @@
               "media": "image",
               "image": "images/perfloc4.webp",
               "alt": "REPLICA · Location 4"
-            },
-            {
-              "square": false,
-              "course": {
-                "ua": "Локація",
-                "en": "Location"
-              },
-              "name": {
-                "ua": "REPLICA · На сонці",
-                "en": "REPLICA · In the sun"
-              },
-              "media": "image",
-              "image": "images/perfloc5.webp",
-              "alt": "REPLICA · Location 5"
             },
             {
               "square": false,
@@ -1928,20 +1928,6 @@
             {
               "square": false,
               "course": {
-                "ua": "Концепція 1",
-                "en": "Concept 1"
-              },
-              "name": {
-                "ua": "Бетонний лофт",
-                "en": "Concrete Loft"
-              },
-              "media": "image",
-              "image": "images/int_bedroom_loft.webp",
-              "alt": "Спальня — лофт"
-            },
-            {
-              "square": false,
-              "course": {
                 "ua": "Концепція 2",
                 "en": "Concept 2"
               },
@@ -1952,6 +1938,20 @@
               "media": "image",
               "image": "images/int_bedroom_calm.webp",
               "alt": "Спальня — мінімалізм"
+            },
+            {
+              "square": false,
+              "course": {
+                "ua": "Концепція 1",
+                "en": "Concept 1"
+              },
+              "name": {
+                "ua": "Бетонний лофт",
+                "en": "Concrete Loft"
+              },
+              "media": "image",
+              "image": "images/int_bedroom_loft.webp",
+              "alt": "Спальня — лофт"
             }
           ]
         }
