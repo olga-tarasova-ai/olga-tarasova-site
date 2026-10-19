@@ -492,6 +492,22 @@
   @media(min-width:1025px){
     .category-card[data-category="product"] .category-overlay{background:linear-gradient(180deg,rgba(20,17,17,.1) 22%,rgba(12,10,10,.8) 62%,rgba(12,10,10,.96) 100%);}
   }
+
+  /* ---- editorial strip ---- */
+  .strip{--sh:clamp(280px,34vw,460px);--sgap:14px;position:relative;width:100%;}
+  .strip-viewport{overflow:hidden;touch-action:pan-y;cursor:grab;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);}
+  .strip-viewport.dragging{cursor:grabbing;}
+  .strip-track{display:flex;gap:var(--sgap);width:max-content;will-change:transform;}
+  .strip-track figure{flex:none;height:var(--sh);}
+  .strip-track img{height:var(--sh);width:auto;display:block;user-select:none;-webkit-user-drag:none;background:#1c1918;}
+  .strip-b{margin:0 calc(50% - 50vw) 56px;width:100vw;}
+  @media(max-width:900px){.strip-b{margin-bottom:40px;}.strip{--sgap:10px;}}
+  /* gentler reveal + reduced motion */
+  .reveal{transform:translateY(18px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.6,.2,1);}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1!important;transform:none!important;transition:none!important;}
+  }
 </style>
 </head>
 <body>
@@ -599,6 +615,31 @@
 <div class="sub" data-en="Visual projects and creative concepts" data-key="portfolio.sub" data-ua="Візуальні проєкти та креативні концепції">Візуальні проєкти та креативні концепції</div>
 </div>
 <p class="sec-intro" data-en="Every project is its own visual story. From the first idea to the final frame: concept, atmosphere and the details that shape a brand's character." data-key="portfolio.intro" data-ua="Кожен проєкт — це окрема візуальна історія. Від першої ідеї до фінального кадру: концепція, атмосфера та деталі, які створюють характер бренду.">Кожен проєкт — це окрема візуальна історія. Від першої ідеї до фінального кадру: концепція, атмосфера та деталі, які створюють характер бренду.</p>
+</div>
+<!-- ===== STRIP (top of Portfolio) ===== -->
+<div class="strip strip-b reveal" role="region" aria-label="Selected work">
+<div class="strip-viewport"><div class="strip-track">
+<figure><img alt="Fashion: redhead on a motorcycle at night" loading="lazy" src="images/strip/strip-01.webp" width="967" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="Food: strawberry mochi with a red splash" loading="lazy" src="images/strip/strip-02.webp" width="900" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="Jewelry campaign at sunset" loading="lazy" src="images/strip/strip-03.webp" width="660" height="880" decoding="async" draggable="false"/></figure>
+<figure><img alt="Interior: dark modern living room" loading="lazy" src="images/strip/strip-04.webp" width="900" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="Beauty: black and white portrait with perfume" loading="lazy" src="images/strip/strip-05.webp" width="670" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="Product: Replica perfume with lime" loading="lazy" src="images/strip/strip-06.webp" width="660" height="880" decoding="async" draggable="false"/></figure>
+<figure><img alt="Beverage advertising: Spraga kombucha" loading="lazy" src="images/strip/strip-09.webp" width="675" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="Bridal: bride on a mirror lake under a stormy sky" loading="lazy" src="images/strip/strip-07.webp" width="967" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="Lingerie: model in black lingerie" loading="lazy" src="images/strip/strip-08.webp" width="900" height="1200" decoding="async" draggable="false"/></figure>
+<span class="strip-dup" aria-hidden="true" style="display:contents">
+<figure><img alt="" loading="lazy" src="images/strip/strip-01.webp" width="967" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="" loading="lazy" src="images/strip/strip-02.webp" width="900" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="" loading="lazy" src="images/strip/strip-03.webp" width="660" height="880" decoding="async" draggable="false"/></figure>
+<figure><img alt="" loading="lazy" src="images/strip/strip-04.webp" width="900" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="" loading="lazy" src="images/strip/strip-05.webp" width="670" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="" loading="lazy" src="images/strip/strip-06.webp" width="660" height="880" decoding="async" draggable="false"/></figure>
+<figure><img alt="" loading="lazy" src="images/strip/strip-09.webp" width="675" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="" loading="lazy" src="images/strip/strip-07.webp" width="967" height="1200" decoding="async" draggable="false"/></figure>
+<figure><img alt="" loading="lazy" src="images/strip/strip-08.webp" width="900" height="1200" decoding="async" draggable="false"/></figure>
+</span>
+</div></div>
 </div>
 <div class="category-grid" id="categoryGrid">
 <div class="category-card" data-category="fashion">
@@ -876,6 +917,54 @@
   }
   new MutationObserver(lazyVideos).observe(document.body, { childList: true, subtree: true });
   lazyVideos();
+
+
+  // ---- editorial strip: slow drift, drag to browse, loads when near the viewport ----
+  (function(){
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const CYCLE = 64;                       // seconds for one full pass of the set
+    document.querySelectorAll('.strip').forEach(root => {
+      const vp = root.querySelector('.strip-viewport'), track = root.querySelector('.strip-track');
+      const imgs = [...track.querySelectorAll('img')];
+      let loaded = false, setW = 0, x = 0, vel = 0, autoK = 0, hover = false, resumeAt = 0, drag = null, run = false, last = 0, raf = 0, inView = true;
+      const load = () => { if (loaded) return; loaded = true; imgs.forEach(i => { i.loading = 'eager'; if (i.dataset.src) i.src = i.dataset.src; }); };
+      const measure = () => {
+        const figs = track.querySelectorAll(':scope > figure, :scope > .strip-dup > figure');
+        const n = figs.length / 2; if (!n) return;
+        setW = figs[n].offsetLeft - figs[0].offsetLeft;
+      };
+      const wrap = () => { if (setW > 0) { x = x % setW; if (x > 0) x -= setW; } };
+      const frame = t => {
+        const dt = Math.min(.05, (t - last) / 1000); last = t;
+        if (!drag) {
+          const want = (hover || t < resumeAt || reduce.matches) ? 0 : 1;
+          autoK += (want - autoK) * Math.min(1, dt * 2.5);
+          x += vel * dt; vel *= Math.pow(.06, dt);
+          x -= (setW / CYCLE) * autoK * dt;
+        }
+        wrap(); track.style.transform = 'translate3d(' + x.toFixed(2) + 'px,0,0)';
+        raf = requestAnimationFrame(frame);
+      };
+      const start = () => { if (run || !setW) return; run = true; last = performance.now(); raf = requestAnimationFrame(frame); };
+      const stop = () => { run = false; cancelAnimationFrame(raf); };
+      const sync = () => { (inView && !document.hidden && root.offsetParent !== null) ? start() : stop(); };
+      new IntersectionObserver(es => { es.forEach(e => { inView = e.isIntersecting; if (inView) load(); sync(); }); }, { rootMargin: '900px 0px' }).observe(root);
+      document.addEventListener('visibilitychange', sync);
+      new ResizeObserver(() => { measure(); sync(); }).observe(track);
+      window.addEventListener('resize', () => { measure(); sync(); });
+      vp.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') hover = true; });
+      vp.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') hover = false; });
+      vp.addEventListener('pointerdown', e => { if (e.pointerType === 'mouse' && e.button !== 0) return; drag = { id: e.pointerId, sx: e.clientX, sy: e.clientY, lx: e.clientX, lt: e.timeStamp, on: false }; vel = 0; });
+      vp.addEventListener('pointermove', e => {
+        if (!drag || e.pointerId !== drag.id) return;
+        if (!drag.on) { const dx = e.clientX - drag.sx, dy = e.clientY - drag.sy; if (Math.abs(dx) > 6 && Math.abs(dx) > Math.abs(dy)) { drag.on = true; try { vp.setPointerCapture(e.pointerId); } catch (_) {} vp.classList.add('dragging'); } else return; }
+        const d = e.clientX - drag.lx, dtm = Math.max(8, e.timeStamp - drag.lt) / 1000;
+        x += d; vel = Math.max(-1800, Math.min(1800, .7 * vel + .3 * (d / dtm))); drag.lx = e.clientX; drag.lt = e.timeStamp;
+      });
+      const end = () => { if (!drag) return; const was = drag.on; drag = null; vp.classList.remove('dragging'); if (was) resumeAt = performance.now() + 3000; else vel = 0; };
+      vp.addEventListener('pointerup', end); vp.addEventListener('pointercancel', end);
+    });
+  })();
 
   function setLang(lang){
     document.documentElement.lang = lang === 'ua' ? 'uk' : 'en';
