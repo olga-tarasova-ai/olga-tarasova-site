@@ -218,6 +218,11 @@
   .m-card.c2 .m-img img{object-position:center 42%;}
   .m-card.c5 .m-img img{object-position:center 32%;}
   .m-card.c6 .m-img img{object-position:center 60%;}
+  @media(hover:hover) and (pointer:fine){
+    .m-img img{transition:transform .8s cubic-bezier(.3,0,.2,1);}
+    .m-card:hover .m-img img{transform:scale(1.05);}
+  }
+  @media(prefers-reduced-motion:reduce){.m-card:hover .m-img img{transform:none;}}
   .m-foot .soon{
     font-family:'Manrope',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
     border:1px solid rgba(241,236,228,.28);padding:7px 14px;color:#bdb6ad;
