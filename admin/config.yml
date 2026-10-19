@@ -421,6 +421,7 @@ collections:
                   - { label: "Food", value: "food" }
                   - { label: "Interior", value: "interior" }
                   - { label: "AI Content & Motion", value: "motion" }
+              - { label: "Незалежна AI-концепція (під заголовком проєкту з'явиться позначка «створено не на замовлення бренду»)", name: "independent_concept", widget: "boolean", default: false, required: false }
               - { label: "Обкладинка (фото для картки в списку)", name: "cover", widget: "image" }
               - label: "Назва кейсу"
                 name: "title"
@@ -532,6 +533,7 @@ collections:
                 name: "deliverables"
                 widget: "object"
                 fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - { label: "Незалежна AI-концепція (під заголовком проєкту з'явиться позначка «створено не на замовлення бренду»)", name: "independent_concept", widget: "boolean", default: false, required: false }
               - { label: "Обкладинка (фото для картки)", name: "cover", widget: "image" }
               - { label: "Пропорції кадрів у галереї (порожньо = квадрат)", name: "aspect", widget: "select", required: false, options: [{ label: "3:4", value: "3/4" }, { label: "4:5", value: "4/5" }, { label: "9:16 (вертикальні)", value: "9/16" }] }
               - { label: "Колонок у галереї на комп'ютері (порожньо = 5)", name: "columns", widget: "select", required: false, options: [{ label: "3", value: "3" }, { label: "4", value: "4" }, { label: "5", value: "5" }] }
@@ -552,3 +554,19 @@ collections:
                   - { label: "Постер для відео (кадр-заглушка)", name: "poster", widget: "image", required: false, hint: "Заповнюйте, якщо тип кадру — Відео" }
                   - { label: "Підпис — укр", name: "caption_ua", widget: "string", required: false }
                   - { label: "Підпис — англ", name: "caption_en", widget: "string", required: false }
+
+  - name: "translations"
+    label: "Німецька версія (DE)"
+    files:
+      - file: "content/translations-de.json"
+        label: "Німецькі тексти сайту"
+        name: "translations_de"
+        fields:
+          - label: "Пари: англійський оригінал → німецький переклад"
+            name: "pairs"
+            widget: "list"
+            summary: "{{fields.en}}"
+            hint: "Німецький текст підставляється за точним збігом англійського. Якщо змінили англійський текст у розділах вище, оновіть тут і його пару."
+            fields:
+              - { label: "Англійський оригінал (ключ — не змінювати)", name: "en", widget: "text" }
+              - { label: "Німецький переклад", name: "de", widget: "text" }

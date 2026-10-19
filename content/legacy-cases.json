@@ -252,7 +252,8 @@
             }
           ]
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-05",
@@ -591,7 +592,8 @@
             }
           ]
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-08",
@@ -718,7 +720,8 @@
             }
           ]
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-09",
@@ -845,7 +848,8 @@
             }
           ]
         }
-      ]
+      ],
+      "independent_concept": true
     },
     {
       "id": "case-10",
