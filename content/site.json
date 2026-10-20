@@ -355,6 +355,10 @@
     "cta": {
       "ua": "Обговорити проєкт →",
       "en": "Discuss a project →"
+    },
+    "invite": {
+      "ua": "Для початку співпраці надішліть мені короткий бриф, опис ідеї або референси.",
+      "en": "To get started, send me a short brief, your idea or a few references."
     }
   }
 }

@@ -397,6 +397,10 @@ collections:
                 name: "cta"
                 widget: "object"
                 fields: [{ label: "UA", name: "ua", widget: "string" }, { label: "EN", name: "en", widget: "string" }]
+              - label: "Запрошення до співпраці (над контактами)"
+                name: "invite"
+                widget: "object"
+                fields: [{ label: "UA", name: "ua", widget: "text" }, { label: "EN", name: "en", widget: "text" }]
 
   - name: "legacy_cases"
     label: "Кейси портфоліо (наявні)"
